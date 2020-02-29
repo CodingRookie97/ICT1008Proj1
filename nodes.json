@@ -3,133 +3,1521 @@
   "features": [
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "marker-color": "#005cfa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "NE17/PTC Punggol MRT/LRT Station"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          103.90234529972076,
-          1.405240061237455
+          103.90235602855682,
+          1.4052534682491322
         ]
       }
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "marker-color": "#005cfa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "PW1 Sam Kee LRT Station"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          103.90195369720457,
-          1.4063662499501576
+          103.90489339828491,
+          1.4097126360596352
         ]
       }
     },
     {
       "type": "Feature",
-      "properties": {},
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          103.90511870384215,
-          1.405465299023457
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {},
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          103.90601187944412,
-          1.410181880522472
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {},
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          103.90490412712097,
-          1.4097179988540393
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {},
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          103.90249013900757,
-          1.4039985716225402
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {},
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          103.90188932418823,
-          1.402676639191187
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {},
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          103.90021562576294,
-          1.407706950090004
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {},
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          103.89853119850157,
-          1.4085355023910386
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {},
+      "properties": {
+        "marker-color": "#005cfa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "PW5 Nibong LRT Station"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
           103.90030682086944,
-          1.4118309388840664
+          1.4118282574893132
         ]
       }
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "marker-color": "#005cfa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "PW6 Sumang LRT Station"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          103.89724910259247,
+          103.89853656291961,
+          1.4085274581953548
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#005cfa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "PW7 Soo Teck LRT Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89723837375641,
           1.405390219763865
         ]
       }
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Waterway Point"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          103.90099883079529,
-          1.410377622470444
+          103.90203952789306,
+          1.4065700364210798
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol Town Square"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90333771705627,
+          1.407717675688023
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol View Primary School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90527963638304,
+          1.4053392731220608
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Shell @ 821 Punggol Road"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90665829181671,
+          1.404553622136663
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Fo Guang Shan (Singapore) Temple"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90553176403045,
+          1.4067362832657552
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "My First Skool EYC @ 2 Punggol Drive"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90438914299011,
+          1.4072511121289252
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol Waterway Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90740394592285,
+          1.4093265148307201
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol Waterway Park Carpark B"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90466809272766,
+          1.4106886644360647
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "SAFRA Punggol"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90609502792358,
+          1.4101416595722207
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "SPC @ Sumang"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90099346637726,
+          1.4103722596775538
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol Cove Primary School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89913201332092,
+          1.4116110645034147
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Valour Primary School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89899253845213,
+          1.4071170421234071
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Church of the Transfiguration"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90002250671385,
+          1.4067845484764973
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Dhammakaya Centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89538764953612,
+          1.40510062831143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol West Community Centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89589995145798,
+          1.404438321799165
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol Topaz Common Green"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8963371515274,
+          1.4044946312670261
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol Sapphire Common Green"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89915347099304,
+          1.4045053568798031
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Matilda House"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89917761087417,
+          1.4051086725189327
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Prive HDB Estate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.904550075531,
+          1.4010570698395314
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol Arcadia HDB Estate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90300512313843,
+          1.401893668717353
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Parc Centros Condominium Estate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90397071838377,
+          1.403405981314683
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol Green HDB Estate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90504360198974,
+          1.4024192242697903
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol Regalia HDB Estate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90192151069641,
+          1.402633736706251
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol Residences HDB Estate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90060186386108,
+          1.4033952556968554
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol Sapphire HDB Estate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89832735061645,
+          1.4038028291392681
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol Emerald HDB Estate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89823615550995,
+          1.4054867502400416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "A Treasure Trove Condominium Estate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89973282814026,
+          1.405320503306374
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol Topaz HDB Estate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89655709266661,
+          1.4053473173287365
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol Opal HDB Estate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89580607414245,
+          1.405502838652337
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Waterway Cascadia HDB Estate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89737784862518,
+          1.4085167326010761
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Waterway Terraces I HDB Estate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89985084533691,
+          1.4079375504363722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Waterway Terraces II HDB Estate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90066623687743,
+          1.409246072899977
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol Bayview HDB Estate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89746367931364,
+          1.411589613343215
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol Vue HDB Estate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89957726001738,
+          1.4126568083231965
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol ParcVista HDB Estate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90148162841797,
+          1.4102489154380137
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Treelodge @ Punggol HDB Estate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90634715557097,
+          1.4059479513488713
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "PUnggol Cornalius HDB Estate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90524744987488,
+          1.404285481808144
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65401: Opp Blk 264A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89871627092361,
+          1.4065512666152908
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65409: Bef Blk 264A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89956921339035,
+          1.406237542696208
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65141: Soo Teck Stn"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89736980199814,
+          1.405130123738787
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65149: Soo Teck Stn"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8970747590065,
+          1.40510062831143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65339: Blk 268C"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89811277389526,
+          1.4031592920924724
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65349: Opp Blk 268D"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.898606300354,
+          1.402647143732877
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65349: Blk 272C"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90066087245941,
+          1.4022261630601682
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65341: Opp Blk 272C"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90092641115187,
+          1.4017220587154992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65201: Opp Blk 201A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9035576581955,
+          1.4008425572586227
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65209: Aft Punggol Road"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90385806560516,
+          1.4003411340241358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65081: Opp Blk 199C"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90529572963714,
+          1.4009605391805493
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65089: Opp Blk 296"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90582412481306,
+          1.4013144849106942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65229: Blk 298"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90537619590759,
+          1.4031485664735381
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65221: Blk 303D"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90480756759643,
+          1.40399589021878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65091: Blk 301A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90659928321838,
+          1.403985164603662
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65091: Blk 604A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90720009803772,
+          1.4045053568798031
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65219: Aft Punggol Central"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90332698822021,
+          1.4032558226607834
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65251: Punggol Stn"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90282541513443,
+          1.4051140353239088
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65259: Punggol Stn/Int"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90174448490143,
+          1.405358042937595
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65359: Opp Punggol View Primary School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90435695648193,
+          1.4055725551043956
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65351: Punggol View Primary School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9048719406128,
+          1.405894323317632
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65489: Aft Punggol Drive"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90573024749756,
+          1.4082432299301226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65481: Bef Punggol Drive"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90617549419403,
+          1.4088545887973347
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65619: Nibong Stn Exit A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89998495578766,
+          1.411495764514989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65611: Nibong Stn Exit B"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9003336429596,
+          1.411329518010022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65469: Blk 310B"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9009827375412,
+          1.409873519886123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65461: Blk 312 CP"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9013421535492,
+          1.4098574315039791
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65451: Blk 322 CP"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89751732349396,
+          1.4106618504751507
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65459: Opp Blk 322 CP"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89773458242416,
+          1.410484878325347
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65449: Blk 315B"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89602065086365,
+          1.4080340808071452
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65441: Opp Blk 315B"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89575779438019,
+          1.408178876355824
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65499: Blk 259 CP"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89506578445433,
+          1.4045750733616062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65491: Opp Blk 259 CP"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89482438564299,
+          1.404553622136663
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65571: Blk 218"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8955619931221,
+          1.4034408395722442
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65479: Blk 258A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.895905315876,
+          1.4035775911930421
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Intersection A"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89809131622314,
+          1.4114287296354002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Intersection B"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89976501464844,
+          1.4107530179410146
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Intersection C"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90214681625366,
+          1.4091978077402003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Intersection D"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90324115753174,
+          1.4106243109293597
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Intersection E"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90550494194031,
+          1.4072940145290675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Intersection F"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90770435333252,
+          1.4058299696785265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Intersection G"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9062774181366,
+          1.402858974743377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Intersection H"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90384197235107,
+          1.4044141891696726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Intersection I"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90089154243469,
+          1.4060766586187871
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Intersection J"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89756560325622,
+          1.4064091523665716
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Intersection K"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89530181884765,
+          1.4065485852144565
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Intersection L"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89481902122497,
+          1.4036955729771107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Intersection M"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89694333076477,
+          1.4035668655760034
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Intersection  N"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89943242073059,
+          1.4025157548686346
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Intersection O"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90207171440124,
+          1.4014539180624237
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Intersection P"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90512943267822,
+          1.39994160420436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bus Stop 65009: Punggol Temp Interchange"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90295952558517,
+          1.4031297966402565
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8500fa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Intersection Q"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90506505966186,
+          1.4100236781141335
         ]
       }
     }
