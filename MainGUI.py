@@ -4,10 +4,9 @@ import sys
 import folium
 
 from PyQt5 import QtWidgets, QtWebEngineWidgets
-from PyQt5.QtCore import QSize
+from PyQt5.QtCore import QSize, pyqtSlot, Qt
 from PyQt5.QtGui import QImage, QPalette, QBrush, QFont
-from PyQt5.QtWidgets import QApplication, QComboBox, QLabel
-
+from PyQt5.QtWidgets import QApplication, QComboBox, QLabel, QCheckBox
 
 class MainGUI(QtWidgets.QMainWindow):
     def __init__(self):
@@ -23,7 +22,7 @@ class MainGUI(QtWidgets.QMainWindow):
         self.setWindowTitle(self.title)
         self.setGeometry(self.left, self.top, self.width, self.height)
         bgImage = QImage("Images/punggol_background_1.png")
-        sBgImage = bgImage.scaled(QSize(600, 400))  # resize Image to widgets size
+        sBgImage = bgImage.scaled(QSize(1000, 700))  # resize Image to widgets size
         palette = QPalette()
         palette.setBrush(QPalette.Window, QBrush(sBgImage))
         self.setPalette(palette)
@@ -32,11 +31,14 @@ class MainGUI(QtWidgets.QMainWindow):
     def initWidgets(self):
         #Initialise the main layout
 
+        #Array that contains the starting locations (Punggol West LRT Line only)
         mrtStations = ["NE17/PTC Punggol MRT/LRT Station", "PW1 Sam Kee LRT Station", "PW2 Teck Lee LRT Station", "PW3 Punggol Point LRT Station", "PW4 Samudera LRT Station", "PW5 Nibong LRT Station", "PW6 Sumang LRT Station", "PW7 Soo Teck LRT Station"]
+
+        # Array that contains the ending locations (Those residential areas that cover Punggol West Area only)
         residences = ["Punggol Regalia HDBs", "Punggol Arcadia HDBs", "Parc Centros HDBs", "Prive Condominiums", "Cornalius HDBs", "Treelodge at Punggol HDBs",
-                                "Northshore Bungalows HDBs (U/C)", "Northshore Cove HDBs (U/C)", "Northshore StraitsView HDBs (U/C)", "Northshore Waterfront HDBs (U/C)", "Northshore Residences HDBs (U/C)",
-                                "Northshore Edge HDBs", "Punggol Bayview HDBs", "Punggol Vue HDBs", "Piermont Grand Condominiums (U/C)", "ParcVista HDBs", "Waterway Terraces II HDBs",
-                                "Waterway Cascadia HDBs", "Waterway Terraces I HDBs", "Punggol Opal HDBs", "Punggol Topaz HDBs", "Punggol Emerald HDBs", "Punggol Sapphire HDBs", "Punggol Residences HDBs"]
+                    "Northshore Bungalows", "NorthShore Trio HDBs (U/C)", "Northshore Cove HDBs (U/C)", "Northshore StraitsView HDBs (U/C)", "Northshore Waterfront HDBs (U/C)", "Northshore Residences HDBs (U/C)",
+                    "Northshore Edge HDBs (U/C)", "Punggol Bayview HDBs", "Punggol Vue HDBs", "Piermont Grand Condominiums (U/C)", "ParcVista HDBs", "Waterway Terraces II HDBs",
+                    "Waterway Cascadia HDBs", "Waterway Terraces I HDBs", "Punggol Opal HDBs", "Punggol Topaz HDBs", "Punggol Emerald HDBs", "Punggol Sapphire HDBs", "Punggol Residences HDBs"]
 
         self.main = QtWidgets.QWidget()
         self.setCentralWidget(self.main)
@@ -46,22 +48,24 @@ class MainGUI(QtWidgets.QMainWindow):
         comboLayout = QtWidgets.QGridLayout(self.main)
 
         lblStartLocation = QLabel(self)
-        lblStartLocation.setText('Choose a starting location:')
+        lblStartLocation.setText('Choose starting location:')
         lblStartLocation.setFont(QFont("Arial", 14, QFont.Bold))
         lblStartLocation.setStyleSheet('QLabel { color : Green; }')
 
         #Choose a start location (MRT station)
         self.comboStart = QComboBox()
+        self.comboStart.setFont(QFont("Arial", 10))
         self.comboStart.addItems(mrtStations)
         self.comboStart.currentIndexChanged.connect(self.chooseStart)
 
         lblEndLocation = QLabel(self)
-        lblEndLocation.setText('Choose a ending location:')
+        lblEndLocation.setText('Choose ending location:')
         lblEndLocation.setFont(QFont("Arial", 14, QFont.Bold))
         lblEndLocation.setStyleSheet('QLabel { color : Red; }')
 
         #Choose an ending location (Residential Estates HDB + Condominiums)
         self.comboEnd = QComboBox()
+        self.comboEnd.setFont(QFont("Arial", 10))
         self.comboEnd.addItems(residences)
         self.comboEnd.currentIndexChanged.connect(self.chooseEnd)
 
@@ -80,23 +84,284 @@ class MainGUI(QtWidgets.QMainWindow):
         btnLayout.addWidget(btnShortestPath)
         gridLayout.addLayout(btnLayout, 1, 0)
 
-        self.mapView = QtWebEngineWidgets.QWebEngineView()
-        gridLayout.addWidget(self.mapView, 3, 0)
-        gridLayout.setColumnStretch(1, 2)
+        mapView = QtWebEngineWidgets.QWebEngineView()
+        gridLayout.addWidget(mapView, 2, 0)
 
         m = folium.Map(location=[1.4053, 103.9021], zoom_start=16)
 
         data = io.BytesIO()
         m.save(data, close_file=False)
-        self.mapView.setHtml(data.getvalue().decode())
+        mapView.setHtml(data.getvalue().decode())
+
+        #Checkbox to select whether the bus routes are displayed on the map
+        lblChkBoxLayout = QtWidgets.QGridLayout(self.main)
+
+        lblCheckBusRoutes = QLabel(self)
+        lblCheckBusRoutes.setText('Check to display bus routes on the map:')
+        lblCheckBusRoutes.setAlignment(Qt.AlignHCenter)
+        lblCheckBusRoutes.setFont(QFont("Arial", 14, QFont.Bold))
+        lblCheckBusRoutes.setStyleSheet('QLabel { color : Blue; }')
+        lblChkBoxLayout.addWidget(lblCheckBusRoutes, 0, 0)
+        gridLayout.addLayout(lblChkBoxLayout, 1, 4)
+
+        cbBus3 = QCheckBox("Bus 3", self)
+        cbBus3.stateChanged.connect(self.checkBus3)
+        cbBus3.setFont(QFont("Arial", 10, QFont.Bold))
+
+        cbBus34 = QCheckBox("Bus 34", self)
+        cbBus34.stateChanged.connect(self.checkBus34)
+        cbBus34.setFont(QFont("Arial", 10, QFont.Bold))
+
+        cbBus34A = QCheckBox("Bus 34A", self)
+        cbBus34A.stateChanged.connect(self.checkBus34A)
+        cbBus34A.setFont(QFont("Arial", 10, QFont.Bold))
+
+        cbBus43 = QCheckBox("Bus 43", self)
+        cbBus43.stateChanged.connect(self.checkBus43)
+        cbBus43.setFont(QFont("Arial", 10, QFont.Bold))
+
+        cbBus43e = QCheckBox("Bus 43e", self)
+        cbBus43e.stateChanged.connect(self.checkBus43e)
+        cbBus43e.setFont(QFont("Arial", 10, QFont.Bold))
+
+        cbBus43M = QCheckBox("Bus 50", self)
+        cbBus43M.stateChanged.connect(self.checkBus43M)
+        cbBus43M.setFont(QFont("Arial", 10, QFont.Bold))
+
+        cbBus50 = QCheckBox("Bus 50", self)
+        cbBus50.stateChanged.connect(self.checkBus50)
+        cbBus50.setFont(QFont("Arial", 10, QFont.Bold))
+
+        cbBus62 = QCheckBox("Bus 62", self)
+        cbBus62.stateChanged.connect(self.checkBus62)
+        cbBus62.setFont(QFont("Arial", 10, QFont.Bold))
+
+        cbBus62A = QCheckBox("Bus 62A", self)
+        cbBus62A.stateChanged.connect(self.checkBus62A)
+        cbBus62A.setFont(QFont("Arial", 10, QFont.Bold))
+
+        cbBus82 = QCheckBox("Bus 82", self)
+        cbBus82.stateChanged.connect(self.checkBus82)
+        cbBus82.setFont(QFont("Arial", 10, QFont.Bold))
+
+        cbBus83 = QCheckBox("Bus 83", self)
+        cbBus83.stateChanged.connect(self.checkBus83)
+        cbBus83.setFont(QFont("Arial", 10, QFont.Bold))
+
+        cbBus84 = QCheckBox("Bus 84", self)
+        cbBus84.stateChanged.connect(self.checkBus84)
+        cbBus84.setFont(QFont("Arial", 10, QFont.Bold))
+
+        cbBus117 = QCheckBox("Bus 117", self)
+        cbBus117.stateChanged.connect(self.checkBus117)
+        cbBus117.setFont(QFont("Arial", 10, QFont.Bold))
+
+        cbBus118 = QCheckBox("Bus 118", self)
+        cbBus118.stateChanged.connect(self.checkBus118)
+        cbBus118.setFont(QFont("Arial", 10, QFont.Bold))
+
+        cbBus119 = QCheckBox("Bus 119", self)
+        cbBus119.stateChanged.connect(self.checkBus119)
+        cbBus119.setFont(QFont("Arial", 10, QFont.Bold))
+
+        cbBus136 = QCheckBox("Bus 136", self)
+        cbBus136.stateChanged.connect(self.checkBus136)
+        cbBus136.setFont(QFont("Arial", 10, QFont.Bold))
+
+        cbBus381 = QCheckBox("Bus 381", self)
+        cbBus381.stateChanged.connect(self.checkBus381)
+        cbBus381.setFont(QFont("Arial", 10, QFont.Bold))
+
+        cbBus382 = QCheckBox("Bus 382", self)
+        cbBus382.stateChanged.connect(self.checkBus382)
+        cbBus382.setFont(QFont("Arial", 10, QFont.Bold))
+
+        cbBus382G = QCheckBox("Bus 382G", self)
+        cbBus382G.stateChanged.connect(self.checkBus382G)
+        cbBus382G.setFont(QFont("Arial", 10, QFont.Bold))
+
+        cbBus382W = QCheckBox("Bus 382W", self)
+        cbBus382W.stateChanged.connect(self.checkBus382)
+        cbBus382W.setFont(QFont("Arial", 10, QFont.Bold))
+
+        cbBus386 = QCheckBox("Bus 386", self)
+        cbBus386.stateChanged.connect(self.checkBus386)
+        cbBus386.setFont(QFont("Arial", 10, QFont.Bold))
+
+        cbBus386A = QCheckBox("Bus 386A", self)
+        cbBus386A.stateChanged.connect(self.checkBus386A)
+        cbBus386A.setFont(QFont("Arial", 10, QFont.Bold))
+
+        chkBoxLayout = QtWidgets.QGridLayout(self.main)
+        chkBoxLayout.addWidget(cbBus3, 0, 0)
+        chkBoxLayout.addWidget(cbBus34, 0, 1)
+        chkBoxLayout.addWidget(cbBus34A, 0, 2)
+        chkBoxLayout.addWidget(cbBus43, 1, 0)
+        chkBoxLayout.addWidget(cbBus43e, 1, 1)
+        chkBoxLayout.addWidget(cbBus43M, 1, 2)
+        chkBoxLayout.addWidget(cbBus50, 2, 0)
+        chkBoxLayout.addWidget(cbBus62, 2, 1)
+        chkBoxLayout.addWidget(cbBus62A, 2, 2)
+        chkBoxLayout.addWidget(cbBus82, 3, 0)
+        chkBoxLayout.addWidget(cbBus83, 3, 1)
+        chkBoxLayout.addWidget(cbBus84, 3, 2)
+        chkBoxLayout.addWidget(cbBus117, 4, 0)
+        chkBoxLayout.addWidget(cbBus118, 4, 1)
+        chkBoxLayout.addWidget(cbBus119, 4, 2)
+        chkBoxLayout.addWidget(cbBus136, 5, 0)
+        chkBoxLayout.addWidget(cbBus381, 5, 1)
+        chkBoxLayout.addWidget(cbBus382, 5, 2)
+        chkBoxLayout.addWidget(cbBus382G, 6, 0)
+        chkBoxLayout.addWidget(cbBus382W, 6, 1)
+        chkBoxLayout.addWidget(cbBus386, 6, 2)
+        chkBoxLayout.addWidget(cbBus386A, 7, 1)
+        gridLayout.addLayout(chkBoxLayout, 2, 4)
 
     #Function to choose different starting locations
     def chooseStart(self, i):
         print("Current index", i, "selection changed ", self.comboStart.currentText())
 
-    # Function to choose different ending locations
+    #Function to choose different ending locations
     def chooseEnd(self, i):
         print("Current index", i, "selection changed ", self.comboEnd.currentText())
+
+    #Function to disable/enable the showing of bus routes in the map
+    def checkBus3(self, state):
+        if state == Qt.Checked:
+            print('Checked')
+        else:
+            print('Unchecked')
+
+    def checkBus34(self, state):
+        if state == Qt.Checked:
+            print('Checked')
+        else:
+            print('Unchecked')
+
+    def checkBus34A(self, state):
+        if state == Qt.Checked:
+            print('Checked')
+        else:
+            print('Unchecked')
+
+    def checkBus43(self, state):
+        if state == Qt.Checked:
+            print('Checked')
+        else:
+            print('Unchecked')
+
+    def checkBus43e(self, state):
+        if state == Qt.Checked:
+            print('Checked')
+        else:
+            print('Unchecked')
+
+    def checkBus43M(self, state):
+        if state == Qt.Checked:
+            print('Checked')
+        else:
+            print('Unchecked')
+
+    def checkBus50(self, state):
+        if state == Qt.Checked:
+            print('Checked')
+        else:
+            print('Unchecked')
+
+    def checkBus62(self, state):
+        if state == Qt.Checked:
+            print('Checked')
+        else:
+            print('Unchecked')
+
+    def checkBus62A(self, state):
+        if state == Qt.Checked:
+            print('Checked')
+        else:
+            print('Unchecked')
+
+    def checkBus82(self, state):
+        if state == Qt.Checked:
+            print('Checked')
+        else:
+            print('Unchecked')
+
+    def checkBus83(self, state):
+        if state == Qt.Checked:
+            print('Checked')
+        else:
+            print('Unchecked')
+
+    def checkBus84(self, state):
+        if state == Qt.Checked:
+            print('Checked')
+        else:
+            print('Unchecked')
+
+    def checkBus117(self, state):
+        if state == Qt.Checked:
+            print('Checked')
+        else:
+            print('Unchecked')
+
+    def checkBus118(self, state):
+        if state == Qt.Checked:
+            print('Checked')
+        else:
+            print('Unchecked')
+
+    def checkBus119(self, state):
+        if state == Qt.Checked:
+            print('Checked')
+        else:
+            print('Unchecked')
+
+    def checkBus136(self, state):
+        if state == Qt.Checked:
+            print('Checked')
+        else:
+            print('Unchecked')
+
+    def checkBus381(self, state):
+        if state == Qt.Checked:
+            print('Checked')
+        else:
+            print('Unchecked')
+
+    def checkBus382(self, state):
+        if state == Qt.Checked:
+            print('Checked')
+        else:
+            print('Unchecked')
+
+    def checkBus382G(self, state):
+        if state == Qt.Checked:
+            print('Checked')
+        else:
+            print('Unchecked')
+
+    def checkBus382W(self, state):
+        if state == Qt.Checked:
+            print('Checked')
+        else:
+            print('Unchecked')
+
+    def checkBus386(self, state):
+        if state == Qt.Checked:
+            print('Checked')
+        else:
+            print('Unchecked')
+
+    def checkBus386A(self, state):
+        if state == Qt.Checked:
+            print('Checked')
+        else:
+            print('Unchecked')
+
+    @pyqtSlot()
+    def btnComputeShortest(self):
+        #TODO: Insert shortest path algorithm here
+        pass
 
 if __name__ == "__main__":
     App = QApplication(sys.argv)
