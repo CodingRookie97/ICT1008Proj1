@@ -14,6 +14,7 @@ busLon = []
 bus3Coordinates = [[0 for x in range(2)] for y in range(3)]
 bus84Coordinates = [[0 for x in range(2)] for y in range(14)]
 
+#Based on your own file directory. This CSV is created directly rom GeoJSON website
 with open('C:\\Users\\Jerone Poh\\Desktop\\punggol_nodes.csv') as f:
     reader = csv.reader(f)
     for row in reader:
