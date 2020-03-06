@@ -8,6 +8,9 @@ from PyQt5.QtCore import QSize, pyqtSlot, Qt
 from PyQt5.QtGui import QImage, QPalette, QBrush, QFont
 from PyQt5.QtWidgets import QApplication, QComboBox, QLabel, QCheckBox
 
+from ShortestPathGUI import ShortestPathGUI
+
+
 class MainGUI(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
@@ -21,8 +24,9 @@ class MainGUI(QtWidgets.QMainWindow):
     def initUI(self):
         self.setWindowTitle(self.title)
         self.setGeometry(self.left, self.top, self.width, self.height)
+
         bgImage = QImage("Images/punggol_background_1.png")
-        sBgImage = bgImage.scaled(QSize(1000, 700))  # resize Image to widgets size
+        sBgImage = bgImage.scaled(QSize(800, 600))  # resize Image to widgets size
         palette = QPalette()
         palette.setBrush(QPalette.Window, QBrush(sBgImage))
         self.setPalette(palette)
@@ -36,9 +40,9 @@ class MainGUI(QtWidgets.QMainWindow):
 
         # Array that contains the ending locations (Those residential areas that cover Punggol West Area only)
         residences = ["Punggol Regalia HDBs", "Punggol Arcadia HDBs", "Parc Centros HDBs", "Prive Condominiums", "Cornalius HDBs", "Treelodge at Punggol HDBs",
-                    "Northshore Bungalows", "NorthShore Trio HDBs (U/C)", "Northshore Cove HDBs (U/C)", "Northshore StraitsView HDBs (U/C)", "Northshore Waterfront HDBs (U/C)", "Northshore Residences HDBs (U/C)",
-                    "Northshore Edge HDBs (U/C)", "Punggol Bayview HDBs", "Punggol Vue HDBs", "Piermont Grand Condominiums (U/C)", "ParcVista HDBs", "Waterway Terraces II HDBs",
-                    "Waterway Cascadia HDBs", "Waterway Terraces I HDBs", "Punggol Opal HDBs", "Punggol Topaz HDBs", "Punggol Emerald HDBs", "Punggol Sapphire HDBs", "Punggol Residences HDBs"]
+                    "Northshore Bungalows", "Punggol Point Woods HDBs (U/C)", "Punggol Point Cove HDBs (U/C)", "Punggol Point Crown HDBs (U/C)", "NorthShore Trio HDBs (U/C)", "Northshore Cove HDBs (U/C)", "Northshore StraitsView HDBs (U/C)",
+                      "Northshore Waterfront HDBs (U/C)", "Northshore Residences HDBs (U/C)",  "Northshore Edge HDBs (U/C)", "Punggol Bayview HDBs", "Punggol Vue HDBs", "Piermont Grand Condominiums (U/C)",
+                      "ParcVista HDBs", "Waterway Terraces II HDBs", "Waterway Cascadia HDBs", "Waterway Terraces I HDBs", "Punggol Opal HDBs", "Punggol Topaz HDBs", "Punggol Emerald HDBs", "Punggol Sapphire HDBs", "Punggol Residences HDBs"]
 
         self.main = QtWidgets.QWidget()
         self.setCentralWidget(self.main)
@@ -82,6 +86,7 @@ class MainGUI(QtWidgets.QMainWindow):
         btnShortestPath.setFont(QFont("Arial", 10, QFont.Bold))
         btnShortestPath.setStyleSheet('QPushButton { background-color: #008000; color: white; }')
         btnLayout.addWidget(btnShortestPath)
+        btnShortestPath.clicked.connect(self.computeShortest)
         gridLayout.addLayout(btnLayout, 1, 0)
 
         mapView = QtWebEngineWidgets.QWebEngineView()
@@ -124,7 +129,7 @@ class MainGUI(QtWidgets.QMainWindow):
         cbBus43e.stateChanged.connect(self.checkBus43e)
         cbBus43e.setFont(QFont("Arial", 10, QFont.Bold))
 
-        cbBus43M = QCheckBox("Bus 50", self)
+        cbBus43M = QCheckBox("Bus 43M", self)
         cbBus43M.stateChanged.connect(self.checkBus43M)
         cbBus43M.setFont(QFont("Arial", 10, QFont.Bold))
 
@@ -152,6 +157,10 @@ class MainGUI(QtWidgets.QMainWindow):
         cbBus84.stateChanged.connect(self.checkBus84)
         cbBus84.setFont(QFont("Arial", 10, QFont.Bold))
 
+        cbBus85 = QCheckBox("Bus 85", self)
+        cbBus85.stateChanged.connect(self.checkBus85)
+        cbBus85.setFont(QFont("Arial", 10, QFont.Bold))
+
         cbBus117 = QCheckBox("Bus 117", self)
         cbBus117.stateChanged.connect(self.checkBus117)
         cbBus117.setFont(QFont("Arial", 10, QFont.Bold))
@@ -175,6 +184,10 @@ class MainGUI(QtWidgets.QMainWindow):
         cbBus382 = QCheckBox("Bus 382", self)
         cbBus382.stateChanged.connect(self.checkBus382)
         cbBus382.setFont(QFont("Arial", 10, QFont.Bold))
+
+        cbBus382A = QCheckBox("Bus 382A", self)
+        cbBus382A.stateChanged.connect(self.checkBus382A)
+        cbBus382A.setFont(QFont("Arial", 10, QFont.Bold))
 
         cbBus382G = QCheckBox("Bus 382G", self)
         cbBus382G.stateChanged.connect(self.checkBus382G)
@@ -205,16 +218,18 @@ class MainGUI(QtWidgets.QMainWindow):
         chkBoxLayout.addWidget(cbBus82, 3, 0)
         chkBoxLayout.addWidget(cbBus83, 3, 1)
         chkBoxLayout.addWidget(cbBus84, 3, 2)
-        chkBoxLayout.addWidget(cbBus117, 4, 0)
-        chkBoxLayout.addWidget(cbBus118, 4, 1)
-        chkBoxLayout.addWidget(cbBus119, 4, 2)
-        chkBoxLayout.addWidget(cbBus136, 5, 0)
-        chkBoxLayout.addWidget(cbBus381, 5, 1)
-        chkBoxLayout.addWidget(cbBus382, 5, 2)
-        chkBoxLayout.addWidget(cbBus382G, 6, 0)
-        chkBoxLayout.addWidget(cbBus382W, 6, 1)
-        chkBoxLayout.addWidget(cbBus386, 6, 2)
-        chkBoxLayout.addWidget(cbBus386A, 7, 1)
+        chkBoxLayout.addWidget(cbBus85, 4, 0)
+        chkBoxLayout.addWidget(cbBus117, 4, 1)
+        chkBoxLayout.addWidget(cbBus118, 4, 2)
+        chkBoxLayout.addWidget(cbBus119, 5, 0)
+        chkBoxLayout.addWidget(cbBus136, 5, 1)
+        chkBoxLayout.addWidget(cbBus381, 5, 2)
+        chkBoxLayout.addWidget(cbBus382, 6, 0)
+        chkBoxLayout.addWidget(cbBus382A, 6, 1)
+        chkBoxLayout.addWidget(cbBus382G, 6, 2)
+        chkBoxLayout.addWidget(cbBus382W, 7, 0)
+        chkBoxLayout.addWidget(cbBus386, 7, 1)
+        chkBoxLayout.addWidget(cbBus386A, 7, 2)
         gridLayout.addLayout(chkBoxLayout, 2, 4)
 
     #Function to choose different starting locations
@@ -228,142 +243,155 @@ class MainGUI(QtWidgets.QMainWindow):
     #Function to disable/enable the showing of bus routes in the map
     def checkBus3(self, state):
         if state == Qt.Checked:
-            print('Checked')
+            print('Bus 3 Checked')
         else:
-            print('Unchecked')
+            print('Bus 3 Unchecked')
 
     def checkBus34(self, state):
         if state == Qt.Checked:
-            print('Checked')
+            print('Bus 34 Checked')
         else:
-            print('Unchecked')
+            print('Bus 34 Unchecked')
 
     def checkBus34A(self, state):
         if state == Qt.Checked:
-            print('Checked')
+            print('Bus 34A Checked')
         else:
-            print('Unchecked')
+            print('Bus 34A Unchecked')
 
     def checkBus43(self, state):
         if state == Qt.Checked:
-            print('Checked')
+            print('Bus 43 Checked')
         else:
-            print('Unchecked')
+            print('Bus 43 Unchecked')
 
     def checkBus43e(self, state):
         if state == Qt.Checked:
-            print('Checked')
+            print('Bus 43e Checked')
         else:
-            print('Unchecked')
+            print('Bus 43e Unchecked')
 
     def checkBus43M(self, state):
         if state == Qt.Checked:
-            print('Checked')
+            print('Bus 43M Checked')
         else:
-            print('Unchecked')
+            print('Bus 43M Unchecked')
 
     def checkBus50(self, state):
         if state == Qt.Checked:
-            print('Checked')
+            print('Bus 50 Checked')
         else:
-            print('Unchecked')
+            print('Bus 50 Unchecked')
 
     def checkBus62(self, state):
         if state == Qt.Checked:
-            print('Checked')
+            print('Bus 62 Checked')
         else:
-            print('Unchecked')
+            print('Bus 62 Unchecked')
 
     def checkBus62A(self, state):
         if state == Qt.Checked:
-            print('Checked')
+            print('Bus 62A Checked')
         else:
-            print('Unchecked')
+            print('Bus 62A Unchecked')
 
     def checkBus82(self, state):
         if state == Qt.Checked:
-            print('Checked')
+            print('Bus 82 Checked')
         else:
-            print('Unchecked')
+            print('Bus 82 Unchecked')
 
     def checkBus83(self, state):
         if state == Qt.Checked:
-            print('Checked')
+            print('Bus 83 Checked')
         else:
-            print('Unchecked')
+            print('Bus 83 Unchecked')
 
     def checkBus84(self, state):
         if state == Qt.Checked:
-            print('Checked')
+            print('Bus 84 Checked')
         else:
-            print('Unchecked')
+            print('Bus 84 Unchecked')
+
+    def checkBus85(self, state):
+        if state == Qt.Checked:
+            print('Bus 85 Checked')
+        else:
+            print('Bus 85 Unchecked')
 
     def checkBus117(self, state):
         if state == Qt.Checked:
-            print('Checked')
+            print('Bus 117 Checked')
         else:
-            print('Unchecked')
+            print('Bus 117 Unchecked')
 
     def checkBus118(self, state):
         if state == Qt.Checked:
-            print('Checked')
+            print('Bus 118 Checked')
         else:
-            print('Unchecked')
+            print('Bus 118 Unchecked')
 
     def checkBus119(self, state):
         if state == Qt.Checked:
-            print('Checked')
+            print('Bus 119 Checked')
         else:
-            print('Unchecked')
+            print('Bus 119 Unchecked')
 
     def checkBus136(self, state):
         if state == Qt.Checked:
-            print('Checked')
+            print('Bus 136 Checked')
         else:
-            print('Unchecked')
+            print('Bus 136 Unchecked')
 
     def checkBus381(self, state):
         if state == Qt.Checked:
-            print('Checked')
+            print('Bus 381 Checked')
         else:
-            print('Unchecked')
+            print('Bus 381 Unchecked')
 
     def checkBus382(self, state):
         if state == Qt.Checked:
-            print('Checked')
+            print('Bus 382 Checked')
         else:
-            print('Unchecked')
+            print('Bus 382 Unchecked')
+
+    def checkBus382A(self, state):
+        if state == Qt.Checked:
+            print('Bus 382A Checked')
+        else:
+            print('Bus 382A Unchecked')
 
     def checkBus382G(self, state):
         if state == Qt.Checked:
-            print('Checked')
+            print('Bus 382G Checked')
         else:
-            print('Unchecked')
+            print('Bus 382G Unchecked')
 
     def checkBus382W(self, state):
         if state == Qt.Checked:
-            print('Checked')
+            print('Bus 382W Checked')
         else:
-            print('Unchecked')
+            print('Bus 382W Unchecked')
 
     def checkBus386(self, state):
         if state == Qt.Checked:
-            print('Checked')
+            print('Bus 386 Checked')
         else:
-            print('Unchecked')
+            print('Bus 386 Unchecked')
 
     def checkBus386A(self, state):
         if state == Qt.Checked:
-            print('Checked')
+            print('Bus 386A Checked')
         else:
-            print('Unchecked')
+            print('Bus 386A Unchecked')
 
     @pyqtSlot()
-    def btnComputeShortest(self):
+    def computeShortest(self):
         #TODO: Insert shortest path algorithm here
-        pass
+        self.shortestPath = ShortestPathGUI(self.comboStart.currentText(), self.comboEnd.currentText())
+        self.shortestPath.show()
 
 if __name__ == "__main__":
     App = QApplication(sys.argv)
     mainWindow = MainGUI()
-    sys.exit(App.exec())
+    sys.exit(App.exec_())
