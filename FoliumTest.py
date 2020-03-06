@@ -14,7 +14,7 @@ busLon = []
 bus3Coordinates = [[0 for x in range(2)] for y in range(3)]
 bus84Coordinates = [[0 for x in range(2)] for y in range(14)]
 
-with open('C:\\Users\\Jerone Poh\\Desktop\\punggol_nodes.csv') as f:
+with open('Punggol_Nodes.csv') as f:
     reader = csv.reader(f)
     for row in reader:
         busCoordinatesString.append(row[3])

@@ -29,7 +29,39 @@
         "type": "Point",
         "coordinates": [
           103.90489339828491,
-          1.4097126360596352
+          1.4097126360596353
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#005cfa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "PW3 Punggol Point LRT Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.906626,
+          1.416883
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#005cfa",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "PW4 Samudera LRT Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90213876962662,
+          1.4159281064622553
         ]
       }
     },
@@ -44,8 +76,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          103.90030682086944,
-          1.4118282574893132
+          103.90030682086945,
+          1.4118282574893133
         ]
       }
     },
@@ -60,8 +92,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          103.89853656291961,
-          1.4085274581953548
+          103.89853656291962,
+          1.4085274581953549
         ]
       }
     },
@@ -92,7 +124,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          103.90203952789306,
+          103.90203952789307,
           1.4065700364210798
         ]
       }
@@ -125,7 +157,39 @@
         "type": "Point",
         "coordinates": [
           103.90527963638304,
-          1.4053392731220608
+          1.4053392731220609
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Yusof Ishak Secondary School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.896635,
+          1.407172
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#dce604",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Northshore Primary School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9046573638916,
+          1.4180678547154504
         ]
       }
     },
@@ -156,8 +220,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          103.90553176403045,
-          1.4067362832657552
+          103.90553176403046,
+          1.4067362832657553
         ]
       }
     },
@@ -173,7 +237,7 @@
         "type": "Point",
         "coordinates": [
           103.90438914299011,
-          1.4072511121289252
+          1.4072511121289253
         ]
       }
     },
@@ -205,7 +269,7 @@
         "type": "Point",
         "coordinates": [
           103.90466809272766,
-          1.4106886644360647
+          1.4106886644360648
         ]
       }
     },
@@ -237,7 +301,7 @@
         "type": "Point",
         "coordinates": [
           103.90099346637726,
-          1.4103722596775538
+          1.4103722596775539
         ]
       }
     },
@@ -253,7 +317,7 @@
         "type": "Point",
         "coordinates": [
           103.89913201332092,
-          1.4116110645034147
+          1.4116110645034148
         ]
       }
     },
@@ -269,7 +333,7 @@
         "type": "Point",
         "coordinates": [
           103.89899253845213,
-          1.4071170421234071
+          1.4071170421234072
         ]
       }
     },
@@ -285,7 +349,7 @@
         "type": "Point",
         "coordinates": [
           103.90002250671385,
-          1.4067845484764973
+          1.4067845484764974
         ]
       }
     },
@@ -349,7 +413,7 @@
         "type": "Point",
         "coordinates": [
           103.89915347099304,
-          1.4045053568798031
+          1.4045053568798032
         ]
       }
     },
@@ -364,8 +428,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          103.89917761087417,
-          1.4051086725189327
+          103.89917761087418,
+          1.4051086725189328
         ]
       }
     },
@@ -381,7 +445,7 @@
         "type": "Point",
         "coordinates": [
           103.904550075531,
-          1.4010570698395314
+          1.4010570698395315
         ]
       }
     },
@@ -428,8 +492,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          103.90504360198974,
-          1.4024192242697903
+          103.90504360198975,
+          1.4024192242697904
         ]
       }
     },
@@ -476,7 +540,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          103.89832735061645,
+          103.89832735061646,
           1.4038028291392681
         ]
       }
@@ -493,7 +557,183 @@
         "type": "Point",
         "coordinates": [
           103.89823615550995,
-          1.4054867502400416
+          1.4054867502400417
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "NorthShore Residences (U/C)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.902132,
+          1.416879
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "NorthShore Waterfront (U/C)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.901286,
+          1.417877
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol Point Cove HDBs (U/C)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.912822,
+          1.419092
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol Point Woods HDBs (U/C)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.910676,
+          1.417195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol Point Crown HDBs (U/C)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.911154,
+          1.419516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "NorthShore Trio HDBs (U/C)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.905895,
+          1.417987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Northshore Cove HDBs (U/C)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.906181,
+          1.419355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Northshore StraitsView HDBs (U/C)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.904582,
+          1.41943
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Northshore Edge HDBs (U/C)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.900637,
+          1.414621
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Piermont Grand Condominiums (U/C)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.898461,
+          1.410376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Northshore Bungalows"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.904315,
+          1.416019
         ]
       }
     },
@@ -540,7 +780,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          103.89580607414245,
+          103.89580607414246,
           1.405502838652337
         ]
       }
@@ -573,7 +813,7 @@
         "type": "Point",
         "coordinates": [
           103.89985084533691,
-          1.4079375504363722
+          1.4079375504363723
         ]
       }
     },
@@ -604,7 +844,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          103.89746367931364,
+          103.89746367931365,
           1.411589613343215
         ]
       }
@@ -637,7 +877,7 @@
         "type": "Point",
         "coordinates": [
           103.90148162841797,
-          1.4102489154380137
+          1.4102489154380138
         ]
       }
     },
@@ -663,7 +903,7 @@
         "marker-color": "#00fa43",
         "marker-size": "medium",
         "marker-symbol": "",
-        "node-details": "PUnggol Cornalius HDB Estate"
+        "node-details": "Punggol Cornalius HDB Estate"
       },
       "geometry": {
         "type": "Point",
@@ -749,7 +989,7 @@
         "type": "Point",
         "coordinates": [
           103.89811277389526,
-          1.4031592920924724
+          1.4031592920924725
         ]
       }
     },
@@ -797,7 +1037,7 @@
         "type": "Point",
         "coordinates": [
           103.90092641115187,
-          1.4017220587154992
+          1.4017220587154993
         ]
       }
     },
@@ -844,7 +1084,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          103.90529572963714,
+          103.90529572963715,
           1.4009605391805493
         ]
       }
@@ -860,7 +1100,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          103.90582412481306,
+          103.90582412481307,
           1.4013144849106942
         ]
       }
@@ -892,7 +1132,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          103.90480756759643,
+          103.90480756759644,
           1.40399589021878
         ]
       }
@@ -925,7 +1165,7 @@
         "type": "Point",
         "coordinates": [
           103.90720009803772,
-          1.4045053568798031
+          1.4045053568798032
         ]
       }
     },
@@ -957,7 +1197,7 @@
         "type": "Point",
         "coordinates": [
           103.90282541513443,
-          1.4051140353239088
+          1.4051140353239089
         ]
       }
     },
@@ -1181,7 +1421,7 @@
         "type": "Point",
         "coordinates": [
           103.89506578445433,
-          1.4045750733616062
+          1.4045750733616063
         ]
       }
     },
@@ -1229,7 +1469,7 @@
         "type": "Point",
         "coordinates": [
           103.895905315876,
-          1.4035775911930421
+          1.4035775911930422
         ]
       }
     },
@@ -1325,7 +1565,7 @@
         "type": "Point",
         "coordinates": [
           103.90770435333252,
-          1.4058299696785265
+          1.4058299696785266
         ]
       }
     },
@@ -1373,7 +1613,7 @@
         "type": "Point",
         "coordinates": [
           103.90089154243469,
-          1.4060766586187871
+          1.4060766586187872
         ]
       }
     },
@@ -1388,7 +1628,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          103.89756560325622,
+          103.89756560325623,
           1.4064091523665716
         ]
       }
@@ -1404,8 +1644,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          103.89530181884765,
-          1.4065485852144565
+          103.89530181884766,
+          1.4065485852144566
         ]
       }
     },
@@ -1420,8 +1660,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          103.89481902122497,
-          1.4036955729771107
+          103.89481902122498,
+          1.4036955729771108
         ]
       }
     },
@@ -1453,7 +1693,7 @@
         "type": "Point",
         "coordinates": [
           103.89943242073059,
-          1.4025157548686346
+          1.4025157548686347
         ]
       }
     },
@@ -1468,7 +1708,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          103.90207171440124,
+          103.90207171440125,
           1.4014539180624237
         ]
       }
@@ -1516,8 +1756,104 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          103.90506505966186,
+          103.90506505966187,
           1.4100236781141335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#dee805",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Marina Country Club"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89896035194397,
+          1.4151934054785358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#dce604",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol Point Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.91116976737976,
+          1.4210602812849928
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#dce604",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol Point Police Post"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9106896519661,
+          1.421505390999248
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#dce604",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "River of Life Community Church"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90870213508605,
+          1.4189902518486621
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#dce604",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bridges Montessori Kindergarten"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90566,
+          1.415591
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#dce604",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "St Francis Xavier Major Seminary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.904997,
+          1.414379
         ]
       }
     }
