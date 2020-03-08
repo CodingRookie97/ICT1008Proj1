@@ -36,7 +36,7 @@ class ShortestPathGUI(QtWidgets.QMainWindow):
         lblShortestPathTitle = QLabel(self)
         lblShortestPathTitle.setText('Compute Shortest Path')
         lblShortestPathTitle.setAlignment(Qt.AlignHCenter)
-        lblShortestPathTitle.setFont(QFont("Arial", 22, QFont.Bold))
+        lblShortestPathTitle.setFont(QFont("Arial", 20, QFont.Bold))
         lblShortestPathTitle.setStyleSheet('QLabel { color : Green; }')
         lblShortestPathTitle.adjustSize()
         titleLayout.addWidget(lblShortestPathTitle)
@@ -72,18 +72,52 @@ class ShortestPathGUI(QtWidgets.QMainWindow):
         #Set columns to read only, no editing
         tableShortestWalk.setEditTriggers(QtWidgets.QTableWidget.NoEditTriggers)
 
+        lblDriveDistance = QLabel(self)
+        lblDriveDistance.setText('Total Driving Distance:')
+        lblDriveDistance.setFont(QFont("Arial", 14, QFont.Bold))
+        lblDriveDistance.setStyleSheet('QLabel { color : Blue; }')
+        tableLayout.addWidget(lblDriveDistance, 4, 0)
+
+        lblShortestDrive = QLabel(self)
+        lblShortestDrive.setText('Shortest Path by Driving:')
+        lblShortestDrive.setAlignment(Qt.AlignHCenter)
+        lblShortestDrive.setFont(QFont("Arial", 14, QFont.Bold))
+        lblShortestDrive.setStyleSheet('QLabel { color : Red; }')
+        tableLayout.addWidget(lblShortestDrive, 5, 0)
+
+        tableShortestDrive = QTableWidget()
+        tableShortestDrive.setRowCount(20)
+        tableShortestDrive.setColumnCount(5)
+        tableShortestDrive.setItem(0, 0, QTableWidgetItem("Starting Node"))
+        tableShortestDrive.setItem(0, 1, QTableWidgetItem("Target Node"))
+        tableShortestDrive.setItem(0, 2, QTableWidgetItem("Cost"))
+        tableShortestDrive.setItem(0, 3, QTableWidgetItem("Estimated time taken to reach"))
+        tableShortestDrive.setItem(0, 4, QTableWidgetItem("Distance Away"))
+        # Align columns to same width
+        tableShortestDrive.horizontalHeader().setStretchLastSection(True)
+        tableShortestDrive.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+        # Set columns to read only, no editing
+        tableShortestDrive.setEditTriggers(QtWidgets.QTableWidget.NoEditTriggers)
+
         lblBusDistance = QLabel(self)
         lblBusDistance.setText('Total Bus Distance:')
         lblBusDistance.setFont(QFont("Arial", 14, QFont.Bold))
         lblBusDistance.setStyleSheet('QLabel { color : Blue; }')
-        tableLayout.addWidget(lblBusDistance, 5, 0)
+        tableLayout.addWidget(lblBusDistance, 7, 0)
 
         lblShortestBus = QLabel(self)
         lblShortestBus.setText('Shortest Path by Bus:')
         lblShortestBus.setAlignment(Qt.AlignHCenter)
         lblShortestBus.setFont(QFont("Arial", 14, QFont.Bold))
         lblShortestBus.setStyleSheet('QLabel { color : Green; }')
-        tableLayout.addWidget(lblShortestBus, 6, 0)
+        tableLayout.addWidget(lblShortestBus, 8, 0)
+
+        lblShortestBus = QLabel(self)
+        lblShortestBus.setText('Shortest Path by Bus:')
+        lblShortestBus.setAlignment(Qt.AlignHCenter)
+        lblShortestBus.setFont(QFont("Arial", 14, QFont.Bold))
+        lblShortestBus.setStyleSheet('QLabel { color : Green; }')
+        tableLayout.addWidget(lblShortestBus, 9, 0)
 
         tableShortestBus = QTableWidget()
         tableShortestBus.setRowCount(20)
@@ -101,14 +135,14 @@ class ShortestPathGUI(QtWidgets.QMainWindow):
         lblTrainDistance.setText('Total Train Distance:')
         lblTrainDistance.setFont(QFont("Arial", 14, QFont.Bold))
         lblTrainDistance.setStyleSheet('QLabel { color : Blue; }')
-        tableLayout.addWidget(lblTrainDistance, 7, 0)
+        tableLayout.addWidget(lblTrainDistance, 10, 0)
 
         lblShortestTrain = QLabel(self)
         lblShortestTrain.setText('Shortest Path by Train:')
         lblShortestTrain.setAlignment(Qt.AlignHCenter)
         lblShortestTrain.setFont(QFont("Arial", 14, QFont.Bold))
         lblShortestTrain.setStyleSheet('QLabel { color : Purple; }')
-        tableLayout.addWidget(lblShortestTrain, 8, 0)
+        tableLayout.addWidget(lblShortestTrain, 11, 0)
 
         tableShortestTrain = QTableWidget()
         tableShortestTrain.setRowCount(20)
@@ -123,8 +157,9 @@ class ShortestPathGUI(QtWidgets.QMainWindow):
         tableShortestTrain.setEditTriggers(QtWidgets.QTableWidget.NoEditTriggers)
 
         tableLayout.addWidget(tableShortestWalk, 3, 0)
-        tableLayout.addWidget(tableShortestBus, 6, 0)
-        tableLayout.addWidget(tableShortestTrain, 11, 0)
+        tableLayout.addWidget(tableShortestDrive, 6, 0)
+        tableLayout.addWidget(tableShortestBus, 9, 0)
+        tableLayout.addWidget(tableShortestTrain, 12, 0)
 
         gridLayout.addLayout(tableLayout, 1, 0)
 

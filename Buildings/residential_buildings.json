@@ -1,0 +1,5957 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 273A Punggol Regalia HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90214145183563,
+          1.402220800248551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 273B Punggol Regalia HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90169620513916,
+          1.4020438274586668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 273C Punggol Regalia HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9012885093689,
+          1.4022476143064592
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 273D Punggol Regalia HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90142798423767,
+          1.4026498251382022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 274A Punggol Regalia HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9023184776306,
+          1.4027356301066875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 274B Punggol Regalia HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90237748622893,
+          1.4031592920924724
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 274C Punggol Regalia HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.902028799057,
+          1.4033255391798627
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 274D Punggol Regalia HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90171229839323,
+          1.403078849949179
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 288A Punggol Arcadia HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90314459800719,
+          1.402285153987017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 288B Punggol Arcadia HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90327334403991,
+          1.402708816054377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 288C Punggol Arcadia HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90371322631836,
+          1.4024782151917791
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 289A Punggol Arcadia HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90268862247467,
+          1.401550448701063
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 289B Punggol Arcadia HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90322506427763,
+          1.4012930336558282
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 289C Punggol Arcadia HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90347719192505,
+          1.4016469793357331
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 289D Punggol Arcadia HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90362203121185,
+          1.4020438274586668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "80 Parc Centros Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90446960926056,
+          1.4034488837854464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "82 Parc Centros Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9041531085968,
+          1.4037492010588064
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "84 Parc Centros Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90389561653137,
+          1.4038618200263726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "86 Parc Centros Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90368103981018,
+          1.4035025118728035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "88 Parc Centros Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90435159206389,
+          1.4032343714237287
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "90 Parc Centros Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90403509140014,
+          1.4028428863128761
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "92 Parc Centros Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9037936925888,
+          1.402971593753817
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "94 Parc Centros Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90351474285126,
+          1.4031592920924724
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 293 Punggol Green HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90494704246521,
+          1.403164654901927
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 294 Punggol Green HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90465199947357,
+          1.4026659135700261
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 295 Punggol Green HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90485048294067,
+          1.4019901993378631
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 296 Punggol Green HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9053064584732,
+          1.4017006074643865
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 297 Punggol Green HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90550494194031,
+          1.402285153987017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 298 Punggol Green HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90566051006316,
+          1.4026122854634841
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 299 Punggol Green HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90534937381744,
+          1.4027838954000728
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "31 Prive Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90400290489197,
+          1.4009498135515261
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "33 Prive Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90428185462951,
+          1.4014646436891442
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "35 Prive Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90492558479309,
+          1.4012179542623222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "37 Prive Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90466809272766,
+          1.400638770288557
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "39 Prive Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90445351600645,
+          1.4010892467249598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 301A Cornalius HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90626132488251,
+          1.4041782256681108
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 301B Cornalius HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90588045120239,
+          1.4042747561943493
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 301C Cornalius HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90564978122711,
+          1.4044195519762521
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 301D Cornalius HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90537083148956,
+          1.4045268081051787
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 302A Cornalius HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90442669391632,
+          1.404521445298854
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 302B Cornalius HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90475392341612,
+          1.4043498354897925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 302C Cornalius HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90485584735869,
+          1.4048003112117284
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 302D Cornalius HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90514016151428,
+          1.4046716038714712
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 303A Cornalius HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90573561191559,
+          1.4038189175631787
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 303B Cornalius HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90549421310425,
+          1.4039315365273734
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 303C Cornalius HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9053064584732,
+          1.4040816951378902
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 303D Cornalius HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90500605106354,
+          1.4042533049666454
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 304 Cornalius HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90659391880035,
+          1.4042372165457244
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 305A Treelodge @ Punggol HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90673875808716,
+          1.4052078844091238
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 305B Treelodge @ Punggol HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9063686132431,
+          1.405390219763865
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 305C Treelodge @ Punggol HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90694260597229,
+          1.4053955825682178
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 305D Treelodge @ Punggol HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90681385993957,
+          1.4057870672514767
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 306A Treelodge @ Punggol HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90541911125181,
+          1.4064091523665716
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 306B Treelodge @ Punggol HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90554249286651,
+          1.4060605702104358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 306B Treelodge @ Punggol HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90585362911224,
+          1.4058621464983083
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 306C Treelodge @ Punggol HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90612721443176,
+          1.4063018963240796
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 306D Treelodge @ Punggol HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90636324882507,
+          1.4061302866458282
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 430 Northshore Trio HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.91111075878143,
+          1.4176173815632755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 431 Northshore Trio HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.91062796115875,
+          1.41743504716723
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 431A Northshore Trio HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.91131460666656,
+          1.417424321614082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 431B Northshore Trio HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.91078889369964,
+          1.4176173815632755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 431C Northshore Trio HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9101505279541,
+          1.4175262143670466
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 432 Northshore Trio HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.91033291816711,
+          1.417215173317629
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 432A Northshore Trio HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.91059577465056,
+          1.4172366244258203
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 432B Northshore Trio HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.91125559806824,
+          1.4169202205597602
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 433A Northshore Trio HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.91073524951935,
+          1.4166091794289588
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 433B Northshore Trio HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.91006469726562,
+          1.4168451416699394
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 410 Northshore Trio HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90550494194031,
+          1.417772902066191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 410A Northshore Trio HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90578389167784,
+          1.41770318597996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 411A Northshore Trio HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90584290027617,
+          1.4183842584246708
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 411B Northshore Trio HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90614330768585,
+          1.4182716401602364
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "1 Ponggol Twenty Fourth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90978574752807,
+          1.4193388320648887
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "1A Ponggol Twenty Fourth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90976428985595,
+          1.419231576619336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "3 Ponggol Twenty Fourth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90972673892975,
+          1.4190975073054104
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "5 Ponggol Twenty Fourth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90966773033142,
+          1.4189044474796988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "5A Ponggol Twenty Fourth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90961945056915,
+          1.4187703781467917
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "7 Ponggol Twenty Fourth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90956580638885,
+          1.4184754255870844
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "9 Ponggol Twenty Fourth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90942633152008,
+          1.4183896211990247
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "9A Ponggol Twenty Fourth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90929758548736,
+          1.4184700628129212
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "11 Ponggol Twenty Fourth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90912055969238,
+          1.4185129650058696
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "11A Ponggol Twenty Fourth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90898108482361,
+          1.4185397788760616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "13 Ponggol Twenty Fourth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90882015228271,
+          1.4185236905539795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "15 Ponggol Twenty Fourth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90869140625,
+          1.4185451416500591
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "17 Ponggol Twenty Fourth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90855729579925,
+          1.4185397788760616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "17A Ponggol Twenty Fourth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9084392786026,
+          1.4185397788760616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "23 Ponggol Twenty Fourth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90891671180725,
+          1.4189312613453362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "25 Ponggol Twenty Fourth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90904545783995,
+          1.4189044474796988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "25A Ponggol Twenty Fourth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9091420173645,
+          1.4189044474796988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "27 Ponggol Twenty Fourth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90931367874145,
+          1.418872270840509
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "29 Ponggol Twenty Fourth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9092493057251,
+          1.4191672233496202
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "29A Ponggol Twenty Fourth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90932440757751,
+          1.4192905671150031
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "31 Ponggol Twenty Fourth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90944778919218,
+          1.4194085481018212
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "31A Ponggol Twenty Fourth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90927076339721,
+          1.4194353619616191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "37 Ponggol Twenty Fourth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90859484672546,
+          1.419306655431742
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "39 Ponggol Twenty Fourth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90855193138122,
+          1.419059967896116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 423A Northshore Cove HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.905810713768,
+          1.4191028700781105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 423B Northshore Cove HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90621840953827,
+          1.4190546051233015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 423C Northshore Cove HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90649199485779,
+          1.4189902518486621
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 425 Northshore Cove HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90637934207916,
+          1.4194729013648197
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 425A Northshore Cove HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90599310398102,
+          1.4197678537973177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 425B Northshore Cove HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90689432621002,
+          1.4196069706569902
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 421 Northshore Straits View HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90419602394104,
+          1.4193763714696414
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 421A Northshore Straits View HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90424430370331,
+          1.419113595623485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 421B Northshore Straits View HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90446424484253,
+          1.41927447879815
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 421C Northshore Straits View HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90518844127655,
+          1.4192583904811821
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 422 Northshore Straits View HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90490412712097,
+          1.4195211663108886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 422A Northshore Straits View HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90399754047394,
+          1.419724951627651
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 422B Northshore Straits View HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90514016151428,
+          1.4198697464470668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 401 Northshore Edge HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90095591545105,
+          1.414324634671926
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 401A Northshore Edge HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90073597431183,
+          1.414453341478626
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 402A Northshore Edge HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90077352523804,
+          1.414957443069418
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 402B Northshore Edge HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90052139759064,
+          1.4151344148785083
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 405 Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90103101730346,
+          1.4157028696890687
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 405A Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90133678913116,
+          1.4155795257325853
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 405B Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90179812908172,
+          1.4160192737213701
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 406 Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90102565288543,
+          1.4158905670015884
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 406A Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90078961849212,
+          1.4160085481616704
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 406B Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90113294124603,
+          1.4163732171639456
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 406C Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90133678913116,
+          1.4166788955481148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 407 Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90213072299957,
+          1.4167378861088435
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 407A Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90139043331145,
+          1.416217696567051
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 407B Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9027851819992,
+          1.417424321614082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 407C Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90333771705627,
+          1.4177568137387912
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 408 Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90346646308897,
+          1.4179016086813962
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 408A Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9028924703598,
+          1.4170435644448975
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 408B Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90320360660551,
+          1.417300977749224
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 408C Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90374004840851,
+          1.4175798421299614
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 409 Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90363276004791,
+          1.4179016086813962
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 409A Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90217900276184,
+          1.4173224288566392
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 409B Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90245258808136,
+          1.4175315771433978
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 409C Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90282809734344,
+          1.417847980925924
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 409D Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90341281890869,
+          1.418094668590782
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 413 Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89979183673858,
+          1.4164429332902008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 413A Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90013515949249,
+          1.416383942721966
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 413B Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90054285526275,
+          1.416839778891998
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 413C Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90094518661499,
+          1.4172419872028458
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 415 Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89990448951721,
+          1.41659309109348
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 415A Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89960408210754,
+          1.416748611665172
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 415B Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89991521835327,
+          1.4171883594321068
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 415C Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90015125274658,
+          1.417494037708697
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 415D Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90059649944305,
+          1.4178426181503105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 416 Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90050530433653,
+          1.4172580755338208
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 417 Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90070378780365,
+          1.4174189588374761
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 418 Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90120267868042,
+          1.4179874130875596
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 419 Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90276908874512,
+          1.4189098102528567
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 419A Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90174984931946,
+          1.4179123342323432
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 419B Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90207171440124,
+          1.4181590218903315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 419C Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90251696109772,
+          1.4184110722963385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 419C Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90295147895813,
+          1.4186845737696733
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 419D Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90298902988434,
+          1.4190224284862107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 420A Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90151381492615,
+          1.4185236905539795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 420B Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90199661254881,
+          1.4187971920139941
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 420C Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90245258808136,
+          1.4190438795776596
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 420D Northshore Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90272080898283,
+          1.4192154883020755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 321 Punggol Bayview HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89713108539581,
+          1.4104151620202172
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 321A Punggol Bayview HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89730274677275,
+          1.410790557484732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 322A Punggol Bayview HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89720082283018,
+          1.4114555435874722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 322B Punggol Bayview HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89690577983856,
+          1.4108924505289461
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 322C Punggol Bayview HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89658391475677,
+          1.4105277806659366
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 323A Punggol Bayview HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89824151992798,
+          1.4125012874772262
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 323B Punggol Bayview HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89782845973968,
+          1.41204545045492
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 323C Punggol Bayview HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8977962732315,
+          1.4126889850486428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 323D Punggol Bayview HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89638006687164,
+          1.4100612176696316
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 323D Punggol Bayview HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89751732349396,
+          1.41219024575404
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 324 Punggol Bayview HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8984614610672,
+          1.4131287335851827
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 324A Punggol Bayview HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89836490154266,
+          1.4128820453920216
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 325A Punggol Bayview HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89815032482147,
+          1.4136167471075484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 325B Punggol Bayview HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89798402786255,
+          1.4131555475176627
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 326A Punggol Bayview HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89928758144378,
+          1.412908859327326
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 326B Punggol Bayview HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89973282814026,
+          1.4126782594735492
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 326C Punggol Bayview HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90001177787781,
+          1.4124798363252322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 326D Punggol Bayview HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9001727104187,
+          1.4128337803076878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 327 Punggol Bayview HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90009760856628,
+          1.412286775948445
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 327A Punggol Bayview HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89897644519806,
+          1.412463747961116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 327B Punggol Bayview HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8993787765503,
+          1.4123243154674176
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 327C Punggol Bayview HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89981865882872,
+          1.41214198065533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 312A Punggol ParcVista HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90037655830383,
+          1.4108066458604256
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 312B Punggol Bayview HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9008057117462,
+          1.4111552273065597
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 312C Punggol Bayview HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9012885093689,
+          1.4108817249455576
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 313 Punggol Bayview HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90182495117187,
+          1.4101684735391268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 313A Punggol Bayview HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90175521373747,
+          1.409873519886123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 313B Punggol Bayview HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90201270580292,
+          1.4103615340917734
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 313C Punggol Bayview HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90158355236053,
+          1.4106296737216517
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 314A Waterway Cascadia HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89791429042816,
+          1.408227141536707
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 314B Waterway Cascadia HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89760851860046,
+          1.4079321876378843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 315 Waterway Cascadia HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89692723751068,
+          1.4079375504363722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 315A Waterway Cascadia HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8969486951828,
+          1.4082968579073433
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 315B Waterway Cascadia HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89656782150268,
+          1.4080233552105892
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 316 Waterway Cascadia HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89759242534637,
+          1.4089832959068235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 316A Waterway Cascadia HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89833271503448,
+          1.4089082167604847
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 316B Waterway Cascadia HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89784455299376,
+          1.4089940214989651
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 316C Waterway Cascadia HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89723837375641,
+          1.408967207518535
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 316D Waterway Cascadia HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.896803855896,
+          1.4087634212571351
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 310A Waterway Terraces II HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9013260602951,
+          1.40905301225484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 310B Waterway Terraces II HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90063941478729,
+          1.4093318776260022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 310C Waterway Terraces II HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89986157417296,
+          1.409723361648418
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 311A Waterway Terraces II HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90182495117187,
+          1.40905301225484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 311B Waterway Terraces II HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89980792999267,
+          1.4101577479524052
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 308A Waterway Terraces I HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90029609203338,
+          1.4073476425281197
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 308B Waterway Terraces I HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8997596502304,
+          1.4075514289133068
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 308C Waterway Terraces I HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89915883541107,
+          1.4079429132348602
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 309A Waterway Terraces I HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90026926994324,
+          1.4067362832657552
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 309B Waterway Terraces I HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89860093593597,
+          1.4077873920738877
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "61 Watertown Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90309631824493,
+          1.407240386528756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "63 Watertown Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90295147895813,
+          1.406982972110205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "65 Watertown Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90280127525328,
+          1.4067309204644813
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "67 Watertown Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90235602855682,
+          1.4066558412456131
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "69 Watertown Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90268325805664,
+          1.4065003199988166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "71 Watertown Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90185177326202,
+          1.4060230305905121
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "73 Watertown Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90139043331145,
+          1.4065700364210798
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "75 Watertown Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90178203582763,
+          1.4065003199988166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "77 Watertown Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90207171440124,
+          1.4062911707195595
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "79 Watertown Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90186250209808,
+          1.4068757160940734
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "81 Watertown Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9015942811966,
+          1.4071331305244816
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 256A Punggol Opal HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89569342136383,
+          1.405980128167012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 256B Punggol Opal HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89598309993744,
+          1.4059479513488713
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 256C Punggol Opal HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89606893062591,
+          1.4054706618276191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 256D Punggol Topaz HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89599919319153,
+          1.4049182929340686
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 257 Punggol Opal HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89565050601958,
+          1.4051810703851583
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 258A Punggol Topaz HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89611721038818,
+          1.403835005986975
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 258B Punggol Topaz HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89647662639616,
+          1.4037277498262681
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 259C Punggol Topaz HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89616549015045,
+          1.4041675000538453
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 259A Punggol Topaz HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89565587043762,
+          1.4039154481042641
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 259B Punggol Topaz HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8952910900116,
+          1.403985164603662
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 259C Punggol Topaz HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89569878578186,
+          1.4045107196861532
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 260A Punggol Topaz HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89663755893706,
+          1.4048271252400574
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 260B Punggol Topaz HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89627814292908,
+          1.4048432136569073
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 260C Punggol Topaz HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8963532447815,
+          1.4051703447754984
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 261A Punggol Topaz HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8968789577484,
+          1.4059747653640075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 261B Punggol Topaz HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89650344848633,
+          1.4060069421817917
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 261C Punggol Topaz HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89641225337982,
+          1.4055350154766224
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 264A Punggol Emerald HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89856338500976,
+          1.4059479513488713
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 265A Punggol Emerald HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89869213104246,
+          1.40564763435811
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 265B Punggol Emerald HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89857411384582,
+          1.405240061237455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 265C Punggol Emerald HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89854192733764,
+          1.4051059911164318
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 265D Punggol Emerald HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89848291873932,
+          1.4049075673232
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 266A Punggol Emerald HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89798939228058,
+          1.4059372257427227
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 266B Punggol Emerald HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8978499174118,
+          1.4054813874359177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 266C Punggol Emerald HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89768898487091,
+          1.4050791770913087
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 266D Punggol Emerald HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89802157878876,
+          1.4049451069610494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "50 A Treasure Cove Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89951825141905,
+          1.4059211373334044
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "52 A Treasure Cove Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89974892139435,
+          1.405888960514437
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "54 A Treasure Cove Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90003859996795,
+          1.405797792858325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "56 A Treasure Cove Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90027463436126,
+          1.4056798111803978
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "58 A Treasure Cove Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90013515949249,
+          1.4053687685464024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "60 A Treasure Cove Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89987766742706,
+          1.4054438478066815
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "62 A Treasure Cove Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89960408210754,
+          1.4055189270645434
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "64 A Treasure Cove Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89937341213226,
+          1.4055940063199878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "66 A Treasure Cove Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89958798885345,
+          1.405164981970624
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "68 A Treasure Cove Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89980256557464,
+          1.4050899027013885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "70 A Treasure Cove Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90008151531218,
+          1.4050201862349411
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "72 A Treasure Cove Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89993131160736,
+          1.4047145063190038
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "74 A Treasure Cove Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8997220993042,
+          1.4047895856003127
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "76 A Treasure Cove Condominium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89949142932892,
+          1.4048539392680812
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 267A Punggol Sapphire HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89759242534637,
+          1.404591161780199
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 267B Punggol Sapphire HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89800548553465,
+          1.4044678172348803
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 267C Punggol Sapphire HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89841854572296,
+          1.4043659239099122
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 268A Punggol Sapphire HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89736175537108,
+          1.404119234788996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 268B Punggol Sapphire HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89743685722351,
+          1.403733112634425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 268C Punggol Sapphire HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89783918857574,
+          1.4035990424269546
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 268D Punggol Sapphire HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89828443527221,
+          1.403475697829284
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 269A Punggol Sapphire HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89914274215698,
+          1.4032021945677777
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 269B Punggol Sapphire HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89879941940307,
+          1.4034649722117871
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 269C Punggol Sapphire HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89858484268188,
+          1.4037760150991962
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 270A Punggol Sapphire HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89959335327148,
+          1.4040280670638152
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 270B Punggol Sapphire HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89918029308319,
+          1.4041460488251491
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 270C Punggol Sapphire HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89879941940307,
+          1.4042586677735937
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 271A Punggol Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9003336429596,
+          1.4037599266750056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 271B Punggol Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9005696773529,
+          1.4042104025106398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 271C Punggol Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90089690685272,
+          1.403985164603662
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 271D Punggol Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90085935592651,
+          1.4035186002987751
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 272A Punggol Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90068233013153,
+          1.4031378408545272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 272B Punggol Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90021026134491,
+          1.403320176370777
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 272C Punggol Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90002250671385,
+          1.4028804259838794
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Blk 272D Punggol Residences HDB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90044093132019,
+          1.4027463557275301
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "210 Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90479683876036,
+          1.4165770027578743
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "210A Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90494167804718,
+          1.4166574444347457
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "210B Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90509724617003,
+          1.4167378861088435
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "210C Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90523135662079,
+          1.4168236905581224
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "210D Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90539765357971,
+          1.4168826811151615
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "208 Ponggol Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9050543308258,
+          1.4162766871395222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "208A Ponggol Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90530109405517,
+          1.4164322077324476
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "206 Ponggol Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90517771244047,
+          1.4161265293157474
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "206A Ponggol Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90542447566986,
+          1.416303501035591
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "204 Ponggol Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90525817871092,
+          1.4159924598220061
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "204A Ponggol Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90548348426819,
+          1.4161265293157474
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "202 Ponggol Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9053225517273,
+          1.415858390320517
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "202A Ponggol Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90558004379271,
+          1.416003185381795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "202B Ponggol Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90585899353027,
+          1.4162713243602576
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "200A Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90578389167784,
+          1.4156867813473055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "200B Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90593945980072,
+          1.4158423019798096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "200C Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90605747699737,
+          1.4159388320223367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "201 Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90525817871092,
+          1.4153435633627538
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "201B Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90499532222746,
+          1.4149949825452117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "201C Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90489339828491,
+          1.4149145408106322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "201D Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9046949148178,
+          1.4147751084641047
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "201E Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90458762645721,
+          1.414689303939014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "201F Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90441596508026,
+          1.414544508795716
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "201G Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90427112579344,
+          1.414453341478626
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "201H Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9041531085968,
+          1.4143568113742688
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "201J Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9040297269821,
+          1.4142388301301567
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "201K Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9038634300232,
+          1.414142300016894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "203 Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90501141548157,
+          1.4156117024175116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "203A Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90493631362913,
+          1.415509809580364
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "203B Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9046922326088,
+          1.4154883584561808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "203C Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90457153320312,
+          1.415177317133223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "203D Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90444815158844,
+          1.4151076009689156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "203E Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90424430370331,
+          1.4148716385510578
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "203F Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90402436256408,
+          1.4147107550705888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "203G Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90388488769531,
+          1.4146142249769566
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "203J Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90374541282654,
+          1.4145176948792914
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "203K Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90361666679382,
+          1.4143943508597694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "203H Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9035254716873,
+          1.4142227417782282
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "205D Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90439450740814,
+          1.4153006611111178
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "205E Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90414237976074,
+          1.4149896197629827
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "205F Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90405654907226,
+          1.4151236893146992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "205G Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90385806560516,
+          1.4148662757685615
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "205H Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90361666679382,
+          1.4146517644582843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "205J Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90340745449066,
+          1.4144104392105148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "207 Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90389025211333,
+          1.415338200581339
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "207H Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90372931957243,
+          1.4155741629517177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "209 Northshore Bungalows"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90374004840851,
+          1.4152470332954438
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "213 Whiteshores"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90308022499084,
+          1.4156331535405497
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "213A Whiteshores"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90304803848266,
+          1.4155419862662572
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "213B Whiteshores"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9030212163925,
+          1.4154669073317942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "213C Whiteshores"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90295684337616,
+          1.415413279519975
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "213D Whiteshores"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90291392803192,
+          1.4153328377999117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "213E Whiteshores"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9028388261795,
+          1.4152738472034336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "213F Whiteshores"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90304267406462,
+          1.4151505032241136
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "213G Whiteshores"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90315532684326,
+          1.415204131042014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "213H Whiteshores"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90322506427763,
+          1.4152738472034336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "213J Whiteshores"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90332162380218,
+          1.415209493823747
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "213KWhiteshores"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90327334403991,
+          1.41512905209661
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "213L Whiteshores"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90321433544159,
+          1.4150325220203818
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "213M Whiteshores"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90340209007263,
+          1.4149306291577772
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "213N Whiteshores"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90347719192505,
+          1.4150164336739494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "213P Whiteshores"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90358448028564,
+          1.4150486103666997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "219 Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90466272830963,
+          1.4152952983296014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "219A Ponggol Seventeenth Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90452325344085,
+          1.4154561817695372
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "221 The Ambience"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90399217605591,
+          1.4154669073317942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "221A The Ambience"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90392780303953,
+          1.4155634373899441
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "221B The Ambience"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90387952327728,
+          1.4156331535405497
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "221C The Ambience"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90384197235107,
+          1.4156975069084938
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "221D The Ambience"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90376687049864,
+          1.415767223055079
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "221E The Ambience"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90373468399048,
+          1.4158262136390131
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "221F The Ambience"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90368103981018,
+          1.4159012925618352
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "221G The Ambience"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90361666679382,
+          1.4159710087022885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "221H The Ambience"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90358448028564,
+          1.4160514504002024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "221J The Ambience"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90353083610534,
+          1.4161104409768974
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "221K The Ambience"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90347182750702,
+          1.4161855198905213
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "225 Northshore Bungalows"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90460908412933,
+          1.4157296835917916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "227 Northshore Bungalows"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90451252460478,
+          1.415708232469644
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "229 Northshore Bungalows"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90438914299011,
+          1.4156653302247508
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "231 Northshore Bungalows"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90428185462951,
+          1.4156117024175116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "233 Northshore Bungalows"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90417456626892,
+          1.415509809580364
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "235 Northshore Bungalows"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90412092208862,
+          1.4156975069084938
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "237 Northshore Bungalows"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90403509140014,
+          1.415767223055079
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "239 Northshore Bungalows"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9039546251297,
+          1.41587447866111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "241 Northshore Bungalows"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9038634300232,
+          1.415960283142347
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "243 Northshore Bungalows"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90374004840851,
+          1.4160943526379583
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "245 Northshore Bungalows"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90384733676909,
+          1.416190882669977
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "247 Northshore Bungalows"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9039546251297,
+          1.4162337849051502
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "249 Northshore Bungalows"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90408337116241,
+          1.4162766871395222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "251 Northshore Bungalows"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.904190659523,
+          1.4163088638147796
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "253 Northshore Bungalows"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90429258346556,
+          1.4163464032686781
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "255 Northshore Bungalows"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90439450740814,
+          1.4164214821746561
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "257 Northshore Bungalows"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90451252460478,
+          1.4164858355206924
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "259 Northshore Bungalows"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90455543994903,
+          1.4163088638147796
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "261 Northshore Bungalows"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90464663505554,
+          1.416212333787659
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "263 Northshore Bungalows"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9046949148178,
+          1.4160836270785894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "265 Northshore Bungalows"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90481293201446,
+          1.415847664760054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#00fa43",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "267 Northshore Bungalows"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90471637248991,
+          1.41579939973741
+        ]
+      }
+    }
+  ]
+}

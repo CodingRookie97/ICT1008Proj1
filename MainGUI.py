@@ -1,15 +1,18 @@
 import io
 import sys
-
 import folium
+import json
 
 from PyQt5 import QtWidgets, QtWebEngineWidgets
 from PyQt5.QtCore import QSize, pyqtSlot, Qt
 from PyQt5.QtGui import QImage, QPalette, QBrush, QFont
 from PyQt5.QtWidgets import QApplication, QComboBox, QLabel, QCheckBox
+from folium.plugins import MarkerCluster
 
 from ShortestPathGUI import ShortestPathGUI
 
+m = folium.Map(location=[1.4053, 103.9021], zoom_start=16)
+marker_cluster = MarkerCluster().add_to(m)
 
 class MainGUI(QtWidgets.QMainWindow):
     def __init__(self):
@@ -34,6 +37,9 @@ class MainGUI(QtWidgets.QMainWindow):
 
     def initWidgets(self):
         #Initialise the main layout
+
+        mapView = QtWebEngineWidgets.QWebEngineView()
+        self.initMap(m, marker_cluster)
 
         #Array that contains the starting locations (Punggol West LRT Line only)
         mrtStations = ["NE17/PTC Punggol MRT/LRT Station", "PW1 Sam Kee LRT Station", "PW2 Teck Lee LRT Station", "PW3 Punggol Point LRT Station", "PW4 Samudera LRT Station", "PW5 Nibong LRT Station", "PW6 Sumang LRT Station", "PW7 Soo Teck LRT Station"]
@@ -89,10 +95,7 @@ class MainGUI(QtWidgets.QMainWindow):
         btnShortestPath.clicked.connect(self.computeShortest)
         gridLayout.addLayout(btnLayout, 1, 0)
 
-        mapView = QtWebEngineWidgets.QWebEngineView()
         gridLayout.addWidget(mapView, 2, 0)
-
-        m = folium.Map(location=[1.4053, 103.9021], zoom_start=16)
 
         data = io.BytesIO()
         m.save(data, close_file=False)
@@ -117,10 +120,6 @@ class MainGUI(QtWidgets.QMainWindow):
         cbBus34.stateChanged.connect(self.checkBus34)
         cbBus34.setFont(QFont("Arial", 10, QFont.Bold))
 
-        cbBus34A = QCheckBox("Bus 34A", self)
-        cbBus34A.stateChanged.connect(self.checkBus34A)
-        cbBus34A.setFont(QFont("Arial", 10, QFont.Bold))
-
         cbBus43 = QCheckBox("Bus 43", self)
         cbBus43.stateChanged.connect(self.checkBus43)
         cbBus43.setFont(QFont("Arial", 10, QFont.Bold))
@@ -140,10 +139,6 @@ class MainGUI(QtWidgets.QMainWindow):
         cbBus62 = QCheckBox("Bus 62", self)
         cbBus62.stateChanged.connect(self.checkBus62)
         cbBus62.setFont(QFont("Arial", 10, QFont.Bold))
-
-        cbBus62A = QCheckBox("Bus 62A", self)
-        cbBus62A.stateChanged.connect(self.checkBus62A)
-        cbBus62A.setFont(QFont("Arial", 10, QFont.Bold))
 
         cbBus82 = QCheckBox("Bus 82", self)
         cbBus82.stateChanged.connect(self.checkBus82)
@@ -181,56 +176,129 @@ class MainGUI(QtWidgets.QMainWindow):
         cbBus381.stateChanged.connect(self.checkBus381)
         cbBus381.setFont(QFont("Arial", 10, QFont.Bold))
 
-        cbBus382 = QCheckBox("Bus 382", self)
-        cbBus382.stateChanged.connect(self.checkBus382)
-        cbBus382.setFont(QFont("Arial", 10, QFont.Bold))
-
-        cbBus382A = QCheckBox("Bus 382A", self)
-        cbBus382A.stateChanged.connect(self.checkBus382A)
-        cbBus382A.setFont(QFont("Arial", 10, QFont.Bold))
-
         cbBus382G = QCheckBox("Bus 382G", self)
         cbBus382G.stateChanged.connect(self.checkBus382G)
         cbBus382G.setFont(QFont("Arial", 10, QFont.Bold))
 
         cbBus382W = QCheckBox("Bus 382W", self)
-        cbBus382W.stateChanged.connect(self.checkBus382)
+        cbBus382W.stateChanged.connect(self.checkBus382W)
         cbBus382W.setFont(QFont("Arial", 10, QFont.Bold))
 
         cbBus386 = QCheckBox("Bus 386", self)
         cbBus386.stateChanged.connect(self.checkBus386)
         cbBus386.setFont(QFont("Arial", 10, QFont.Bold))
 
-        cbBus386A = QCheckBox("Bus 386A", self)
-        cbBus386A.stateChanged.connect(self.checkBus386A)
-        cbBus386A.setFont(QFont("Arial", 10, QFont.Bold))
-
         chkBoxLayout = QtWidgets.QGridLayout(self.main)
         chkBoxLayout.addWidget(cbBus3, 0, 0)
         chkBoxLayout.addWidget(cbBus34, 0, 1)
-        chkBoxLayout.addWidget(cbBus34A, 0, 2)
-        chkBoxLayout.addWidget(cbBus43, 1, 0)
-        chkBoxLayout.addWidget(cbBus43e, 1, 1)
-        chkBoxLayout.addWidget(cbBus43M, 1, 2)
-        chkBoxLayout.addWidget(cbBus50, 2, 0)
-        chkBoxLayout.addWidget(cbBus62, 2, 1)
-        chkBoxLayout.addWidget(cbBus62A, 2, 2)
-        chkBoxLayout.addWidget(cbBus82, 3, 0)
-        chkBoxLayout.addWidget(cbBus83, 3, 1)
-        chkBoxLayout.addWidget(cbBus84, 3, 2)
-        chkBoxLayout.addWidget(cbBus85, 4, 0)
-        chkBoxLayout.addWidget(cbBus117, 4, 1)
-        chkBoxLayout.addWidget(cbBus118, 4, 2)
-        chkBoxLayout.addWidget(cbBus119, 5, 0)
-        chkBoxLayout.addWidget(cbBus136, 5, 1)
-        chkBoxLayout.addWidget(cbBus381, 5, 2)
-        chkBoxLayout.addWidget(cbBus382, 6, 0)
-        chkBoxLayout.addWidget(cbBus382A, 6, 1)
-        chkBoxLayout.addWidget(cbBus382G, 6, 2)
-        chkBoxLayout.addWidget(cbBus382W, 7, 0)
-        chkBoxLayout.addWidget(cbBus386, 7, 1)
-        chkBoxLayout.addWidget(cbBus386A, 7, 2)
+        chkBoxLayout.addWidget(cbBus43, 0, 2)
+        chkBoxLayout.addWidget(cbBus43e, 1, 0)
+        chkBoxLayout.addWidget(cbBus43M, 1, 1)
+        chkBoxLayout.addWidget(cbBus50, 1, 2)
+        chkBoxLayout.addWidget(cbBus62, 2, 0)
+        chkBoxLayout.addWidget(cbBus82, 2, 1)
+        chkBoxLayout.addWidget(cbBus83, 2, 2)
+        chkBoxLayout.addWidget(cbBus84, 3, 0)
+        chkBoxLayout.addWidget(cbBus85, 3, 1)
+        chkBoxLayout.addWidget(cbBus117, 3, 2)
+        chkBoxLayout.addWidget(cbBus118, 4, 0)
+        chkBoxLayout.addWidget(cbBus119, 4, 1)
+        chkBoxLayout.addWidget(cbBus136, 4, 2)
+        chkBoxLayout.addWidget(cbBus381, 5, 0)
+        chkBoxLayout.addWidget(cbBus382G, 5, 1)
+        chkBoxLayout.addWidget(cbBus382W, 5, 2)
+        chkBoxLayout.addWidget(cbBus386, 6, 1)
         gridLayout.addLayout(chkBoxLayout, 2, 4)
+
+    def initMap(self, map, markerCluster):
+        #This is to import the area of interest polyline from json file to display on folium map
+        self.importAreaOfInterest('Combined/area_of_interest.json', map)
+        #This is to import the train stations from json file to display on folium map (starting location)
+        self.importTrainStns('MRT/mrt.json', markerCluster)
+        #This is to import the bus stops from json file to display on folium map
+        self.importBusStops('Bus_Stops/bus_stops.json', map)
+        #This is to import the general buildings from json file to display on folium map
+        self.importBuildings('Buildings/general_buildings.json', map)
+        # This is to import the residential buildings from json file to display on folium map (ending location)
+        self.importResidential('Buildings/residential_buildings.json', map)
+
+        coordinates = [[]]
+        with open("Bus_Services/Bus85/Bus_85_from.json") as f:
+            getJson = json.load(f)
+        feature_access = getJson['features']
+        for feature_data in feature_access:
+            type = feature_data['geometry']['type']
+            if type == 'LineString':
+                coordinates = feature_data['geometry']['coordinates']
+                for c in coordinates:
+                    c[0], c[1] = c[1], c[0]
+        folium.PolyLine(coordinates, color="blue", weight=3).add_to(m)
+        coordinates = [[]]
+        with open("Bus_Services/Bus85/Bus_85_to.json") as f:
+            getJson = json.load(f)
+        feature_access = getJson['features']
+        for feature_data in feature_access:
+            type = feature_data['geometry']['type']
+            if type == 'LineString':
+                coordinates = feature_data['geometry']['coordinates']
+                for c in coordinates:
+                    c[0], c[1] = c[1], c[0]
+        folium.PolyLine(coordinates, color="orange", weight=3).add_to(m)
+
+    def importAreaOfInterest(self, file, map):
+        with open(file) as f:
+            self.getJson = json.load(f)
+        feature_access = self.getJson['features']
+        coordinates = [[]]
+        for feature_data in feature_access:
+            coordinates = feature_data['geometry']['coordinates']
+            for c in coordinates:
+                c[0], c[1] = c[1], c[0]
+        folium.PolyLine(coordinates, color="red", weight=3).add_to(map)
+
+    def importTrainStns(self, file, markerCluster):
+        with open(file) as f:
+            self.getJson = json.load(f)
+        feature_access = self.getJson['features']
+        for feature_data in feature_access:
+            prop = feature_data['properties']
+            coordinates = feature_data['geometry']['coordinates']
+            coordinates[0], coordinates[1] = coordinates[1], coordinates[0]
+            icon = folium.features.CustomIcon('Images/lrt_logo.png', icon_size=(20, 25))
+            folium.Marker(coordinates, popup=prop['node-details'], icon=icon).add_to(markerCluster)
+
+    def importBusStops(self, file, map):
+        with open(file) as f:
+            self.getJson = json.load(f)
+        feature_access = self.getJson['features']
+        for feature_data in feature_access:
+            prop = feature_data['properties']
+            coordinates = feature_data['geometry']['coordinates']
+            coordinates[0], coordinates[1] = coordinates[1], coordinates[0]
+            icon = folium.features.CustomIcon('Images/bus_stop_logo.png', icon_size=(20, 20))
+            folium.Marker(coordinates, popup=prop['node-details'], icon=icon).add_to(map)
+
+    def importBuildings(self, file, map):
+        with open(file) as f:
+            self.getJson = json.load(f)
+        feature_access = self.getJson['features']
+        for feature_data in feature_access:
+            prop = feature_data['properties']
+            coordinates = feature_data['geometry']['coordinates']
+            coordinates[0], coordinates[1] = coordinates[1], coordinates[0]
+            icon = folium.features.CustomIcon('Images/building_logo.png', icon_size=(20, 20))
+            folium.Marker(coordinates, popup=prop['node-details'], icon=icon).add_to(map)
+
+    def importResidential(self, file, map):
+        with open(file) as f:
+            self.getJson = json.load(f)
+        feature_access = self.getJson['features']
+        for feature_data in feature_access:
+            prop = feature_data['properties']
+            coordinates = feature_data['geometry']['coordinates']
+            coordinates[0], coordinates[1] = coordinates[1], coordinates[0]
+            icon = folium.features.CustomIcon('Images/home_logo.png', icon_size=(20, 20))
+            folium.Marker(coordinates, popup=prop['node-details'], icon=icon).add_to(map)
 
     #Function to choose different starting locations
     def chooseStart(self, i):
@@ -252,12 +320,6 @@ class MainGUI(QtWidgets.QMainWindow):
             print('Bus 34 Checked')
         else:
             print('Bus 34 Unchecked')
-
-    def checkBus34A(self, state):
-        if state == Qt.Checked:
-            print('Bus 34A Checked')
-        else:
-            print('Bus 34A Unchecked')
 
     def checkBus43(self, state):
         if state == Qt.Checked:
@@ -288,12 +350,6 @@ class MainGUI(QtWidgets.QMainWindow):
             print('Bus 62 Checked')
         else:
             print('Bus 62 Unchecked')
-
-    def checkBus62A(self, state):
-        if state == Qt.Checked:
-            print('Bus 62A Checked')
-        else:
-            print('Bus 62A Unchecked')
 
     def checkBus82(self, state):
         if state == Qt.Checked:
@@ -349,18 +405,6 @@ class MainGUI(QtWidgets.QMainWindow):
         else:
             print('Bus 381 Unchecked')
 
-    def checkBus382(self, state):
-        if state == Qt.Checked:
-            print('Bus 382 Checked')
-        else:
-            print('Bus 382 Unchecked')
-
-    def checkBus382A(self, state):
-        if state == Qt.Checked:
-            print('Bus 382A Checked')
-        else:
-            print('Bus 382A Unchecked')
-
     def checkBus382G(self, state):
         if state == Qt.Checked:
             print('Bus 382G Checked')
@@ -378,12 +422,6 @@ class MainGUI(QtWidgets.QMainWindow):
             print('Bus 386 Checked')
         else:
             print('Bus 386 Unchecked')
-
-    def checkBus386A(self, state):
-        if state == Qt.Checked:
-            print('Bus 386A Checked')
-        else:
-            print('Bus 386A Unchecked')
 
     @pyqtSlot()
     def computeShortest(self):

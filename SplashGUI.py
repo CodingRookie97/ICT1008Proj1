@@ -71,7 +71,7 @@ class App(QWidget):
     def on_click(self):
         self.toMain = MainGUI()
         self.toMain.show()
-        #self.close()
+        self.close()
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

@@ -1,0 +1,389 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Waterway Point"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90203952789306,
+          1.4065700364210798
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol Town Square"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90333771705627,
+          1.407717675688023
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol View Primary School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90527963638304,
+          1.4053392731220608
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Shell @ 821 Punggol Road"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90665829181671,
+          1.404553622136663
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Fo Guang Shan (Singapore) Temple"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90553176403045,
+          1.4067362832657552
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "My First Skool EYC @ 2 Punggol Drive"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90438914299011,
+          1.4072511121289252
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol Waterway Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90740394592285,
+          1.4093265148307201
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol Waterway Park Carpark B"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90466809272766,
+          1.4106886644360647
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "SAFRA Punggol"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90609502792358,
+          1.4101416595722207
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "SPC @ Sumang"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90099346637726,
+          1.4103722596775538
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol Cove Primary School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89913201332092,
+          1.4116110645034147
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Valour Primary School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89899253845213,
+          1.4071170421234071
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Church of the Transfiguration"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90002250671385,
+          1.4067845484764973
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Dhammakaya Centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89538764953612,
+          1.40510062831143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol West Community Centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89589995145798,
+          1.404438321799165
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol Topaz Common Green"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8963371515274,
+          1.4044946312670261
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol Sapphire Common Green"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89915347099304,
+          1.4045053568798031
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#edfa00",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Matilda House"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89917761087417,
+          1.4051086725189327
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#dee805",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Marina Country Club"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89896035194397,
+          1.4151934054785358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#dce604",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol Point Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.91116976737976,
+          1.4210602812849928
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#dce604",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol Point Police Post"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.9106896519661,
+          1.421505390999248
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#dce604",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "River of Life Community Church"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90870213508605,
+          1.4189902518486621
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#dce604",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Bridges Montessori Kindergarten"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90566,
+          1.415591
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#dce604",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "St Francis Xavier Major Seminary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.904997,
+          1.414379
+        ]
+      }
+    }
+  ]
+}
