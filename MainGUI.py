@@ -34,7 +34,7 @@ class MainGUI(QtWidgets.QMainWindow):
         self.setWindowIcon(QIcon('Images/punggol_logo.jpg'))
 
         bgImage = QImage("Images/punggol_background_1.png")
-        sBgImage = bgImage.scaled(QSize(900, 600))  # resize Image to widgets size
+        sBgImage = bgImage.scaled(QSize(1100, 800))  # resize Image to fit the windows size
         palette = QPalette()
         palette.setBrush(QPalette.Window, QBrush(sBgImage))
         self.setPalette(palette)
