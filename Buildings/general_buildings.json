@@ -119,22 +119,6 @@
         "marker-color": "#edfa00",
         "marker-size": "medium",
         "marker-symbol": "",
-        "node-details": "Punggol Waterway Park Carpark B"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          103.90466809272766,
-          1.4106886644360647
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "marker-color": "#edfa00",
-        "marker-size": "medium",
-        "marker-symbol": "",
         "node-details": "SAFRA Punggol"
       },
       "geometry": {
@@ -301,7 +285,7 @@
         "type": "Point",
         "coordinates": [
           103.89896035194397,
-          1.4151934054785358
+          1.4151934054785357
         ]
       }
     },
@@ -348,7 +332,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          103.90870213508605,
+          103.90870213508604,
           1.4189902518486621
         ]
       }
@@ -382,6 +366,86 @@
         "coordinates": [
           103.904997,
           1.414379
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#dce604",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Yusuf Ishak Secondary School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.89662146568298,
+          1.4071921213274412
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#dce604",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Punggol Town Hub"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90523672103882,
+          1.4088974911679617
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#dce604",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Northshore Primary School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90463590621948,
+          1.4181107569158284
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#dce604",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Little Footprints Preschool"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90906155109405,
+          1.419263753253526
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#dce604",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "node-details": "Christian Care Services"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.90356302261352,
+          1.4154186423012116
         ]
       }
     }

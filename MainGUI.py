@@ -5,14 +5,18 @@ import json
 
 from PyQt5 import QtWidgets, QtWebEngineWidgets
 from PyQt5.QtCore import QSize, pyqtSlot, Qt
-from PyQt5.QtGui import QImage, QPalette, QBrush, QFont
+from PyQt5.QtGui import QImage, QPalette, QBrush, QFont, QPixmap, QIcon
 from PyQt5.QtWidgets import QApplication, QComboBox, QLabel, QCheckBox
 from folium.plugins import MarkerCluster
 
+from FastestPathGUI import FastestPathGUI
 from ShortestPathGUI import ShortestPathGUI
 
-m = folium.Map(location=[1.4053, 103.9021], zoom_start=16)
+m = folium.Map(location=[1.4053, 103.9021], zoom_start=15)
 marker_cluster = MarkerCluster().add_to(m)
+#Initialise both starting and ending coordinates
+startingCoordinates = None
+endingCoordinates = None
 
 class MainGUI(QtWidgets.QMainWindow):
     def __init__(self):
@@ -27,9 +31,10 @@ class MainGUI(QtWidgets.QMainWindow):
     def initUI(self):
         self.setWindowTitle(self.title)
         self.setGeometry(self.left, self.top, self.width, self.height)
+        self.setWindowIcon(QIcon('Images/punggol_logo.jpg'))
 
         bgImage = QImage("Images/punggol_background_1.png")
-        sBgImage = bgImage.scaled(QSize(800, 600))  # resize Image to widgets size
+        sBgImage = bgImage.scaled(QSize(900, 600))  # resize Image to widgets size
         palette = QPalette()
         palette.setBrush(QPalette.Window, QBrush(sBgImage))
         self.setPalette(palette)
@@ -45,17 +50,17 @@ class MainGUI(QtWidgets.QMainWindow):
         mrtStations = ["NE17/PTC Punggol MRT/LRT Station", "PW1 Sam Kee LRT Station", "PW2 Teck Lee LRT Station", "PW3 Punggol Point LRT Station", "PW4 Samudera LRT Station", "PW5 Nibong LRT Station", "PW6 Sumang LRT Station", "PW7 Soo Teck LRT Station"]
 
         # Array that contains the ending locations (Those residential areas that cover Punggol West Area only)
-        residences = ["Punggol Regalia HDBs", "Punggol Arcadia HDBs", "Parc Centros HDBs", "Prive Condominiums", "Cornalius HDBs", "Treelodge at Punggol HDBs",
-                    "Northshore Bungalows", "Punggol Point Woods HDBs (U/C)", "Punggol Point Cove HDBs (U/C)", "Punggol Point Crown HDBs (U/C)", "NorthShore Trio HDBs (U/C)", "Northshore Cove HDBs (U/C)", "Northshore StraitsView HDBs (U/C)",
-                      "Northshore Waterfront HDBs (U/C)", "Northshore Residences HDBs (U/C)",  "Northshore Edge HDBs (U/C)", "Punggol Bayview HDBs", "Punggol Vue HDBs", "Piermont Grand Condominiums (U/C)",
-                      "ParcVista HDBs", "Waterway Terraces II HDBs", "Waterway Cascadia HDBs", "Waterway Terraces I HDBs", "Punggol Opal HDBs", "Punggol Topaz HDBs", "Punggol Emerald HDBs", "Punggol Sapphire HDBs", "Punggol Residences HDBs"]
+        residences = self.importEnding('Buildings/residential_buildings.json')
+
+        #Array that contains the mode of transport to compute shortest path
+        mode = ["Walk", "Drive", "Bus", "Train (LRT/MRT)"]
 
         self.main = QtWidgets.QWidget()
         self.setCentralWidget(self.main)
         gridLayout = QtWidgets.QGridLayout(self.main)
 
-        #Combo Box Layout
-        comboLayout = QtWidgets.QGridLayout(self.main)
+        #Combo Box Layout 1 for starting and ending location
+        comboLayout1 = QtWidgets.QGridLayout(self.main)
 
         lblStartLocation = QLabel(self)
         lblStartLocation.setText('Choose starting location:')
@@ -79,23 +84,50 @@ class MainGUI(QtWidgets.QMainWindow):
         self.comboEnd.addItems(residences)
         self.comboEnd.currentIndexChanged.connect(self.chooseEnd)
 
-        #Adds widgets to the Combobox layout
-        comboLayout.addWidget(lblStartLocation, 0, 0)
-        comboLayout.addWidget(self.comboStart, 1, 0)
-        comboLayout.addWidget(lblEndLocation, 0, 1)
-        comboLayout.addWidget(self.comboEnd, 1, 1)
-        gridLayout.addLayout(comboLayout, 0, 0)
+        #Adds widgets to the Combobox layout for starting and ending location
+        comboLayout1.addWidget(lblStartLocation, 0, 0)
+        comboLayout1.addWidget(self.comboStart, 1, 0)
+        comboLayout1.addWidget(lblEndLocation, 0, 1)
+        comboLayout1.addWidget(self.comboEnd, 1, 1)
+        gridLayout.addLayout(comboLayout1, 0, 0)
 
-        #Button to determine shortest path
-        btnLayout = QtWidgets.QHBoxLayout()
+        #Adds widgets to the Combobox layout for selecting mode of path
+        comboLayout2 = QtWidgets.QGridLayout(self.main)
+
+        lblModeTransport = QLabel(self)
+        lblModeTransport.setText('Select Mode of Transport:')
+        lblModeTransport.setFont(QFont("Arial", 14, QFont.Bold))
+        lblModeTransport.setStyleSheet('QLabel { color : Orange; }')
+
+        # Choose a mode of transport
+        self.comboMode = QComboBox()
+        self.comboMode.setFont(QFont("Arial", 10))
+        self.comboMode.addItems(mode)
+        self.comboMode.currentIndexChanged.connect(self.chooseMode)
+
+        # Adds widgets to the Combobox layout for starting and ending location
+        comboLayout2.addWidget(lblModeTransport, 0, 0)
+        comboLayout2.addWidget(self.comboMode, 0, 1)
+
+        gridLayout.addLayout(comboLayout2, 1, 0)
+
+        #Button to determine shortest path + fastest Path
+        btnLayout = QtWidgets.QGridLayout()
         btnShortestPath = QtWidgets.QPushButton(self.tr("Compute shortest path"))
         btnShortestPath.setFont(QFont("Arial", 10, QFont.Bold))
         btnShortestPath.setStyleSheet('QPushButton { background-color: #008000; color: white; }')
-        btnLayout.addWidget(btnShortestPath)
-        btnShortestPath.clicked.connect(self.computeShortest)
-        gridLayout.addLayout(btnLayout, 1, 0)
+        btnLayout.addWidget(btnShortestPath, 0, 0)
 
-        gridLayout.addWidget(mapView, 2, 0)
+        btnShortestPath.clicked.connect(self.computeShortest)
+
+        btnFastestPath = QtWidgets.QPushButton(self.tr("Compute fastest path"))
+        btnFastestPath.setFont(QFont("Arial", 10, QFont.Bold))
+        btnFastestPath.setStyleSheet('QPushButton { background-color: #008000; color: white; }')
+        btnLayout.addWidget(btnFastestPath, 1, 0)
+
+        btnFastestPath.clicked.connect(self.computeFastest)
+        gridLayout.addLayout(btnLayout, 2, 0)
+        gridLayout.addWidget(mapView, 3, 0, 2, 1)
 
         data = io.BytesIO()
         m.save(data, close_file=False)
@@ -110,7 +142,7 @@ class MainGUI(QtWidgets.QMainWindow):
         lblCheckBusRoutes.setFont(QFont("Arial", 14, QFont.Bold))
         lblCheckBusRoutes.setStyleSheet('QLabel { color : Blue; }')
         lblChkBoxLayout.addWidget(lblCheckBusRoutes, 0, 0)
-        gridLayout.addLayout(lblChkBoxLayout, 1, 4)
+        gridLayout.addLayout(lblChkBoxLayout, 0, 4)
 
         cbBus3 = QCheckBox("Bus 3", self)
         cbBus3.stateChanged.connect(self.checkBus3)
@@ -208,7 +240,72 @@ class MainGUI(QtWidgets.QMainWindow):
         chkBoxLayout.addWidget(cbBus382G, 5, 1)
         chkBoxLayout.addWidget(cbBus382W, 5, 2)
         chkBoxLayout.addWidget(cbBus386, 6, 1)
-        gridLayout.addLayout(chkBoxLayout, 2, 4)
+        gridLayout.addLayout(chkBoxLayout, 0, 4, 4, 1)
+
+
+        #Layout to display the different types of legends of the map
+        legendLayout = QtWidgets.QGridLayout()
+        lblLegend = QLabel(self)
+        lblLegend.setText('Legend:')
+        lblLegend.setFont(QFont("Arial", 12, QFont.Bold))
+        lblLegend.setStyleSheet('QLabel { color : Blue; }')
+        legendLayout.addWidget(lblLegend, 0, 0)
+
+        lrtLogo = QLabel(self)
+        pixmapLRT = QPixmap.fromImage(QImage('Images/lrt_logo.png').scaled(20, 25, Qt.IgnoreAspectRatio, Qt.SmoothTransformation))
+        lrtLogo.setPixmap(pixmapLRT.scaled(20, 25))
+        legendLayout.addWidget(lrtLogo, 1, 0)
+
+        lblLRT = QLabel(self)
+        lblLRT.setText('LRT Station')
+        lblLRT.setFont(QFont("Arial", 12, QFont.Bold))
+        lblLRT.setStyleSheet('QLabel { color : Green; }')
+        legendLayout.addWidget(lblLRT, 1, 1, 1, 2)
+
+        busLogo = QLabel(self)
+        pixmapBus = QPixmap.fromImage(QImage('Images/bus_stop_logo.png').scaled(20, 20, Qt.IgnoreAspectRatio, Qt.SmoothTransformation))
+        busLogo.setPixmap(pixmapBus.scaled(20, 20))
+        legendLayout.addWidget(busLogo, 2, 0)
+
+        lblBus = QLabel(self)
+        lblBus.setText('Bus Stop')
+        lblBus.setFont(QFont("Arial", 12, QFont.Bold))
+        lblBus.setStyleSheet('QLabel { color : Blue; }')
+        legendLayout.addWidget(lblBus, 2, 1, 1, 2)
+
+        buildingLogo = QLabel(self)
+        pixmapBuilding = QPixmap.fromImage(QImage('Images/building_logo.png').scaled(20, 20, Qt.IgnoreAspectRatio, Qt.SmoothTransformation))
+        buildingLogo.setPixmap(pixmapBuilding.scaled(20, 20))
+        legendLayout.addWidget(buildingLogo, 3, 0)
+
+        lblBuilding = QLabel(self)
+        lblBuilding.setText('General Building')
+        lblBuilding.setFont(QFont("Arial", 12, QFont.Bold))
+        lblBuilding.setStyleSheet('QLabel { color : Orange; }')
+        legendLayout.addWidget(lblBuilding, 3, 1, 1, 2)
+
+        houseLogo = QLabel(self)
+        pixmapBuilding = QPixmap.fromImage(QImage('Images/home_logo.png').scaled(20, 20, Qt.IgnoreAspectRatio, Qt.SmoothTransformation))
+        houseLogo.setPixmap(pixmapBuilding.scaled(20, 20))
+        legendLayout.addWidget(houseLogo, 4, 0)
+
+        lblHouse = QLabel(self)
+        lblHouse.setText('Residential Housing')
+        lblHouse.setFont(QFont("Arial", 12, QFont.Bold))
+        lblHouse.setStyleSheet('QLabel { color : #6699CC; }')
+        legendLayout.addWidget(lblHouse, 4, 1, 1, 2)
+
+        gridLayout.addLayout(legendLayout, 4, 4)
+
+    def importEnding(self, file):
+        ending = []
+        with open(file) as f:
+            self.getJson = json.load(f)
+        feature_access = self.getJson['features']
+        #retrieve and populate the names of the nodes from json file
+        for feature_data in feature_access:
+            ending.append(feature_data['properties']['node-details'])
+        return ending
 
     def initMap(self, map, markerCluster):
         #This is to import the area of interest polyline from json file to display on folium map
@@ -307,6 +404,10 @@ class MainGUI(QtWidgets.QMainWindow):
     #Function to choose different ending locations
     def chooseEnd(self, i):
         print("Current index", i, "selection changed ", self.comboEnd.currentText())
+
+    #Function to choose different mode
+    def chooseMode(self, i):
+        print("Current index", i, "selection changed ", self.comboMode.currentText())
 
     #Function to disable/enable the showing of bus routes in the map
     def checkBus3(self, state):
@@ -426,8 +527,14 @@ class MainGUI(QtWidgets.QMainWindow):
     @pyqtSlot()
     def computeShortest(self):
         #TODO: Insert shortest path algorithm here
-        self.shortestPath = ShortestPathGUI(self.comboStart.currentText(), self.comboEnd.currentText())
+        self.shortestPath = ShortestPathGUI(self.comboStart.currentText(), self.comboEnd.currentText(), self.comboMode.currentText())
         self.shortestPath.show()
+
+    @pyqtSlot()
+    def computeFastest(self):
+        # TODO: Insert fastest path algorithm here
+        self.FastestPath = FastestPathGUI(self.comboStart.currentText(), self.comboEnd.currentText(),self.comboMode.currentText())
+        self.FastestPath.show()
 
 if __name__ == "__main__":
     App = QApplication(sys.argv)

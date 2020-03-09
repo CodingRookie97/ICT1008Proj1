@@ -1,10 +1,10 @@
 import sys
+
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QLabel
-from PyQt5.QtGui import QImage, QPalette, QBrush, QFont, QPixmap
+from PyQt5.QtGui import QImage, QPalette, QBrush, QFont, QPixmap, QIcon
 from PyQt5.QtCore import Qt, pyqtSlot, QSize
 
 from MainGUI import MainGUI
-
 
 class App(QWidget):
     def __init__(self):
@@ -19,6 +19,7 @@ class App(QWidget):
     def initUI(self):
         self.setWindowTitle(self.title)
         self.setGeometry(self.left, self.top, self.width, self.height)
+        self.setWindowIcon(QIcon('Images/punggol_logo.jpg'))
 
         bgImage = QImage("Images/punggol_background_1.png")
         sBgImage = bgImage.scaled(QSize(800, 600))  # resize Image to widgets size
