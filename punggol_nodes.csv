@@ -1,0 +1,452 @@
+marker-color,marker-size,marker-symbol,node-details,lon,lat
+#005cfa,medium,,NE17/PTC Punggol MRT/LRT Station,103.902356,1.405253468
+#005cfa,medium,,PW1 Sam Kee LRT Station,103.9048934,1.409712636
+#005cfa,medium,,PW2 Teck Lee LRT Station,103.9066315,1.41275602
+#005cfa,medium,,PW3 Punggol Point LRT Station,103.9066368,1.416882681
+#005cfa,medium,,PW4 Samudera LRT Station,103.9021388,1.415938832
+#005cfa,medium,,PW5 Nibong LRT Station,103.9003068,1.411828257
+#005cfa,medium,,PW6 Sumang LRT Station,103.8985366,1.408527458
+#005cfa,medium,,PW7 Soo Teck LRT Station,103.8972357,1.405304415
+#edfa00,medium,,Waterway Point,103.9020395,1.406570036
+#edfa00,medium,,Punggol Town Square,103.9033377,1.407717676
+#edfa00,medium,,Punggol View Primary School,103.9052796,1.405339273
+#edfa00,medium,,Shell @ 821 Punggol Road,103.9066583,1.404553622
+#edfa00,medium,,Fo Guang Shan (Singapore) Temple,103.9055318,1.406736283
+#edfa00,medium,,My First Skool EYC @ 2 Punggol Drive,103.9043891,1.407251112
+#edfa00,medium,,Punggol Waterway Park,103.9074039,1.409326515
+#edfa00,medium,,SAFRA Punggol,103.906095,1.41014166
+#edfa00,medium,,SPC @ Sumang,103.9009935,1.41037226
+#edfa00,medium,,Punggol Cove Primary School,103.899132,1.411611065
+#edfa00,medium,,Valour Primary School,103.8989925,1.407117042
+#edfa00,medium,,Church of the Transfiguration,103.9000225,1.406784548
+#edfa00,medium,,Dhammakaya Centre,103.8953876,1.405100628
+#edfa00,medium,,Punggol West Community Centre,103.8959,1.404438322
+#edfa00,medium,,Punggol Topaz Common Green,103.8963372,1.404494631
+#edfa00,medium,,Punggol Sapphire Common Green,103.8991535,1.404505357
+#edfa00,medium,,Matilda House,103.8991776,1.405108673
+#dee805,medium,,Marina Country Club,103.8989604,1.415193405
+#dce604,medium,,Punggol Point Park,103.9111698,1.421060281
+#dce604,medium,,Punggol Point Police Post,103.9106897,1.421505391
+#dce604,medium,,River of Life Community Church,103.9087021,1.418990252
+#dce604,medium,,Bridges Montessori Kindergarten,103.90566,1.415591
+#dce604,medium,,St Francis Xavier Major Seminary,103.904997,1.414379
+#dce604,medium,,Yusuf Ishak Secondary School,103.8966215,1.407192121
+#dce604,medium,,Punggol Town Hub,103.9052367,1.408897491
+#dce604,medium,,Northshore Primary School,103.9046359,1.418110757
+#dce604,medium,,Little Footprints Preschool,103.9090616,1.419263753
+#dce604,medium,,Christian Care Services,103.903563,1.415418642
+#00fa43,medium,,Blk 273A Punggol Regalia HDB,103.9021415,1.4022208
+#00fa43,medium,,Blk 273B Punggol Regalia HDB,103.9016962,1.402043827
+#00fa43,medium,,Blk 273C Punggol Regalia HDB,103.9012885,1.402247614
+#00fa43,medium,,Blk 273D Punggol Regalia HDB,103.901428,1.402649825
+#00fa43,medium,,Blk 274A Punggol Regalia HDB,103.9023185,1.40273563
+#00fa43,medium,,Blk 274B Punggol Regalia HDB,103.9023775,1.403159292
+#00fa43,medium,,Blk 274C Punggol Regalia HDB,103.9020288,1.403325539
+#00fa43,medium,,Blk 274D Punggol Regalia HDB,103.9017123,1.40307885
+#00fa43,medium,,Blk 288A Punggol Arcadia HDB,103.9031446,1.402285154
+#00fa43,medium,,Blk 288B Punggol Arcadia HDB,103.9032733,1.402708816
+#00fa43,medium,,Blk 288C Punggol Arcadia HDB,103.9037132,1.402478215
+#00fa43,medium,,Blk 289A Punggol Arcadia HDB,103.9026886,1.401550449
+#00fa43,medium,,Blk 289B Punggol Arcadia HDB,103.9032251,1.401293034
+#00fa43,medium,,Blk 289C Punggol Arcadia HDB,103.9034772,1.401646979
+#00fa43,medium,,Blk 289D Punggol Arcadia HDB,103.903622,1.402043827
+#00fa43,medium,,80 Parc Centros Condominium,103.9044696,1.403448884
+#00fa43,medium,,82 Parc Centros Condominium,103.9041531,1.403749201
+#00fa43,medium,,84 Parc Centros Condominium,103.9038956,1.40386182
+#00fa43,medium,,86 Parc Centros Condominium,103.903681,1.403502512
+#00fa43,medium,,88 Parc Centros Condominium,103.9043516,1.403234371
+#00fa43,medium,,90 Parc Centros Condominium,103.9040351,1.402842886
+#00fa43,medium,,92 Parc Centros Condominium,103.9037937,1.402971594
+#00fa43,medium,,94 Parc Centros Condominium,103.9035147,1.403159292
+#00fa43,medium,,Blk 293 Punggol Green HDB,103.904947,1.403164655
+#00fa43,medium,,Blk 294 Punggol Green HDB,103.904652,1.402665914
+#00fa43,medium,,Blk 295 Punggol Green HDB,103.9048505,1.401990199
+#00fa43,medium,,Blk 296 Punggol Green HDB,103.9053065,1.401700607
+#00fa43,medium,,Blk 297 Punggol Green HDB,103.9055049,1.402285154
+#00fa43,medium,,Blk 298 Punggol Green HDB,103.9056605,1.402612285
+#00fa43,medium,,Blk 299 Punggol Green HDB,103.9053494,1.402783895
+#00fa43,medium,,31 Prive Condominium,103.9040029,1.400949814
+#00fa43,medium,,33 Prive Condominium,103.9042819,1.401464644
+#00fa43,medium,,35 Prive Condominium,103.9049256,1.401217954
+#00fa43,medium,,37 Prive Condominium,103.9046681,1.40063877
+#00fa43,medium,,39 Prive Condominium,103.9044535,1.401089247
+#00fa43,medium,,Blk 301A Cornalius HDB,103.9062613,1.404178226
+#00fa43,medium,,Blk 301B Cornalius HDB,103.9058805,1.404274756
+#00fa43,medium,,Blk 301C Cornalius HDB,103.9056498,1.404419552
+#00fa43,medium,,Blk 301D Cornalius HDB,103.9053708,1.404526808
+#00fa43,medium,,Blk 302A Cornalius HDB,103.9044267,1.404521445
+#00fa43,medium,,Blk 302B Cornalius HDB,103.9047539,1.404349835
+#00fa43,medium,,Blk 302C Cornalius HDB,103.9048558,1.404800311
+#00fa43,medium,,Blk 302D Cornalius HDB,103.9051402,1.404671604
+#00fa43,medium,,Blk 303A Cornalius HDB,103.9057356,1.403818918
+#00fa43,medium,,Blk 303B Cornalius HDB,103.9054942,1.403931537
+#00fa43,medium,,Blk 303C Cornalius HDB,103.9053065,1.404081695
+#00fa43,medium,,Blk 303D Cornalius HDB,103.9050061,1.404253305
+#00fa43,medium,,Blk 304 Cornalius HDB,103.9065939,1.404237217
+#00fa43,medium,,Blk 305A Treelodge @ Punggol HDB,103.9067388,1.405207884
+#00fa43,medium,,Blk 305B Treelodge @ Punggol HDB,103.9063686,1.40539022
+#00fa43,medium,,Blk 305C Treelodge @ Punggol HDB,103.9069426,1.405395583
+#00fa43,medium,,Blk 305D Treelodge @ Punggol HDB,103.9068139,1.405787067
+#00fa43,medium,,Blk 306 Treelodge @ Punggol HDB,103.9054191,1.406409152
+#00fa43,medium,,Blk 306A Treelodge @ Punggol HDB,103.9055425,1.40606057
+#00fa43,medium,,Blk 306B Treelodge @ Punggol HDB,103.9058536,1.405862146
+#00fa43,medium,,Blk 306C Treelodge @ Punggol HDB,103.9061272,1.406301896
+#00fa43,medium,,Blk 306D Treelodge @ Punggol HDB,103.9063632,1.406130287
+#00fa43,medium,,Blk 430 Punggol Point Woods HDB,103.9111108,1.417617382
+#00fa43,medium,,Blk 431 Punggol Point Woods HDB,103.910628,1.417435047
+#00fa43,medium,,Blk 431A Punggol Point Woods HDB,103.9113146,1.417424322
+#00fa43,medium,,Blk 431B Punggol Point Woods HDB,103.9107889,1.417617382
+#00fa43,medium,,Blk 431C Punggol Point Woods HDB,103.9101505,1.417526214
+#00fa43,medium,,Blk 432 Punggol Point Woods HDB,103.9103329,1.417215173
+#00fa43,medium,,Blk 432A Punggol Point Woods HDB,103.9105958,1.417236624
+#00fa43,medium,,Blk 432B Punggol Point Woods HDB,103.9112556,1.416920221
+#00fa43,medium,,Blk 433A Punggol Point Woods HDB,103.9107352,1.416609179
+#00fa43,medium,,Blk 433B Punggol Point Woods HDB,103.9100647,1.416845142
+#00fa43,medium,,Blk 410 Northshore Trio HDB,103.9055049,1.417772902
+#00fa43,medium,,Blk 410A Northshore Trio HDB,103.9057839,1.417703186
+#00fa43,medium,,Blk 411A Northshore Trio HDB,103.9058429,1.418384258
+#00fa43,medium,,Blk 411B Northshore Trio HDB,103.9061433,1.41827164
+#00fa43,medium,,1 Ponggol Twenty Fourth Avenue,103.9097857,1.419338832
+#00fa43,medium,,1A Ponggol Twenty Fourth Avenue,103.9097643,1.419231577
+#00fa43,medium,,3 Ponggol Twenty Fourth Avenue,103.9097267,1.419097507
+#00fa43,medium,,5 Ponggol Twenty Fourth Avenue,103.9096677,1.418904447
+#00fa43,medium,,5A Ponggol Twenty Fourth Avenue,103.9096195,1.418770378
+#00fa43,medium,,7 Ponggol Twenty Fourth Avenue,103.9095658,1.418475426
+#00fa43,medium,,9 Ponggol Twenty Fourth Avenue,103.9094263,1.418389621
+#00fa43,medium,,9A Ponggol Twenty Fourth Avenue,103.9092976,1.418470063
+#00fa43,medium,,11 Ponggol Twenty Fourth Avenue,103.9091206,1.418512965
+#00fa43,medium,,11A Ponggol Twenty Fourth Avenue,103.9089811,1.418539779
+#00fa43,medium,,13 Ponggol Twenty Fourth Avenue,103.9088202,1.418523691
+#00fa43,medium,,15 Ponggol Twenty Fourth Avenue,103.9086914,1.418545142
+#00fa43,medium,,17 Ponggol Twenty Fourth Avenue,103.9085573,1.418539779
+#00fa43,medium,,17A Ponggol Twenty Fourth Avenue,103.9084393,1.418539779
+#00fa43,medium,,23 Ponggol Twenty Fourth Avenue,103.9089167,1.418931261
+#00fa43,medium,,25 Ponggol Twenty Fourth Avenue,103.9090455,1.418904447
+#00fa43,medium,,25A Ponggol Twenty Fourth Avenue,103.909142,1.418904447
+#00fa43,medium,,27 Ponggol Twenty Fourth Avenue,103.9093137,1.418872271
+#00fa43,medium,,29 Ponggol Twenty Fourth Avenue,103.9092493,1.419167223
+#00fa43,medium,,29A Ponggol Twenty Fourth Avenue,103.9093244,1.419290567
+#00fa43,medium,,31 Ponggol Twenty Fourth Avenue,103.9094478,1.419408548
+#00fa43,medium,,31A Ponggol Twenty Fourth Avenue,103.9092708,1.419435362
+#00fa43,medium,,37 Ponggol Twenty Fourth Avenue,103.9085948,1.419306655
+#00fa43,medium,,39 Ponggol Twenty Fourth Avenue,103.9085519,1.419059968
+#00fa43,medium,,Blk 423A Northshore Cove HDB,103.9058107,1.41910287
+#00fa43,medium,,Blk 423B Northshore Cove HDB,103.9062184,1.419054605
+#00fa43,medium,,Blk 423C Northshore Cove HDB,103.906492,1.418990252
+#00fa43,medium,,Blk 425 Northshore Cove HDB,103.9063793,1.419472901
+#00fa43,medium,,Blk 425A Northshore Cove HDB,103.9059931,1.419767854
+#00fa43,medium,,Blk 425B Northshore Cove HDB,103.9068943,1.419606971
+#00fa43,medium,,Blk 421 Northshore Straits View HDB,103.904196,1.419376371
+#00fa43,medium,,Blk 421A Northshore Straits View HDB,103.9042443,1.419113596
+#00fa43,medium,,Blk 421B Northshore Straits View HDB,103.9044642,1.419274479
+#00fa43,medium,,Blk 421C Northshore Straits View HDB,103.9051884,1.41925839
+#00fa43,medium,,Blk 422 Northshore Straits View HDB,103.9049041,1.419521166
+#00fa43,medium,,Blk 422A Northshore Straits View HDB,103.9039975,1.419724952
+#00fa43,medium,,Blk 422B Northshore Straits View HDB,103.9051402,1.419869746
+#00fa43,medium,,Blk 401 Northshore Edge HDB,103.9009559,1.414324635
+#00fa43,medium,,Blk 401A Northshore Edge HDB,103.900736,1.414453341
+#00fa43,medium,,Blk 402A Northshore Edge HDB,103.9007735,1.414957443
+#00fa43,medium,,Blk 402B Northshore Edge HDB,103.9005214,1.415134415
+#00fa43,medium,,Blk 405 Northshore Residences HDB,103.901031,1.41570287
+#00fa43,medium,,Blk 405A Northshore Residences HDB,103.9013368,1.415579526
+#00fa43,medium,,Blk 405B Northshore Residences HDB,103.9017981,1.416019274
+#00fa43,medium,,Blk 406 Northshore Residences HDB,103.9010257,1.415890567
+#00fa43,medium,,Blk 406A Northshore Residences HDB,103.9007896,1.416008548
+#00fa43,medium,,Blk 406B Northshore Residences HDB,103.9011329,1.416373217
+#00fa43,medium,,Blk 406C Northshore Residences HDB,103.9013368,1.416678896
+#00fa43,medium,,Blk 407 Northshore Residences HDB,103.9021307,1.416737886
+#00fa43,medium,,Blk 407A Northshore Residences HDB,103.9013904,1.416217697
+#00fa43,medium,,Blk 407B Northshore Residences HDB,103.9027852,1.417424322
+#00fa43,medium,,Blk 407C Northshore Residences HDB,103.9033377,1.417756814
+#00fa43,medium,,Blk 408 Northshore Residences HDB,103.9034665,1.417901609
+#00fa43,medium,,Blk 408A Northshore Residences HDB,103.9028925,1.417043564
+#00fa43,medium,,Blk 408B Northshore Residences HDB,103.9032036,1.417300978
+#00fa43,medium,,Blk 408C Northshore Residences HDB,103.90374,1.417579842
+#00fa43,medium,,Blk 409 Northshore Residences HDB,103.9036328,1.417901609
+#00fa43,medium,,Blk 409A Northshore Residences HDB,103.902179,1.417322429
+#00fa43,medium,,Blk 409B Northshore Residences HDB,103.9024526,1.417531577
+#00fa43,medium,,Blk 409C Northshore Residences HDB,103.9028281,1.417847981
+#00fa43,medium,,Blk 409D Northshore Residences HDB,103.9034128,1.418094669
+#00fa43,medium,,Blk 413 Northshore Residences HDB,103.8997918,1.416442933
+#00fa43,medium,,Blk 413A Northshore Residences HDB,103.9001352,1.416383943
+#00fa43,medium,,Blk 413B Northshore Residences HDB,103.9005429,1.416839779
+#00fa43,medium,,Blk 413C Northshore Residences HDB,103.9009452,1.417241987
+#00fa43,medium,,Blk 415 Northshore Residences HDB,103.8999045,1.416593091
+#00fa43,medium,,Blk 415A Northshore Residences HDB,103.8996041,1.416748612
+#00fa43,medium,,Blk 415B Northshore Residences HDB,103.8999152,1.417188359
+#00fa43,medium,,Blk 415C Northshore Residences HDB,103.9001513,1.417494038
+#00fa43,medium,,Blk 415D Northshore Residences HDB,103.9005965,1.417842618
+#00fa43,medium,,Blk 416 Northshore Residences HDB,103.9005053,1.417258076
+#00fa43,medium,,Blk 417 Northshore Residences HDB,103.9007038,1.417418959
+#00fa43,medium,,Blk 418 Northshore Residences HDB,103.9012027,1.417987413
+#00fa43,medium,,Blk 419 Northshore Residences HDB,103.9027691,1.41890981
+#00fa43,medium,,Blk 419A Northshore Residences HDB,103.9017498,1.417912334
+#00fa43,medium,,Blk 419B Northshore Residences HDB,103.9020717,1.418159022
+#00fa43,medium,,Blk 419C Northshore Residences HDB,103.902517,1.418411072
+#00fa43,medium,,Blk 419C Northshore Residences HDB,103.9029515,1.418684574
+#00fa43,medium,,Blk 419D Northshore Residences HDB,103.902989,1.419022428
+#00fa43,medium,,Blk 420A Northshore Residences HDB,103.9015138,1.418523691
+#00fa43,medium,,Blk 420B Northshore Residences HDB,103.9019966,1.418797192
+#00fa43,medium,,Blk 420C Northshore Residences HDB,103.9024526,1.41904388
+#00fa43,medium,,Blk 420D Northshore Residences HDB,103.9027208,1.419215488
+#00fa43,medium,,Blk 321 Punggol Bayview HDB,103.8971311,1.410415162
+#00fa43,medium,,Blk 321A Punggol Bayview HDB,103.8973027,1.410790557
+#00fa43,medium,,Blk 322A Punggol Bayview HDB,103.8972008,1.411455544
+#00fa43,medium,,Blk 322B Punggol Bayview HDB,103.8969058,1.410892451
+#00fa43,medium,,Blk 322C Punggol Bayview HDB,103.8965839,1.410527781
+#00fa43,medium,,Blk 323A Punggol Bayview HDB,103.8982415,1.412501287
+#00fa43,medium,,Blk 323B Punggol Bayview HDB,103.8978285,1.41204545
+#00fa43,medium,,Blk 323C Punggol Bayview HDB,103.8977963,1.412688985
+#00fa43,medium,,Blk 323D Punggol Bayview HDB,103.8963801,1.410061218
+#00fa43,medium,,Blk 323D Punggol Bayview HDB,103.8975173,1.412190246
+#00fa43,medium,,Blk 324 Punggol Bayview HDB,103.8984615,1.413128734
+#00fa43,medium,,Blk 324A Punggol Bayview HDB,103.8983649,1.412882045
+#00fa43,medium,,Blk 325A Punggol Bayview HDB,103.8981503,1.413616747
+#00fa43,medium,,Blk 325B Punggol Bayview HDB,103.897984,1.413155548
+#00fa43,medium,,Blk 326A Punggol Bayview HDB,103.8992876,1.412908859
+#00fa43,medium,,Blk 326B Punggol Bayview HDB,103.8997328,1.412678259
+#00fa43,medium,,Blk 326C Punggol Bayview HDB,103.9000118,1.412479836
+#00fa43,medium,,Blk 326D Punggol Bayview HDB,103.9001727,1.41283378
+#00fa43,medium,,Blk 327 Punggol Bayview HDB,103.9000976,1.412286776
+#00fa43,medium,,Blk 327A Punggol Bayview HDB,103.8989764,1.412463748
+#00fa43,medium,,Blk 327B Punggol Bayview HDB,103.8993788,1.412324315
+#00fa43,medium,,Blk 327C Punggol Bayview HDB,103.8998187,1.412141981
+#00fa43,medium,,Blk 312A Punggol ParcVista HDB,103.9003766,1.410806646
+#00fa43,medium,,Blk 312B Punggol Bayview HDB,103.9008057,1.411155227
+#00fa43,medium,,Blk 312C Punggol Bayview HDB,103.9012885,1.410881725
+#00fa43,medium,,Blk 313 Punggol Bayview HDB,103.901825,1.410168474
+#00fa43,medium,,Blk 313A Punggol Bayview HDB,103.9017552,1.40987352
+#00fa43,medium,,Blk 313B Punggol Bayview HDB,103.9020127,1.410361534
+#00fa43,medium,,Blk 313C Punggol Bayview HDB,103.9015836,1.410629674
+#00fa43,medium,,Blk 314A Waterway Cascadia HDB,103.8979143,1.408227142
+#00fa43,medium,,Blk 314B Waterway Cascadia HDB,103.8976085,1.407932188
+#00fa43,medium,,Blk 315 Waterway Cascadia HDB,103.8969272,1.40793755
+#00fa43,medium,,Blk 315A Waterway Cascadia HDB,103.8969487,1.408296858
+#00fa43,medium,,Blk 315B Waterway Cascadia HDB,103.8965678,1.408023355
+#00fa43,medium,,Blk 316 Waterway Cascadia HDB,103.8975924,1.408983296
+#00fa43,medium,,Blk 316A Waterway Cascadia HDB,103.8983327,1.408908217
+#00fa43,medium,,Blk 316B Waterway Cascadia HDB,103.8978446,1.408994021
+#00fa43,medium,,Blk 316C Waterway Cascadia HDB,103.8972384,1.408967208
+#00fa43,medium,,Blk 316D Waterway Cascadia HDB,103.8968039,1.408763421
+#00fa43,medium,,Blk 310A Waterway Terraces II HDB,103.9013261,1.409053012
+#00fa43,medium,,Blk 310B Waterway Terraces II HDB,103.9006394,1.409331878
+#00fa43,medium,,Blk 310C Waterway Terraces II HDB,103.8998616,1.409723362
+#00fa43,medium,,Blk 311A Waterway Terraces II HDB,103.901825,1.409053012
+#00fa43,medium,,Blk 311B Waterway Terraces II HDB,103.8998079,1.410157748
+#00fa43,medium,,Blk 308A Waterway Terraces I HDB,103.9002961,1.407347643
+#00fa43,medium,,Blk 308B Waterway Terraces I HDB,103.8997597,1.407551429
+#00fa43,medium,,Blk 308C Waterway Terraces I HDB,103.8991588,1.407942913
+#00fa43,medium,,Blk 309A Waterway Terraces I HDB,103.9002693,1.406736283
+#00fa43,medium,,Blk 309B Waterway Terraces I HDB,103.8986009,1.407787392
+#00fa43,medium,,61 Watertown Condominium,103.9030963,1.407240387
+#00fa43,medium,,63 Watertown Condominium,103.9029515,1.406982972
+#00fa43,medium,,65 Watertown Condominium,103.9028013,1.40673092
+#00fa43,medium,,67 Watertown Condominium,103.902356,1.406655841
+#00fa43,medium,,69 Watertown Condominium,103.9026833,1.40650032
+#00fa43,medium,,71 Watertown Condominium,103.9018518,1.406023031
+#00fa43,medium,,73 Watertown Condominium,103.9013904,1.406570036
+#00fa43,medium,,75 Watertown Condominium,103.901782,1.40650032
+#00fa43,medium,,77 Watertown Condominium,103.9020717,1.406291171
+#00fa43,medium,,79 Watertown Condominium,103.9018625,1.406875716
+#00fa43,medium,,81 Watertown Condominium,103.9015943,1.407133131
+#00fa43,medium,,Blk 256A Punggol Opal HDB,103.8956934,1.405980128
+#00fa43,medium,,Blk 256B Punggol Opal HDB,103.8959831,1.405947951
+#00fa43,medium,,Blk 256C Punggol Opal HDB,103.8960689,1.405470662
+#00fa43,medium,,Blk 256D Punggol Topaz HDB,103.8959992,1.404918293
+#00fa43,medium,,Blk 257 Punggol Opal HDB,103.8956505,1.40518107
+#00fa43,medium,,Blk 258A Punggol Topaz HDB,103.8961172,1.403835006
+#00fa43,medium,,Blk 258B Punggol Topaz HDB,103.8964766,1.40372775
+#00fa43,medium,,Blk 259C Punggol Topaz HDB,103.8961655,1.4041675
+#00fa43,medium,,Blk 259A Punggol Topaz HDB,103.8956559,1.403915448
+#00fa43,medium,,Blk 259B Punggol Topaz HDB,103.8952911,1.403985165
+#00fa43,medium,,Blk 259C Punggol Topaz HDB,103.8956988,1.40451072
+#00fa43,medium,,Blk 260A Punggol Topaz HDB,103.8966376,1.404827125
+#00fa43,medium,,Blk 260B Punggol Topaz HDB,103.8962781,1.404843214
+#00fa43,medium,,Blk 260C Punggol Topaz HDB,103.8963532,1.405170345
+#00fa43,medium,,Blk 261A Punggol Topaz HDB,103.896879,1.405974765
+#00fa43,medium,,Blk 261B Punggol Topaz HDB,103.8965034,1.406006942
+#00fa43,medium,,Blk 261C Punggol Topaz HDB,103.8964123,1.405535015
+#00fa43,medium,,Blk 264A Punggol Emerald HDB,103.8985634,1.405947951
+#00fa43,medium,,Blk 265A Punggol Emerald HDB,103.8986921,1.405647634
+#00fa43,medium,,Blk 265B Punggol Emerald HDB,103.8985741,1.405240061
+#00fa43,medium,,Blk 265C Punggol Emerald HDB,103.8985419,1.405105991
+#00fa43,medium,,Blk 265D Punggol Emerald HDB,103.8984829,1.404907567
+#00fa43,medium,,Blk 266A Punggol Emerald HDB,103.8979894,1.405937226
+#00fa43,medium,,Blk 266B Punggol Emerald HDB,103.8978499,1.405481387
+#00fa43,medium,,Blk 266C Punggol Emerald HDB,103.897689,1.405079177
+#00fa43,medium,,Blk 266D Punggol Emerald HDB,103.8980216,1.404945107
+#00fa43,medium,,50 A Treasure Cove Condominium,103.8995183,1.405921137
+#00fa43,medium,,52 A Treasure Cove Condominium,103.8997489,1.405888961
+#00fa43,medium,,54 A Treasure Cove Condominium,103.9000386,1.405797793
+#00fa43,medium,,56 A Treasure Cove Condominium,103.9002746,1.405679811
+#00fa43,medium,,58 A Treasure Cove Condominium,103.9001352,1.405368769
+#00fa43,medium,,60 A Treasure Cove Condominium,103.8998777,1.405443848
+#00fa43,medium,,62 A Treasure Cove Condominium,103.8996041,1.405518927
+#00fa43,medium,,64 A Treasure Cove Condominium,103.8993734,1.405594006
+#00fa43,medium,,66 A Treasure Cove Condominium,103.899588,1.405164982
+#00fa43,medium,,68 A Treasure Cove Condominium,103.8998026,1.405089903
+#00fa43,medium,,70 A Treasure Cove Condominium,103.9000815,1.405020186
+#00fa43,medium,,72 A Treasure Cove Condominium,103.8999313,1.404714506
+#00fa43,medium,,74 A Treasure Cove Condominium,103.8997221,1.404789586
+#00fa43,medium,,76 A Treasure Cove Condominium,103.8994914,1.404853939
+#00fa43,medium,,Blk 267A Punggol Sapphire HDB,103.8975924,1.404591162
+#00fa43,medium,,Blk 267B Punggol Sapphire HDB,103.8980055,1.404467817
+#00fa43,medium,,Blk 267C Punggol Sapphire HDB,103.8984185,1.404365924
+#00fa43,medium,,Blk 268A Punggol Sapphire HDB,103.8973618,1.404119235
+#00fa43,medium,,Blk 268B Punggol Sapphire HDB,103.8974369,1.403733113
+#00fa43,medium,,Blk 268C Punggol Sapphire HDB,103.8978392,1.403599042
+#00fa43,medium,,Blk 268D Punggol Sapphire HDB,103.8982844,1.403475698
+#00fa43,medium,,Blk 269A Punggol Sapphire HDB,103.8991427,1.403202195
+#00fa43,medium,,Blk 269B Punggol Sapphire HDB,103.8987994,1.403464972
+#00fa43,medium,,Blk 269C Punggol Sapphire HDB,103.8985848,1.403776015
+#00fa43,medium,,Blk 270A Punggol Sapphire HDB,103.8995934,1.404028067
+#00fa43,medium,,Blk 270B Punggol Sapphire HDB,103.8991803,1.404146049
+#00fa43,medium,,Blk 270C Punggol Sapphire HDB,103.8987994,1.404258668
+#00fa43,medium,,Blk 271A Punggol Residences HDB,103.9003336,1.403759927
+#00fa43,medium,,Blk 271B Punggol Residences HDB,103.9005697,1.404210403
+#00fa43,medium,,Blk 271C Punggol Residences HDB,103.9008969,1.403985165
+#00fa43,medium,,Blk 271D Punggol Residences HDB,103.9008594,1.4035186
+#00fa43,medium,,Blk 272A Punggol Residences HDB,103.9006823,1.403137841
+#00fa43,medium,,Blk 272B Punggol Residences HDB,103.9002103,1.403320176
+#00fa43,medium,,Blk 272C Punggol Residences HDB,103.9000225,1.402880426
+#00fa43,medium,,Blk 272D Punggol Residences HDB,103.9004409,1.402746356
+#00fa43,medium,,210 Ponggol Seventeenth Avenue,103.9047968,1.416577003
+#00fa43,medium,,210A Ponggol Seventeenth Avenue,103.9049417,1.416657444
+#00fa43,medium,,210B Ponggol Seventeenth Avenue,103.9050972,1.416737886
+#00fa43,medium,,210C Ponggol Seventeenth Avenue,103.9052314,1.416823691
+#00fa43,medium,,210D Ponggol Seventeenth Avenue,103.9053977,1.416882681
+#00fa43,medium,,208 Ponggol Park,103.9050543,1.416276687
+#00fa43,medium,,208A Ponggol Park,103.9053011,1.416432208
+#00fa43,medium,,206 Ponggol Park,103.9051777,1.416126529
+#00fa43,medium,,206A Ponggol Park,103.9054245,1.416303501
+#00fa43,medium,,204 Ponggol Park,103.9052582,1.41599246
+#00fa43,medium,,204A Ponggol Park,103.9054835,1.416126529
+#00fa43,medium,,202 Ponggol Park,103.9053226,1.41585839
+#00fa43,medium,,202A Ponggol Park,103.90558,1.416003185
+#00fa43,medium,,202B Ponggol Park,103.905859,1.416271324
+#00fa43,medium,,200A Ponggol Seventeenth Avenue,103.9057839,1.415686781
+#00fa43,medium,,200B Ponggol Seventeenth Avenue,103.9059395,1.415842302
+#00fa43,medium,,200C Ponggol Seventeenth Avenue,103.9060575,1.415938832
+#00fa43,medium,,201 Ponggol Seventeenth Avenue,103.9052582,1.415343563
+#00fa43,medium,,201B Ponggol Seventeenth Avenue,103.9049953,1.414994983
+#00fa43,medium,,201C Ponggol Seventeenth Avenue,103.9048934,1.414914541
+#00fa43,medium,,201D Ponggol Seventeenth Avenue,103.9046949,1.414775108
+#00fa43,medium,,201E Ponggol Seventeenth Avenue,103.9045876,1.414689304
+#00fa43,medium,,201F Ponggol Seventeenth Avenue,103.904416,1.414544509
+#00fa43,medium,,201G Ponggol Seventeenth Avenue,103.9042711,1.414453341
+#00fa43,medium,,201H Ponggol Seventeenth Avenue,103.9041531,1.414356811
+#00fa43,medium,,201J Ponggol Seventeenth Avenue,103.9040297,1.41423883
+#00fa43,medium,,201K Ponggol Seventeenth Avenue,103.9038634,1.4141423
+#00fa43,medium,,203 Ponggol Seventeenth Avenue,103.9050114,1.415611702
+#00fa43,medium,,203A Ponggol Seventeenth Avenue,103.9049363,1.41550981
+#00fa43,medium,,203B Ponggol Seventeenth Avenue,103.9046922,1.415488358
+#00fa43,medium,,203C Ponggol Seventeenth Avenue,103.9045715,1.415177317
+#00fa43,medium,,203D Ponggol Seventeenth Avenue,103.9044482,1.415107601
+#00fa43,medium,,203E Ponggol Seventeenth Avenue,103.9042443,1.414871639
+#00fa43,medium,,203F Ponggol Seventeenth Avenue,103.9040244,1.414710755
+#00fa43,medium,,203G Ponggol Seventeenth Avenue,103.9038849,1.414614225
+#00fa43,medium,,203J Ponggol Seventeenth Avenue,103.9037454,1.414517695
+#00fa43,medium,,203K Ponggol Seventeenth Avenue,103.9036167,1.414394351
+#00fa43,medium,,203H Ponggol Seventeenth Avenue,103.9035255,1.414222742
+#00fa43,medium,,205D Ponggol Seventeenth Avenue,103.9043945,1.415300661
+#00fa43,medium,,205E Ponggol Seventeenth Avenue,103.9041424,1.41498962
+#00fa43,medium,,205F Ponggol Seventeenth Avenue,103.9040565,1.415123689
+#00fa43,medium,,205G Ponggol Seventeenth Avenue,103.9038581,1.414866276
+#00fa43,medium,,205H Ponggol Seventeenth Avenue,103.9036167,1.414651764
+#00fa43,medium,,205J Ponggol Seventeenth Avenue,103.9034075,1.414410439
+#00fa43,medium,,207 Ponggol Seventeenth Avenue,103.9038903,1.415338201
+#00fa43,medium,,207H Ponggol Seventeenth Avenue,103.9037293,1.415574163
+#00fa43,medium,,209 Northshore Bungalows,103.90374,1.415247033
+#00fa43,medium,,213 Whiteshores,103.9030802,1.415633154
+#00fa43,medium,,213A Whiteshores,103.903048,1.415541986
+#00fa43,medium,,213B Whiteshores,103.9030212,1.415466907
+#00fa43,medium,,213C Whiteshores,103.9029568,1.41541328
+#00fa43,medium,,213D Whiteshores,103.9029139,1.415332838
+#00fa43,medium,,213E Whiteshores,103.9028388,1.415273847
+#00fa43,medium,,213F Whiteshores,103.9030427,1.415150503
+#00fa43,medium,,213G Whiteshores,103.9031553,1.415204131
+#00fa43,medium,,213H Whiteshores,103.9032251,1.415273847
+#00fa43,medium,,213J Whiteshores,103.9033216,1.415209494
+#00fa43,medium,,213KWhiteshores,103.9032733,1.415129052
+#00fa43,medium,,213L Whiteshores,103.9032143,1.415032522
+#00fa43,medium,,213M Whiteshores,103.9034021,1.414930629
+#00fa43,medium,,213N Whiteshores,103.9034772,1.415016434
+#00fa43,medium,,213P Whiteshores,103.9035845,1.41504861
+#00fa43,medium,,219 Ponggol Seventeenth Avenue,103.9046627,1.415295298
+#00fa43,medium,,219A Ponggol Seventeenth Avenue,103.9045233,1.415456182
+#00fa43,medium,,221 The Ambience,103.9039922,1.415466907
+#00fa43,medium,,221A The Ambience,103.9039278,1.415563437
+#00fa43,medium,,221B The Ambience,103.9038795,1.415633154
+#00fa43,medium,,221C The Ambience,103.903842,1.415697507
+#00fa43,medium,,221D The Ambience,103.9037669,1.415767223
+#00fa43,medium,,221E The Ambience,103.9037347,1.415826214
+#00fa43,medium,,221F The Ambience,103.903681,1.415901293
+#00fa43,medium,,221G The Ambience,103.9036167,1.415971009
+#00fa43,medium,,221H The Ambience,103.9035845,1.41605145
+#00fa43,medium,,221J The Ambience,103.9035308,1.416110441
+#00fa43,medium,,221K The Ambience,103.9034718,1.41618552
+#00fa43,medium,,225 Northshore Bungalows,103.9046091,1.415729684
+#00fa43,medium,,227 Northshore Bungalows,103.9045125,1.415708232
+#00fa43,medium,,229 Northshore Bungalows,103.9043891,1.41566533
+#00fa43,medium,,231 Northshore Bungalows,103.9042819,1.415611702
+#00fa43,medium,,233 Northshore Bungalows,103.9041746,1.41550981
+#00fa43,medium,,235 Northshore Bungalows,103.9041209,1.415697507
+#00fa43,medium,,237 Northshore Bungalows,103.9040351,1.415767223
+#00fa43,medium,,239 Northshore Bungalows,103.9039546,1.415874479
+#00fa43,medium,,241 Northshore Bungalows,103.9038634,1.415960283
+#00fa43,medium,,243 Northshore Bungalows,103.90374,1.416094353
+#00fa43,medium,,245 Northshore Bungalows,103.9038473,1.416190883
+#00fa43,medium,,247 Northshore Bungalows,103.9039546,1.416233785
+#00fa43,medium,,249 Northshore Bungalows,103.9040834,1.416276687
+#00fa43,medium,,251 Northshore Bungalows,103.9041907,1.416308864
+#00fa43,medium,,253 Northshore Bungalows,103.9042926,1.416346403
+#00fa43,medium,,255 Northshore Bungalows,103.9043945,1.416421482
+#00fa43,medium,,257 Northshore Bungalows,103.9045125,1.416485836
+#00fa43,medium,,259 Northshore Bungalows,103.9045554,1.416308864
+#00fa43,medium,,261 Northshore Bungalows,103.9046466,1.416212334
+#00fa43,medium,,263 Northshore Bungalows,103.9046949,1.416083627
+#00fa43,medium,,265 Northshore Bungalows,103.9048129,1.415847665
+#00fa43,medium,,267 Northshore Bungalows,103.9047164,1.4157994
+#8500fa,medium,,Bus Stop 65009: Punggol Temp Int,103.9025223,1.404092421
+#8500fa,medium,,Bus Stop 65401: Opp Blk 264A,103.8987163,1.406551267
+#8500fa,medium,,Bus Stop 65409: Bef Blk 264A,103.8995692,1.406237543
+#8500fa,medium,,Bus Stop 65141: Soo Teck Stn,103.8974047,1.405320503
+#8500fa,medium,,Bus Stop 65149: Soo Teck Stn,103.897056,1.405229336
+#8500fa,medium,,Bus Stop 65339: Blk 268C,103.8981128,1.403170018
+#8500fa,medium,,Bus Stop 65349: Opp Blk 268D,103.8986331,1.402649825
+#8500fa,medium,,Bus Stop 65349: Blk 272C,103.9006501,1.402279791
+#8500fa,medium,,Bus Stop 65341: Opp Blk 272C,103.9009345,1.401748873
+#8500fa,medium,,Bus Stop 65201: Opp Blk 201A,103.903563,1.400869371
+#8500fa,medium,,Bus Stop 65209: Aft Punggol Road,103.9038581,1.400341134
+#8500fa,medium,,Bus Stop 65081: Opp Blk 199C,103.9052957,1.400960539
+#8500fa,medium,,Bus Stop 65089: Opp Blk 296,103.9058429,1.401346662
+#8500fa,medium,,Bus Stop 65229: Blk 298,103.9055479,1.403186106
+#8500fa,medium,,Bus Stop 65221: Blk 303D,103.9048237,1.404060244
+#8500fa,medium,,Bus Stop 65091: Blk 301A,103.9065671,1.40399589
+#8500fa,medium,,Bus Stop 65091: Blk 604A,103.9071733,1.404532171
+#8500fa,medium,,Bus Stop 65219: Aft Punggol Central,103.9033163,1.403277274
+#8500fa,medium,,Bus Stop 65251: Punggol Stn,103.9027745,1.405116717
+#8500fa,medium,,Bus Stop 65259: Punggol Stn/Int,103.9017445,1.405358043
+#8500fa,medium,,Bus Stop 65359: Opp Punggol View Primary School,103.9043301,1.405529653
+#8500fa,medium,,Bus Stop 65351: Punggol View Primary School,103.9048719,1.405910412
+#8500fa,medium,,Bus Stop 65489: Aft Punggol Drive,103.9056873,1.408248593
+#8500fa,medium,,Bus Stop 65481: Bef Punggol Drive,103.9062023,1.408854589
+#8500fa,medium,,Bus Stop 65619: Nibong Stn Exit A,103.8999689,1.411482358
+#8500fa,medium,,Bus Stop 65621: Samudera Stn Exit B,103.9024311,1.415922744
+#8500fa,medium,,Bus Stop 65629: Samudera Stn Exit B,103.9022058,1.41614798
+#8500fa,medium,,Bus Stop 65639: Bef Punggol Pt Stn,103.9055693,1.417445773
+#8500fa,medium,,Bus Stop 65631: Aft Punggol Pt Stn,103.9055103,1.417188359
+#8500fa,medium,,Bus Stop 65681: Aft Northshore Crescent,103.908053,1.418384258
+#8500fa,medium,,Bus Stop 65689: Bef Northshore Crescent,103.9080262,1.418207287
+#8500fa,medium,,Bus Stop 65139: Punggol Road End,103.9104939,1.421087095
+#8500fa,medium,,Bus Stop 65611: Nibong Stn Exit B,103.9003336,1.411332199
+#8500fa,medium,,Bus Stop 65469: Blk 310B,103.9009774,1.409846706
+#8500fa,medium,,Bus Stop 65461: Blk 312 CP,103.9013314,1.40987352
+#8500fa,medium,,Bus Stop 65451: Blk 322 CP,103.8975656,1.410715478
+#8500fa,medium,,Bus Stop 65459: Opp Blk 322 CP,103.8977319,1.410570683
+#8500fa,medium,,Bus Stop 65449: Blk 315B,103.8959885,1.408001904
+#8500fa,medium,,Bus Stop 65441: Opp Blk 315B,103.8957578,1.408178876
+#8500fa,medium,,Bus Stop 65499: Blk 259 CP,103.8950658,1.404575073
+#8500fa,medium,,Bus Stop 65491: Opp Blk 259 CP,103.8948083,1.404558985
+#8500fa,medium,,Bus Stop 65571: Blk 218,103.8955861,1.403411344
+#8500fa,medium,,Bus Stop 65479: Blk 258A,103.8959026,1.403540052

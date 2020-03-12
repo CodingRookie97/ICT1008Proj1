@@ -5,7 +5,7 @@ from PyQt5.QtWidgets import QApplication, QLabel, QTableWidget, QTableWidgetItem
 from PyQt5.QtGui import QImage, QPalette, QBrush, QFont, QIcon
 from PyQt5.QtCore import Qt, QSize
 
-class ShortestPathGUI(QtWidgets.QMainWindow):
+class DrivingPathGUI(QtWidgets.QMainWindow):
     def __init__(self, startLocation, endLocation):
         super().__init__()
         self.title = 'ICT1008 AY19/20 Project Group 2-3'
@@ -45,34 +45,35 @@ class ShortestPathGUI(QtWidgets.QMainWindow):
         gridLayout.addLayout(titleLayout, 0, 0)
         tableLayout = QtWidgets.QGridLayout(self.main)
 
-        lblWalkDistance = QLabel(self)
-        lblWalkDistance.setText('Total Walking Distance:')
-        lblWalkDistance.setFont(QFont("Arial", 14, QFont.Bold))
-        lblWalkDistance.setStyleSheet('QLabel { color : Blue; }')
-        tableLayout.addWidget(lblWalkDistance, 1, 0)
+        lblDriveDistance = QLabel(self)
+        lblDriveDistance.setText('Total Driving Distance:')
+        lblDriveDistance.setFont(QFont("Arial", 14, QFont.Bold))
+        lblDriveDistance.setStyleSheet('QLabel { color : Blue; }')
+        tableLayout.addWidget(lblDriveDistance, 1, 0)
 
-        lblShortestWalk = QLabel(self)
-        lblShortestWalk.setText('Shortest Path by Walking:')
-        lblShortestWalk.setAlignment(Qt.AlignHCenter)
-        lblShortestWalk.setFont(QFont("Arial", 14, QFont.Bold))
-        lblShortestWalk.setStyleSheet('QLabel { color : Orange; }')
-        tableLayout.addWidget(lblShortestWalk, 2, 0)
+        lblShortestDrive = QLabel(self)
+        lblShortestDrive.setText('Shortest Path by Driving:')
+        lblShortestDrive.setAlignment(Qt.AlignHCenter)
+        lblShortestDrive.setFont(QFont("Arial", 14, QFont.Bold))
+        lblShortestDrive.setStyleSheet('QLabel { color : Red; }')
+        tableLayout.addWidget(lblShortestDrive, 2, 0)
 
-        tableShortestWalk = QTableWidget()
-        tableShortestWalk.setRowCount(20)
-        tableShortestWalk.setColumnCount(5)
-        tableShortestWalk.setItem(0, 0, QTableWidgetItem("Starting Node"))
-        tableShortestWalk.setItem(0, 1, QTableWidgetItem("Target Node"))
-        tableShortestWalk.setItem(0, 2, QTableWidgetItem("Cost"))
-        tableShortestWalk.setItem(0, 3, QTableWidgetItem("Estimated time taken to reach"))
-        tableShortestWalk.setItem(0, 4, QTableWidgetItem("Distance Away"))
+        tableShortestDrive = QTableWidget()
+        tableShortestDrive.setRowCount(20)
+        tableShortestDrive.setColumnCount(5)
+        tableShortestDrive.setItem(0, 0, QTableWidgetItem("Starting Node"))
+        tableShortestDrive.setItem(0, 1, QTableWidgetItem("Target Node"))
+        tableShortestDrive.setItem(0, 2, QTableWidgetItem("Cost"))
+        tableShortestDrive.setItem(0, 3, QTableWidgetItem("Estimated time taken to reach"))
+        tableShortestDrive.setItem(0, 4, QTableWidgetItem("Distance Away"))
         # Align columns to same width
-        tableShortestWalk.horizontalHeader().setStretchLastSection(True)
-        tableShortestWalk.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+        tableShortestDrive.horizontalHeader().setStretchLastSection(True)
+        tableShortestDrive.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
         # Set columns to read only, no editing
-        tableShortestWalk.setEditTriggers(QtWidgets.QTableWidget.NoEditTriggers)
+        tableShortestDrive.setEditTriggers(QtWidgets.QTableWidget.NoEditTriggers)
 
-        tableLayout.addWidget(tableShortestWalk, 3, 0)
+        tableLayout.addWidget(tableShortestDrive, 3, 0)
+
 
         gridLayout.addLayout(tableLayout, 1, 0)
 
