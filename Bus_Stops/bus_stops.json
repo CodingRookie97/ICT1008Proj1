@@ -7,7 +7,8 @@
         "marker-color": "#8500fa",
         "marker-size": "medium",
         "marker-symbol": "",
-        "node-details": "Bus Stop 65009: Punggol Temp Int"
+        "node-details": "Bus Stop 65009: Punggol Temp Int",
+        "bus-services": ["3", "34", "34A", "43", "43M", "43e", "50", "62", "62A", "82", "83", "84", "85", "117", "118", "119", "136","381", "382", "382A", "382G", "382W", "386", "386A"]
       },
       "geometry": {
         "type": "Point",
@@ -23,7 +24,8 @@
         "marker-color": "#8500fa",
         "marker-size": "medium",
         "marker-symbol": "",
-        "node-details": "Bus Stop 65401: Opp Blk 264A"
+        "node-details": "Bus Stop 65401: Opp Blk 264A",
+        "bus-services": ["43", "43M", "43e", "117", "118", "381"]
       },
       "geometry": {
         "type": "Point",

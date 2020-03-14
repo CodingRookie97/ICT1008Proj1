@@ -839,20 +839,25 @@ class MainGUI(QtWidgets.QMainWindow):
     @pyqtSlot()
     def computeShortest(self):
         #TODO: Insert shortest path algorithm here
-        self.shortestPath = ShortestPathGUI(self.comboStart.currentText(), self.comboEnd.currentText())
-        self.shortestPath.show()
+        #self.shortestPath = ShortestPathGUI(self.comboStart.currentText(), self.comboEnd.currentText())
+        #self.shortestPath.show()
+
+
+        pass
 
     @pyqtSlot()
     def computeDriving(self):
-        # TODO: Insert shortest driving path algorithm here
-        self.drivingPath = DrivingPathGUI(self.comboStart.currentText(), self.comboEnd.currentText())
-        self.drivingPath.show()
+        #TODO: Insert shortest driving path algorithm here
+        #self.drivingPath = DrivingPathGUI(self.comboStart.currentText(), self.comboEnd.currentText())
+        #self.drivingPath.show()
+        pass
 
     @pyqtSlot()
     def computeFastest(self):
-        # TODO: Insert fastest train path algorithm here
-        self.fastestPath = FastestPathGUI(self.comboStart.currentText(), self.comboEnd.currentText())
-        self.fastestPath.show()
+        #TODO: Insert fastest train path algorithm here
+        #elf.fastestPath = FastestPathGUI(self.comboStart.currentText(), self.comboEnd.currentText())
+        #self.fastestPath.show()
+        pass
 
 if __name__ == "__main__":
     App = QApplication(sys.argv)
