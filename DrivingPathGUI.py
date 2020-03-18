@@ -60,12 +60,11 @@ class DrivingPathGUI(QtWidgets.QMainWindow):
 
         tableShortestDrive = QTableWidget()
         tableShortestDrive.setRowCount(20)
-        tableShortestDrive.setColumnCount(5)
-        tableShortestDrive.setItem(0, 0, QTableWidgetItem("Starting Node"))
-        tableShortestDrive.setItem(0, 1, QTableWidgetItem("Target Node"))
+        tableShortestDrive.setColumnCount(3)
+        tableShortestDrive.setItem(0, 0, QTableWidgetItem("Starting Node Coordinates"))
+        tableShortestDrive.setItem(0, 1, QTableWidgetItem("Target Node Coordinates"))
         tableShortestDrive.setItem(0, 2, QTableWidgetItem("Cost"))
-        tableShortestDrive.setItem(0, 3, QTableWidgetItem("Estimated time taken to reach"))
-        tableShortestDrive.setItem(0, 4, QTableWidgetItem("Distance Away"))
+
         # Align columns to same width
         tableShortestDrive.horizontalHeader().setStretchLastSection(True)
         tableShortestDrive.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)

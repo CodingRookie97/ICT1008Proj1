@@ -60,12 +60,10 @@ class ShortestPathGUI(QtWidgets.QMainWindow):
 
         tableShortestWalk = QTableWidget()
         tableShortestWalk.setRowCount(20)
-        tableShortestWalk.setColumnCount(5)
-        tableShortestWalk.setItem(0, 0, QTableWidgetItem("Starting Node"))
-        tableShortestWalk.setItem(0, 1, QTableWidgetItem("Target Node"))
+        tableShortestWalk.setColumnCount(3)
+        tableShortestWalk.setItem(0, 0, QTableWidgetItem("Starting Node Coordinates"))
+        tableShortestWalk.setItem(0, 1, QTableWidgetItem("Target Node Coordinates"))
         tableShortestWalk.setItem(0, 2, QTableWidgetItem("Cost"))
-        tableShortestWalk.setItem(0, 3, QTableWidgetItem("Estimated time taken to reach"))
-        tableShortestWalk.setItem(0, 4, QTableWidgetItem("Distance Away"))
         # Align columns to same width
         tableShortestWalk.horizontalHeader().setStretchLastSection(True)
         tableShortestWalk.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
