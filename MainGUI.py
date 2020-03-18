@@ -12,6 +12,7 @@ from folium.plugins import MarkerCluster
 from DrivingPathGUI import DrivingPathGUI
 from FastestPathGUI import FastestPathGUI
 from ShortestPathGUI import ShortestPathGUI
+from haversine import haversine
 
 global mapView
 
@@ -841,7 +842,8 @@ class MainGUI(QtWidgets.QMainWindow):
         #TODO: Insert shortest path algorithm here
         self.shortestPath = ShortestPathGUI(self.comboStart.currentText(), self.comboEnd.currentText())
         self.shortestPath.show()
-        pass
+        """eastpoint = (1.3427, 103.9530)  # (lat, lon)
+        nyp = (1.3800, 103.8489)"""
 
     @pyqtSlot()
     def computeDriving(self):

@@ -59,7 +59,7 @@ class ShortestPathGUI(QtWidgets.QMainWindow):
         tableLayout.addWidget(lblShortestWalk, 2, 0)
 
         tableShortestWalk = QTableWidget()
-        tableShortestWalk.setRowCount(20)
+        tableShortestWalk.setRowCount(40)
         tableShortestWalk.setColumnCount(3)
         tableShortestWalk.setItem(0, 0, QTableWidgetItem("Starting Node Coordinates"))
         tableShortestWalk.setItem(0, 1, QTableWidgetItem("Target Node Coordinates"))

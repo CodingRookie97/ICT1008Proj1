@@ -59,7 +59,7 @@ class DrivingPathGUI(QtWidgets.QMainWindow):
         tableLayout.addWidget(lblShortestDrive, 2, 0)
 
         tableShortestDrive = QTableWidget()
-        tableShortestDrive.setRowCount(20)
+        tableShortestDrive.setRowCount(40)
         tableShortestDrive.setColumnCount(3)
         tableShortestDrive.setItem(0, 0, QTableWidgetItem("Starting Node Coordinates"))
         tableShortestDrive.setItem(0, 1, QTableWidgetItem("Target Node Coordinates"))

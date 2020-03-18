@@ -84,7 +84,7 @@ class FastestPathGUI(QtWidgets.QMainWindow):
         tableLayout.addWidget(lblFastestTrain, 5, 0)
 
         tableFastestTrain = QTableWidget()
-        tableFastestTrain.setRowCount(20)
+        tableFastestTrain.setRowCount(40)
         tableFastestTrain.setColumnCount(3)
         tableFastestTrain.setItem(0, 0, QTableWidgetItem("Starting Node Coordinates"))
         tableFastestTrain.setItem(0, 1, QTableWidgetItem("Target Node Coordinates"))
