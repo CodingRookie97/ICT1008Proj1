@@ -99,5 +99,5 @@ class FastestPathGUI(QtWidgets.QMainWindow):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    shortest = FastestPathGUI()
+    fastest = FastestPathGUI()
     sys.exit(app.exec_())

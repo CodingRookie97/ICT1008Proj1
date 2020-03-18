@@ -11,6 +11,7 @@ from folium.plugins import MarkerCluster
 
 from DrivingPathGUI import DrivingPathGUI
 from FastestPathGUI import FastestPathGUI
+from Graph import Graph
 from ShortestPathGUI import ShortestPathGUI
 from haversine import haversine
 
@@ -53,10 +54,7 @@ class MainGUI(QtWidgets.QMainWindow):
         mrtStations = ["NE17/PTC Punggol MRT/LRT Station", "PW1 Sam Kee LRT Station", "PW2 Teck Lee LRT Station", "PW3 Punggol Point LRT Station", "PW4 Samudera LRT Station", "PW5 Nibong LRT Station", "PW6 Sumang LRT Station", "PW7 Soo Teck LRT Station"]
 
         # Array that contains the ending locations (Those residential areas that cover Punggol West Area only)
-        residences = self.importEnding('Buildings/residential_buildings.json')
-
-        #Array that contains the mode of transport to compute shortest path
-        mode = ["Walk", "Drive", "Bus", "Train (LRT/MRT)"]
+        endingLocation = self.importEnding('Combined/nodes.json')
 
         #Array that contains the bus services
         busServices = ["Bus 3", "Bus 34", "Bus 43", "Bus 43e", "Bus 43M", "Bus 50", "Bus 62", "Bus 82", "Bus 83", "Bus 84", "Bus 85", "Bus 117", "Bus 118", "Bus 119", "Bus 136", "Bus 381", "Bus 382G", "Bus 382W", "Bus 386"]
@@ -87,7 +85,7 @@ class MainGUI(QtWidgets.QMainWindow):
         #Choose an ending location (Residential Estates HDB + Condominiums)
         self.comboEnd = QComboBox()
         self.comboEnd.setFont(QFont("Arial", 10))
-        self.comboEnd.addItems(residences)
+        self.comboEnd.addItems(endingLocation)
         self.comboEnd.currentIndexChanged.connect(self.chooseEnd)
 
         #Adds widgets to the Combobox layout for starting and ending location
@@ -840,10 +838,21 @@ class MainGUI(QtWidgets.QMainWindow):
     @pyqtSlot()
     def computeShortest(self):
         #TODO: Insert shortest path algorithm here
-        self.shortestPath = ShortestPathGUI(self.comboStart.currentText(), self.comboEnd.currentText())
-        self.shortestPath.show()
-        """eastpoint = (1.3427, 103.9530)  # (lat, lon)
-        nyp = (1.3800, 103.8489)"""
+        with open('Combined/nodes.json') as f:
+            getJson = json.load(f)
+        start_coordinates = []
+        end_coordinates = []
+        feature_access = getJson['features']
+        for feature_data in feature_access:
+            prop = feature_data['properties']
+            geometry = feature_data['geometry']
+            if prop['node-details'] == self.comboStart.currentText():
+                start_coordinates = geometry['coordinates']
+            if prop['node-details'] == self.comboEnd.currentText():
+                end_coordinates = geometry['coordinates']
+        print("Start coordinates of " + self.comboStart.currentText() + " : " + str(start_coordinates))
+        print("End coordinates of " + self.comboEnd.currentText() + " : " + str(end_coordinates))
+        # mrtG = Graph()
 
     @pyqtSlot()
     def computeDriving(self):
@@ -855,8 +864,8 @@ class MainGUI(QtWidgets.QMainWindow):
     @pyqtSlot()
     def computeFastest(self):
         #TODO: Insert fastest train path algorithm here
-        self.fastestPath = FastestPathGUI(self.comboStart.currentText(), self.comboEnd.currentText())
-        self.fastestPath.show()
+        """self.fastestPath = FastestPathGUI(self.comboStart.currentText(), self.comboEnd.currentText())
+        self.fastestPath.show()"""
         pass
 
 if __name__ == "__main__":

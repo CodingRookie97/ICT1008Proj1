@@ -78,5 +78,5 @@ class DrivingPathGUI(QtWidgets.QMainWindow):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    shortest = ShortestPathGUI()
+    driving = DrivingPathGUI()
     sys.exit(app.exec_())
