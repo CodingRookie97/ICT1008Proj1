@@ -51,10 +51,10 @@ class MainGUI(QtWidgets.QMainWindow):
         self.initMap(self.m, self.marker_cluster)
 
         #Array that contains the starting locations (Punggol West LRT Line only)
-        mrtStations = ["NE17/PTC Punggol MRT/LRT Station", "PW1 Sam Kee LRT Station", "PW2 Teck Lee LRT Station", "PW3 Punggol Point LRT Station", "PW4 Samudera LRT Station", "PW5 Nibong LRT Station", "PW6 Sumang LRT Station", "PW7 Soo Teck LRT Station"]
+        #mrtStations = ["NE17/PTC Punggol MRT/LRT Station", "PW1 Sam Kee LRT Station", "PW2 Teck Lee LRT Station", "PW3 Punggol Point LRT Station", "PW4 Samudera LRT Station", "PW5 Nibong LRT Station", "PW6 Sumang LRT Station", "PW7 Soo Teck LRT Station"]
 
         # Array that contains the ending locations (Those residential areas that cover Punggol West Area only)
-        endingLocation = self.importEnding('Combined/nodes.json')
+        startEndingLocation= self.importStartEnding('Combined/nodes.json')
 
         #Array that contains the bus services
         busServices = ["Bus 3", "Bus 34", "Bus 43", "Bus 43e", "Bus 43M", "Bus 50", "Bus 62", "Bus 82", "Bus 83", "Bus 84", "Bus 85", "Bus 117", "Bus 118", "Bus 119", "Bus 136", "Bus 381", "Bus 382G", "Bus 382W", "Bus 386"]
@@ -74,7 +74,7 @@ class MainGUI(QtWidgets.QMainWindow):
         #Choose a start location (MRT station)
         self.comboStart = QComboBox()
         self.comboStart.setFont(QFont("Arial", 10))
-        self.comboStart.addItems(mrtStations)
+        self.comboStart.addItems(startEndingLocation)
         self.comboStart.currentIndexChanged.connect(self.chooseStart)
 
         lblEndLocation = QLabel(self)
@@ -85,7 +85,7 @@ class MainGUI(QtWidgets.QMainWindow):
         #Choose an ending location (Residential Estates HDB + Condominiums)
         self.comboEnd = QComboBox()
         self.comboEnd.setFont(QFont("Arial", 10))
-        self.comboEnd.addItems(endingLocation)
+        self.comboEnd.addItems(startEndingLocation)
         self.comboEnd.currentIndexChanged.connect(self.chooseEnd)
 
         #Adds widgets to the Combobox layout for starting and ending location
@@ -207,7 +207,7 @@ class MainGUI(QtWidgets.QMainWindow):
         self.mapView.setHtml(data.getvalue().decode())
         gridLayout.addWidget(self.mapView, 2, 0, 2, 1)
 
-    def importEnding(self, file):
+    def importStartEnding(self, file):
         ending = []
         with open(file) as f:
             self.getJson = json.load(f)
