@@ -50,11 +50,8 @@ class MainGUI(QtWidgets.QMainWindow):
         self.mapView = QtWebEngineWidgets.QWebEngineView()
         self.initMap(self.m, self.marker_cluster)
 
-        #Array that contains the starting locations (Punggol West LRT Line only)
-        #mrtStations = ["NE17/PTC Punggol MRT/LRT Station", "PW1 Sam Kee LRT Station", "PW2 Teck Lee LRT Station", "PW3 Punggol Point LRT Station", "PW4 Samudera LRT Station", "PW5 Nibong LRT Station", "PW6 Sumang LRT Station", "PW7 Soo Teck LRT Station"]
-
         # Array that contains the ending locations (Those residential areas that cover Punggol West Area only)
-        startEndingLocation= self.importStartEnding('Combined/nodes.json')
+        startEndingLocation = self.importStartEnding('Combined/nodes.json')
 
         #Array that contains the bus services
         busServices = ["Bus 3", "Bus 34", "Bus 43", "Bus 43e", "Bus 43M", "Bus 50", "Bus 62", "Bus 82", "Bus 83", "Bus 84", "Bus 85", "Bus 117", "Bus 118", "Bus 119", "Bus 136", "Bus 381", "Bus 382G", "Bus 382W", "Bus 386"]
