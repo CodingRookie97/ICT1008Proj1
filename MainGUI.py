@@ -1,5 +1,7 @@
 import io
 import sys
+from collections import defaultdict
+
 import folium
 import json
 
@@ -11,9 +13,9 @@ from folium.plugins import MarkerCluster
 
 from DrivingPathGUI import DrivingPathGUI
 from FastestPathGUI import FastestPathGUI
-from Graph import Graph
 from ShortestPathGUI import ShortestPathGUI
-from haversine import haversine
+
+from WalkPath import WalkPath
 
 global mapView
 
@@ -835,21 +837,27 @@ class MainGUI(QtWidgets.QMainWindow):
     @pyqtSlot()
     def computeShortest(self):
         #TODO: Insert shortest path algorithm here
+        nodes = {}
         with open('Combined/nodes.json') as f:
             getJson = json.load(f)
-        start_coordinates = []
-        end_coordinates = []
-        feature_access = getJson['features']
-        for feature_data in feature_access:
-            prop = feature_data['properties']
-            geometry = feature_data['geometry']
-            if prop['node-details'] == self.comboStart.currentText():
-                start_coordinates = geometry['coordinates']
-            if prop['node-details'] == self.comboEnd.currentText():
-                end_coordinates = geometry['coordinates']
-        print("Start coordinates of " + self.comboStart.currentText() + " : " + str(start_coordinates))
-        print("End coordinates of " + self.comboEnd.currentText() + " : " + str(end_coordinates))
-        # mrtG = Graph()
+            feature_access = getJson['features']
+            for feature_data in feature_access:
+                prop = feature_data['properties']
+                if 'node-details' in prop:
+                    location_name = prop['node-details']
+                    nodes[location_name] = feature_data['geometry']['coordinates']
+
+        pathfinder = WalkPath(nodes)
+        pathfinder.create_edges()
+        graph = pathfinder.build_graph()
+        path = pathfinder.find_shortest_path(graph, self.comboStart.currentText(), self.comboEnd.currentText())
+        folium.PolyLine(path, color="purple", weight=3).add_to(self.m)
+        data = io.BytesIO()
+        self.m.save(data, close_file=False)
+        self.mapView.setHtml(data.getvalue().decode())
+
+        self.drivingPath = ShortestPathGUI(path)
+        self.drivingPath.show()
 
     @pyqtSlot()
     def computeDriving(self):
