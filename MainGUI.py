@@ -868,9 +868,116 @@ class MainGUI(QtWidgets.QMainWindow):
 
     @pyqtSlot()
     def computeFastest(self):
-        #TODO: Insert fastest train path algorithm here
-        """self.fastestPath = FastestPathGUI(self.comboStart.currentText(), self.comboEnd.currentText())
-        self.fastestPath.show()"""
+        # Fastest Bus Route
+        nodes = {}
+
+        # Initialising start and end points
+        with open('Combined/nodes.json') as f:
+            getJson = json.load(f)
+            feature_access = getJson['features']
+            for feature_data in feature_access:
+                prop = feature_data['properties']
+                if 'node-details' in prop:
+                    # Checking if start point exists in data
+                    if self.comboStart.currentText() in prop['node-details']:
+                        location_name = prop['node-details']
+                        nodes[location_name] = feature_data['geometry']['coordinates']
+                        # Recording latitude and longitude to compare later
+                        lat0 = nodes[location_name][0]
+                        lon0 = nodes[location_name][1]
+                    # Checking of end point exists in data
+                    elif self.comboEnd.currentText() in prop['node-details']:
+                        location_name = prop['node-details']
+                        nodes[location_name] = feature_data['geometry']['coordinates']
+                        lat1 = nodes[location_name][0]
+                        lon1 = nodes[location_name][1]
+
+            # Retrieving all bus stops between start and end points
+            for feature_data in feature_access:
+                prop = feature_data['properties']
+                if 'node-details' in prop:
+                    if "Bus Stop" in prop['node-details']:
+                        # Temporarily storing bus stop's coordinates
+                        bLat = feature_data['geometry']['coordinates'][0]
+                        bLon = feature_data['geometry']['coordinates'][1]
+                        # If start point is below end point
+                        if lat0 <= lat1:
+                            # If bus stop is between start and end latitudes
+                            if bLat >= lat0 and bLat <= lat1:
+                                # If start point is left of end point
+                                if lon0 <= lon1:
+                                    # If bus stop is between start and end points
+                                    if bLon >= lon0 and bLon <= lon1:
+                                        location_name = prop['node-details']
+                                        nodes[location_name] = feature_data['geometry']['coordinates']
+                                # If start point is right of end point
+                                elif lon0 >= lon1:
+                                    # If bus stop is between start and end longitudes
+                                    if bLon <= lon0 and bLon >= lon1:
+                                        location_name = prop['node-details']
+                                        nodes[location_name] = feature_data['geometry']['coordinates']
+                        # If start point is above end point
+                        # The rest is the same as before
+                        elif lat0 >= lat1:
+                            if bLat <= lat0 and bLat >= lat1:
+                                if lon0 <= lon1:
+                                    if bLon >= lon0 and bLon <= lon1:
+                                        location_name = prop['node-details']
+                                        nodes[location_name] = feature_data['geometry']['coordinates']
+                                elif lon0 >= lon1:
+                                    if bLon <= lon0 and bLon >= lon1:
+                                        location_name = prop['node-details']
+                                        nodes[location_name] = feature_data['geometry']['coordinates']
+
+        # Sorting points in ascending order based on whether start point is above or below end point
+        if lat0 <= lat1:
+            temp_node = sorted(nodes.items(), key=lambda kv: (kv[1][0], kv[1][1], kv[0]))
+        else:
+            temp_node = sorted(nodes.items(), key=lambda kv: (kv[1][0], kv[1][1], kv[0]), reverse=True)
+
+        # Initialising graph
+        pathfinder = WalkPath(nodes)
+        pathfinder.create_edges()
+        graph = pathfinder.build_graph()
+        path = pathfinder.find_shortest_path(graph, self.comboStart.currentText(), self.comboEnd.currentText())
+
+        # Checking to see if there are sufficient bus stops
+        if len(temp_node) > 3:
+            buses = []
+            # Retrieving bus services
+            with open('Bus_Stops/bus_stops.json') as f2:
+                getJson = json.load(f2)
+                feature_access = getJson['features']
+                for feature_data in feature_access:
+                    prop = feature_data['properties']
+                    if 'node-details' in prop:
+                        if temp_node[1][0] in prop['node-details']:
+                            buses0 = prop['bus-services']
+                        if temp_node[len(temp_node) - 2][0] in prop['node-details']:
+                            buses1 = prop['bus-services']
+                # Storing list of buses that connect both points
+                for bus in buses0:
+                    if bus in buses1:
+                        buses.append(bus)
+
+            # Checking to see if there are buses connecting both points
+            # If there are, then add them to the path
+            if len(buses) > 0:
+                firstBus = [temp_node[1][1][1], temp_node[1][1][0]]
+                lastBus = [temp_node[len(temp_node) - 2][1][1], temp_node[len(temp_node) - 2][1][0]]
+
+                temp = path[1]
+                path[1] = firstBus
+                path.append(lastBus)
+                path.append(temp)
+
+        folium.PolyLine(path, color="purple", weight=3).add_to(self.m)
+        data = io.BytesIO()
+        self.m.save(data, close_file=False)
+        self.mapView.setHtml(data.getvalue().decode())
+
+        self.drivingPath = ShortestPathGUI(path)
+        self.drivingPath.show()
         pass
 
 if __name__ == "__main__":
