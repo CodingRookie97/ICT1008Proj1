@@ -8,14 +8,14 @@ import json
 from PyQt5 import QtWidgets, QtWebEngineWidgets
 from PyQt5.QtCore import QSize, pyqtSlot, Qt
 from PyQt5.QtGui import QImage, QPalette, QBrush, QFont, QPixmap, QIcon
-from PyQt5.QtWidgets import QApplication, QComboBox, QLabel, QCheckBox
+from PyQt5.QtWidgets import QApplication, QComboBox, QLabel
 from folium.plugins import MarkerCluster
 
 from DrivingPathGUI import DrivingPathGUI
 from FastestPathGUI import FastestPathGUI
 from ShortestPathGUI import ShortestPathGUI
 
-from WalkPath import WalkPath
+from ShortestPath import ShortestPath
 
 global mapView
 
@@ -96,11 +96,11 @@ class MainGUI(QtWidgets.QMainWindow):
 
         #Button to determine shortest path + fastest Path
         btnLayout = QtWidgets.QGridLayout()
-        btnShortestPath = QtWidgets.QPushButton(self.tr("Compute shortest walking path"))
-        btnShortestPath.setFont(QFont("Arial", 10, QFont.Bold))
-        btnShortestPath.setStyleSheet('QPushButton { background-color: #008000; color: white; }')
-        btnLayout.addWidget(btnShortestPath, 0, 0)
-        btnShortestPath.clicked.connect(self.computeShortest)
+        btnWalkingPath = QtWidgets.QPushButton(self.tr("Compute shortest walking path"))
+        btnWalkingPath.setFont(QFont("Arial", 10, QFont.Bold))
+        btnWalkingPath.setStyleSheet('QPushButton { background-color: #008000; color: white; }')
+        btnLayout.addWidget(btnWalkingPath , 0, 0)
+        btnWalkingPath.clicked.connect(self.computeWalking)
 
         btnDrivingPath = QtWidgets.QPushButton(self.tr("Compute shortest driving path"))
         btnDrivingPath.setFont(QFont("Arial", 10, QFont.Bold))
@@ -835,8 +835,7 @@ class MainGUI(QtWidgets.QMainWindow):
             self.mapView.setHtml(data.getvalue().decode())
 
     @pyqtSlot()
-    def computeShortest(self):
-        #TODO: Insert shortest path algorithm here
+    def computeWalking(self):
         nodes = {}
         with open('Combined/nodes.json') as f:
             getJson = json.load(f)
@@ -847,24 +846,82 @@ class MainGUI(QtWidgets.QMainWindow):
                     location_name = prop['node-details']
                     nodes[location_name] = feature_data['geometry']['coordinates']
 
-        pathfinder = WalkPath(nodes)
+        pathfinder = ShortestPath(nodes)
         pathfinder.create_edges()
         graph = pathfinder.build_graph()
         path = pathfinder.find_shortest_path(graph, self.comboStart.currentText(), self.comboEnd.currentText())
-        folium.PolyLine(path, color="purple", weight=3).add_to(self.m)
+        folium.PolyLine(path, color="#008000", weight=3).add_to(self.m)
         data = io.BytesIO()
         self.m.save(data, close_file=False)
         self.mapView.setHtml(data.getvalue().decode())
 
-        self.drivingPath = ShortestPathGUI(path)
-        self.drivingPath.show()
+        self.walkingPath = ShortestPathGUI(path)
+        self.walkingPath.show()
 
     @pyqtSlot()
     def computeDriving(self):
-        #TODO: Insert shortest driving path algorithm here
-        self.drivingPath = DrivingPathGUI(self.comboStart.currentText(), self.comboEnd.currentText())
+        nodes = {}
+        with open('MRT/mrt.json') as f1, open('Combined/exportRoad.json') as f2, open(
+                'Buildings/residential_buildings.json') as f3, open(
+                'Buildings/general_buildings.json') as f4,  open(
+                'Bus_Stops/bus_stops.json') as f5:
+            getMrtJson = json.load(f1)
+            getRoadJson = json.load(f2)
+            getHdbJson = json.load(f3)
+            getGeneralJson = json.load(f4)
+            getBusStopsJson = json.load(f5)
+
+            feature_access_mrt = getMrtJson['features']
+            for feature_data in feature_access_mrt:
+                propMrt = feature_data['properties']
+                if 'node-details' in propMrt:
+                    mrt_name = propMrt['node-details']
+                    nodes[mrt_name] = feature_data['geometry']['coordinates']
+
+            feature_access_road = getRoadJson['features']
+            count = 0
+            for feature_data in feature_access_road:
+                type = feature_data['geometry']['type']
+                if type == 'LineString':
+                    coordinateList = feature_data['geometry']['coordinates']
+                    for coordinate in coordinateList:
+                        if isinstance(coordinate, list):
+                            nodes[count] = coordinate
+                            count += 1
+
+            feature_access_hdb = getHdbJson['features']
+            for feature_data in feature_access_hdb:
+                propHdb = feature_data['properties']
+                if 'node-details' in propHdb:
+                    hdb_name = propHdb['node-details']
+                    nodes[hdb_name] = feature_data['geometry']['coordinates']
+
+            feature_access_general = getGeneralJson['features']
+            for feature_data in feature_access_general:
+                propGeneral = feature_data['properties']
+                if 'node-details' in propGeneral:
+                    general_name = propGeneral['node-details']
+                    nodes[general_name] = feature_data['geometry']['coordinates']
+
+            feature_access_bus_stop = getBusStopsJson['features']
+            for feature_data in feature_access_bus_stop :
+                propBusStop = feature_data['properties']
+                if 'node-details' in propBusStop:
+                    bus_stop_name = propBusStop['node-details']
+                    nodes[bus_stop_name] = feature_data['geometry']['coordinates']
+
+        pathFinder = ShortestPath(nodes)
+        pathFinder.create_edges()
+        graph = pathFinder.build_graph()
+        path = pathFinder.find_shortest_path(graph, self.comboStart.currentText(), self.comboEnd.currentText())
+        folium.PolyLine(path, color="#FF8C00", weight=3).add_to(self.m)
+        data = io.BytesIO()
+        self.m.save(data, close_file=False)
+        self.mapView.setHtml(data.getvalue().decode())
+
+        self.drivingPath = DrivingPathGUI(path)
         self.drivingPath.show()
-        pass
+        # endbeta(CH)
 
     @pyqtSlot()
     def computeFastest(self):
@@ -936,7 +993,7 @@ class MainGUI(QtWidgets.QMainWindow):
             temp_node = sorted(nodes.items(), key=lambda kv: (kv[1][0], kv[1][1], kv[0]), reverse=True)
 
         # Initialising graph
-        pathfinder = WalkPath(nodes)
+        pathfinder = ShortestPath(nodes)
         pathfinder.create_edges()
         graph = pathfinder.build_graph()
         path = pathfinder.find_shortest_path(graph, self.comboStart.currentText(), self.comboEnd.currentText())
@@ -971,14 +1028,13 @@ class MainGUI(QtWidgets.QMainWindow):
                 path.append(lastBus)
                 path.append(temp)
 
-        folium.PolyLine(path, color="purple", weight=3).add_to(self.m)
+        folium.PolyLine(path, color="#008B8B", weight=3).add_to(self.m)
         data = io.BytesIO()
         self.m.save(data, close_file=False)
         self.mapView.setHtml(data.getvalue().decode())
 
-        self.drivingPath = ShortestPathGUI(path)
-        self.drivingPath.show()
-        pass
+        self.fastestPath = FastestPathGUI(path)
+        self.fastestPath.show()
 
 if __name__ == "__main__":
     App = QApplication(sys.argv)

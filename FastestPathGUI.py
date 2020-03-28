@@ -4,17 +4,17 @@ from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QApplication, QLabel, QTableWidget, QTableWidgetItem, QHeaderView
 from PyQt5.QtGui import QImage, QPalette, QBrush, QFont, QIcon
 from PyQt5.QtCore import Qt, QSize
+import json
 
 class FastestPathGUI(QtWidgets.QMainWindow):
-    def __init__(self, startLocation, endLocation):
+    def __init__(self, path):
         super().__init__()
         self.title = 'ICT1008 AY19/20 Project Group 2-3'
         self.left = 10
         self.top = 10
         self.width = 600
         self.height = 400
-        self.startLocation = startLocation
-        self.endLocation = endLocation
+        self.path = path
         self.initUI()
 
     def initUI(self):
@@ -58,17 +58,38 @@ class FastestPathGUI(QtWidgets.QMainWindow):
         lblFastestBus.setStyleSheet('QLabel { color : Green; }')
         tableLayout.addWidget(lblFastestBus, 2, 0)
 
+        self.path = [swap(self.path[x]) for x in range(len(self.path))]
+        nodeNames = []
+        with open('Combined/nodes.json') as f:
+            getJson = json.load(f)
+            feature_access = getJson['features']
+            for feature_data in feature_access:
+                prop = feature_data['properties']
+                type = feature_data['geometry']['type']
+                if type == 'Point':
+                    coordinates = feature_data['geometry']['coordinates']
+                    for i in range(len(self.path)):
+                        if self.path[i] == coordinates:
+                            if 'node-details' in prop:
+                                nodeNames.append(prop['node-details'])
+
+        print(self.path)
+
         tableFastestBus = QTableWidget()
-        tableFastestBus.setRowCount(20)
-        tableFastestBus.setColumnCount(3)
-        tableFastestBus.setItem(0, 0, QTableWidgetItem("Starting Node Coordinates"))
-        tableFastestBus.setItem(0, 1, QTableWidgetItem("Target Node Coordinates"))
-        tableFastestBus.setItem(0, 2, QTableWidgetItem("Cost"))
+        tableFastestBus.setRowCount(len(self.path) + 1)
+        tableFastestBus.setColumnCount(2)
+        tableFastestBus.setItem(0, 0, QTableWidgetItem("Checkpoint Coordinates"))
+        tableFastestBus.setItem(0, 1, QTableWidgetItem("Checkpoint Names"))
+        for i in range(len(self.path)):
+            tableFastestBus.setItem(i + 1, 0, QTableWidgetItem(str(self.path[i])))
+            tableFastestBus.setItem(i + 1, 1, QTableWidgetItem(str(nodeNames[i])))
+        # Align columns to same width
         tableFastestBus.horizontalHeader().setStretchLastSection(True)
         tableFastestBus.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+        # Set columns to read only, no editing
         tableFastestBus.setEditTriggers(QtWidgets.QTableWidget.NoEditTriggers)
-
         tableLayout.addWidget(tableFastestBus, 3, 0)
+        gridLayout.addLayout(tableLayout, 1, 0)
 
         lblTrainDistance = QLabel(self)
         lblTrainDistance.setText('Total Train Distance:')
@@ -83,19 +104,26 @@ class FastestPathGUI(QtWidgets.QMainWindow):
         lblFastestTrain.setStyleSheet('QLabel { color : Purple; }')
         tableLayout.addWidget(lblFastestTrain, 5, 0)
 
-        tableFastestTrain = QTableWidget()
-        tableFastestTrain.setRowCount(40)
-        tableFastestTrain.setColumnCount(3)
-        tableFastestTrain.setItem(0, 0, QTableWidgetItem("Starting Node Coordinates"))
-        tableFastestTrain.setItem(0, 1, QTableWidgetItem("Target Node Coordinates"))
-        tableFastestTrain.setItem(0, 2, QTableWidgetItem("Cost"))
+        """tableFastestTrain = QTableWidget()
+        tableFastestTrain.setRowCount(len(self.path) + 1)
+        tableFastestTrain.setColumnCount(2)
+        tableFastesttTrain.setItem(0, 0, QTableWidgetItem("Checkpoint Coordinates"))
+        tableFastestTrain.setItem(0, 1, QTableWidgetItem("Checkpoint Names"))
+        for i in range(len(self.path)):
+            tableFastestTrain.setItem(i + 1, 0, QTableWidgetItem(str(self.path[i])))
+            tableFastestTrain.setItem(i + 1, 1, QTableWidgetItem(str(nodeNames[i])))
+        # Align columns to same width
         tableFastestTrain.horizontalHeader().setStretchLastSection(True)
         tableFastestTrain.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+        # Set columns to read only, no editing
         tableFastestTrain.setEditTriggers(QtWidgets.QTableWidget.NoEditTriggers)
-
         tableLayout.addWidget(tableFastestTrain, 6, 0)
+        gridLayout.addLayout(tableLayout, 1, 0)"""
 
         gridLayout.addLayout(tableLayout, 1, 0)
+
+def swap(coord):
+    return [coord[1], coord[0]]
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

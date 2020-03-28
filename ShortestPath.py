@@ -3,14 +3,18 @@ from haversine import haversine
 
 global mapView
 
-MAX_WALK_RANGE = 0.50 # km
+MAX_WALK_RANGE = 0.900 # km
+MAX_DRIVING_RANGE = 1
+MAX_BUS_RANGE = 0.8
+MAX_TRAIN_RANGE = 1
 
 
-class WalkPath:
+class ShortestPath:
 
     def __init__(self, nodes):
         self.nodes = nodes
         self.edges = []
+        distance = 0.0
 
     def create_edges(self):
         for key1, value1 in self.nodes.items():
@@ -29,14 +33,16 @@ class WalkPath:
             graph[src].append([dst, weight])
             # remove this line of edge list is directed
             graph[dst].append([src, weight])
-
         return graph
 
     def find_shortest_path(self, graph, src, dst):
         d, prev = dijkstra(graph, src, dst)
         path = find_path(prev, [dst])
-        path = [swap(self.nodes[x[0]]) for x in path]
-        return path
+        newpath=[]
+        for x in path:
+            if x[0] in self.nodes:
+                newpath.append(swap(self.nodes[x[0]]))
+        return newpath
 
 def dijkstra(graph, src, dst=None):
     nodes = []

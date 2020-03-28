@@ -73,8 +73,6 @@ class ShortestPathGUI(QtWidgets.QMainWindow):
                             if 'node-details' in prop:
                                 nodeNames.append(prop['node-details'])
 
-        print(self.path)
-
         tableShortestWalk = QTableWidget()
         tableShortestWalk.setRowCount(len(self.path) + 1)
         tableShortestWalk.setColumnCount(2)
@@ -88,9 +86,7 @@ class ShortestPathGUI(QtWidgets.QMainWindow):
         tableShortestWalk.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
         # Set columns to read only, no editing
         tableShortestWalk.setEditTriggers(QtWidgets.QTableWidget.NoEditTriggers)
-
         tableLayout.addWidget(tableShortestWalk, 3, 0)
-
         gridLayout.addLayout(tableLayout, 1, 0)
 
 def swap(coord):
