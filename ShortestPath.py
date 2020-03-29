@@ -3,18 +3,15 @@ from haversine import haversine
 
 global mapView
 
-MAX_WALK_RANGE = 0.900 # km
-MAX_DRIVING_RANGE = 1
-MAX_BUS_RANGE = 0.8
-MAX_TRAIN_RANGE = 1
-
+MAX_WALK_RANGE = 0.5 # km
 
 class ShortestPath:
 
     def __init__(self, nodes):
         self.nodes = nodes
         self.edges = []
-        distance = 0.0
+        self.mrtnodes = {}
+        self.mrtroutes = {}
 
     def create_edges(self):
         for key1, value1 in self.nodes.items():
@@ -23,25 +20,34 @@ class ShortestPath:
                 if edge is not None:
                     self.edges.append(edge)
 
+    def create_mrt_edgenodes(self, edges, mrtnodes, mrtroutes):
+        self.edges = self.edges + edges
+        self.mrtnodes = mrtnodes
+        self.mrtroutes = mrtroutes
+
     def build_graph(self):
         graph = defaultdict(list)
         seen_edges = defaultdict(int)
-        for src, dst, weight in self.edges:
+        for src, dst, weight, mode in self.edges:
             seen_edges[(src, dst, weight)] += 1
             if seen_edges[(src, dst, weight)] > 1:
                 continue
-            graph[src].append([dst, weight])
+            graph[src].append([dst, weight, mode])
             # remove this line of edge list is directed
-            graph[dst].append([src, weight])
+            graph[dst].append([src, weight, mode])
         return graph
 
     def find_shortest_path(self, graph, src, dst):
         d, prev = dijkstra(graph, src, dst)
-        path = find_path(prev, [dst])
+        path = find_path(prev, [dst, 'walk'])
         newpath=[]
         for x in path:
             if x[0] in self.nodes:
                 newpath.append(swap(self.nodes[x[0]]))
+            elif x[0] in self.mrtnodes:
+                newpath.append(swap(self.mrtnodes[x[0]]))
+            elif x[1] == "LRT":
+                newpath.append(swap(self.mrtroutes[x[0]]))
         return newpath
 
 def dijkstra(graph, src, dst=None):
@@ -67,18 +73,18 @@ def dijkstra(graph, src, dst=None):
         if dst is not None and u == dst:
             return dist[dst], prev
 
-        for v, w in graph.get(u, []):
+        for v, w, mode in graph.get(u, []):
 
             alt = dist[u] + w
             if alt < dist[v]:
                 dist[v] = alt
-                prev[v] = [u]
+                prev[v] = [u, mode]
     return dist, prev
 
 def add_neighbour(key1, value1, key2, value2):
     distance = haversine(value1, value2)
     if distance < MAX_WALK_RANGE:
-        return [key1, key2, distance]
+        return [key1, key2, distance, 'walk']
 
 def find_path(prv, node):
     p = []

@@ -45,18 +45,12 @@ class DrivingPathGUI(QtWidgets.QMainWindow):
         gridLayout.addLayout(titleLayout, 0, 0)
         tableLayout = QtWidgets.QGridLayout(self.main)
 
-        lblDriveDistance = QLabel(self)
-        lblDriveDistance.setText('Total Driving Distance:')
-        lblDriveDistance.setFont(QFont("Arial", 14, QFont.Bold))
-        lblDriveDistance.setStyleSheet('QLabel { color : Blue; }')
-        tableLayout.addWidget(lblDriveDistance, 1, 0)
-
         lblShortestDrive = QLabel(self)
         lblShortestDrive.setText('Shortest Path by Driving:')
         lblShortestDrive.setAlignment(Qt.AlignHCenter)
         lblShortestDrive.setFont(QFont("Arial", 14, QFont.Bold))
         lblShortestDrive.setStyleSheet('QLabel { color : Red; }')
-        tableLayout.addWidget(lblShortestDrive, 2, 0)
+        tableLayout.addWidget(lblShortestDrive, 1, 0)
 
         self.path = [swap(self.path[x]) for x in range(len(self.path))]
         nodeNames = []

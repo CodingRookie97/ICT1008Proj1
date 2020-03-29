@@ -1,6 +1,8 @@
 import io
+import os
 import sys
-from collections import defaultdict
+from collections import OrderedDict
+from haversine import haversine
 
 import folium
 import json
@@ -12,7 +14,8 @@ from PyQt5.QtWidgets import QApplication, QComboBox, QLabel
 from folium.plugins import MarkerCluster
 
 from DrivingPathGUI import DrivingPathGUI
-from FastestPathGUI import FastestPathGUI
+from FastestBusGUI import FastestBusGUI
+from FastestMRTGUI import FastestMRTGUI
 from ShortestPathGUI import ShortestPathGUI
 
 from ShortestPath import ShortestPath
@@ -108,12 +111,17 @@ class MainGUI(QtWidgets.QMainWindow):
         btnLayout.addWidget(btnDrivingPath, 1, 0)
         btnDrivingPath.clicked.connect(self.computeDriving)
 
-        btnFastestPath = QtWidgets.QPushButton(self.tr("Compute fastest bus/train path"))
-        btnFastestPath.setFont(QFont("Arial", 10, QFont.Bold))
-        btnFastestPath.setStyleSheet('QPushButton { background-color: #008B8B; color: white; }')
-        btnFastestPath.clicked.connect(self.computeFastest)
+        btnFastestBusPath = QtWidgets.QPushButton(self.tr("Compute fastest bus path"))
+        btnFastestBusPath.setFont(QFont("Arial", 10, QFont.Bold))
+        btnFastestBusPath.setStyleSheet('QPushButton { background-color: #008B8B; color: white; }')
+        btnFastestBusPath.clicked.connect(self.computeFastestBus)
+        btnLayout.addWidget(btnFastestBusPath, 2, 0)
 
-        btnLayout.addWidget(btnFastestPath, 2, 0)
+        btnFastestTrainPath = QtWidgets.QPushButton(self.tr("Compute fastest train path"))
+        btnFastestTrainPath.setFont(QFont("Arial", 10, QFont.Bold))
+        btnFastestTrainPath.setStyleSheet('QPushButton { background-color: #000000; color: white; }')
+        btnFastestTrainPath.clicked.connect(self.computeFastestTrain)
+        btnLayout.addWidget(btnFastestTrainPath, 3, 0)
         gridLayout.addLayout(btnLayout, 1, 0)
 
         #Checkbox to select whether the bus routes are displayed on the map
@@ -924,7 +932,7 @@ class MainGUI(QtWidgets.QMainWindow):
         # endbeta(CH)
 
     @pyqtSlot()
-    def computeFastest(self):
+    def computeFastestBus(self):
         # Fastest Bus Route
         nodes = {}
 
@@ -1033,7 +1041,90 @@ class MainGUI(QtWidgets.QMainWindow):
         self.m.save(data, close_file=False)
         self.mapView.setHtml(data.getvalue().decode())
 
-        self.fastestPath = FastestPathGUI(path)
+        self.fastestPath = FastestBusGUI(path)
+        self.fastestPath.show()
+
+    @pyqtSlot()
+    def computeFastestTrain(self):
+        nodes = OrderedDict()
+        edges = []
+        mrtPath = []
+        mrtRoutes = OrderedDict()
+        mrtNodes = {}
+        temp = {}
+        filedir = "MRT\\"
+        json_files = [pos_json for pos_json in os.listdir(filedir) if pos_json.endswith('.geojson')]
+        for f in json_files:
+            with open(filedir + f) as json_file:
+                data = json.load(json_file)
+
+            for feature in data['features']:
+
+                if feature['geometry']['type'] == 'MultiLineString':
+                    for y in feature['geometry']['coordinates']:
+                        mrtPath.append(y)
+
+                else:
+                    coord = feature['geometry']['coordinates']
+                    nodes[feature['properties']['node-details']] = coord
+                    mrtNodes[tuple(coord)] = feature['properties']['node-details']
+
+                    lowest = 999
+                    lowestIndex = 0
+                    for i in range(len(mrtPath)):
+                        print(mrtPath[i])
+                        d = haversine(coord, mrtPath[i])
+                        if d < lowest:
+                            lowest = d
+                            lowestIndex = i
+                    mrtPath.insert(lowestIndex, coord)
+
+            length = len(mrtPath)
+            for i in range(length):
+                c = tuple(mrtPath[i])
+                k = str(i)
+                mrtRoutes[k] = c
+                temp[c] = k
+
+            # complete dictionary
+
+            for i in range(length):
+                if i + 1 != length:
+                    d = haversine(mrtPath[i], mrtPath[i + 1])
+                    if tuple(mrtPath[i]) in mrtNodes:
+                        edges.append((mrtNodes[tuple(mrtPath[i])], temp[tuple(mrtPath[i + 1])], d / 70, "LRT"))
+                    elif tuple(mrtPath[i + 1]) in mrtNodes:
+                        edges.append((temp[tuple(mrtPath[i])], mrtNodes[tuple(mrtPath[i + 1])], d / 70, "LRT"))
+                    else:
+                        edges.append((temp[tuple(mrtPath[i])], temp[tuple(mrtPath[i + 1])], d / 70, "LRT"))
+
+            temp.clear()
+            mrtPath.clear()
+
+        with open('Combined/nodes.json') as f:
+            getJson = json.load(f)
+            feature_access = getJson['features']
+
+            for feature_data in feature_access:
+                prop = feature_data['properties']
+                if 'node-details' in prop:
+                    location_name = prop['node-details']
+                    nodes[location_name] = feature_data['geometry']['coordinates']
+
+        pathfinder = ShortestPath(nodes)
+        pathfinder.create_edges()
+        pathfinder.create_mrt_edgenodes(edges, mrtNodes, mrtRoutes)
+        graph = pathfinder.build_graph()
+        print("Get graph: " + str(graph))
+        path = pathfinder.find_shortest_path(graph, self.comboStart.currentText(), self.comboEnd.currentText())
+
+        print("Get Path: " + str(path))
+        folium.PolyLine(path, opacity=1, color='black').add_to(self.m)
+        data = io.BytesIO()
+        self.m.save(data, close_file=False)
+        self.mapView.setHtml(data.getvalue().decode())
+
+        self.fastestPath = FastestMRTGUI(graph)
         self.fastestPath.show()
 
 if __name__ == "__main__":

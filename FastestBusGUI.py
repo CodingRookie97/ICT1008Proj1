@@ -6,7 +6,7 @@ from PyQt5.QtGui import QImage, QPalette, QBrush, QFont, QIcon
 from PyQt5.QtCore import Qt, QSize
 import json
 
-class ShortestPathGUI(QtWidgets.QMainWindow):
+class FastestBusGUI(QtWidgets.QMainWindow):
     def __init__(self, path):
         super().__init__()
         self.title = 'ICT1008 AY19/20 Project Group 2-3'
@@ -34,23 +34,23 @@ class ShortestPathGUI(QtWidgets.QMainWindow):
 
         titleLayout = QtWidgets.QHBoxLayout()
 
-        lblShortestPathTitle = QLabel(self)
-        lblShortestPathTitle.setText('Compute Shortest Path')
-        lblShortestPathTitle.setAlignment(Qt.AlignHCenter)
-        lblShortestPathTitle.setFont(QFont("Arial", 20, QFont.Bold))
-        lblShortestPathTitle.setStyleSheet('QLabel { color : Green; }')
-        lblShortestPathTitle.adjustSize()
-        titleLayout.addWidget(lblShortestPathTitle)
+        lblFastestPathTitle = QLabel(self)
+        lblFastestPathTitle.setText('Compute Fastest Bus Path')
+        lblFastestPathTitle.setAlignment(Qt.AlignHCenter)
+        lblFastestPathTitle.setFont(QFont("Arial", 20, QFont.Bold))
+        lblFastestPathTitle.setStyleSheet('QLabel { color : Green; }')
+        lblFastestPathTitle.adjustSize()
+        titleLayout.addWidget(lblFastestPathTitle)
 
         gridLayout.addLayout(titleLayout, 0, 0)
         tableLayout = QtWidgets.QGridLayout(self.main)
 
-        lblShortestWalk = QLabel(self)
-        lblShortestWalk.setText('Shortest Path by Walking:')
-        lblShortestWalk.setAlignment(Qt.AlignHCenter)
-        lblShortestWalk.setFont(QFont("Arial", 14, QFont.Bold))
-        lblShortestWalk.setStyleSheet('QLabel { color : Orange; }')
-        tableLayout.addWidget(lblShortestWalk, 1, 0)
+        lblFastestBus = QLabel(self)
+        lblFastestBus.setText('Fastest Path by Bus:')
+        lblFastestBus.setAlignment(Qt.AlignHCenter)
+        lblFastestBus.setFont(QFont("Arial", 14, QFont.Bold))
+        lblFastestBus.setStyleSheet('QLabel { color : Green; }')
+        tableLayout.addWidget(lblFastestBus, 1, 0)
 
         self.path = [swap(self.path[x]) for x in range(len(self.path))]
         nodeNames = []
@@ -67,20 +67,22 @@ class ShortestPathGUI(QtWidgets.QMainWindow):
                             if 'node-details' in prop:
                                 nodeNames.append(prop['node-details'])
 
-        tableShortestWalk = QTableWidget()
-        tableShortestWalk.setRowCount(len(self.path) + 1)
-        tableShortestWalk.setColumnCount(2)
-        tableShortestWalk.setItem(0, 0, QTableWidgetItem("Checkpoint Coordinates"))
-        tableShortestWalk.setItem(0, 1, QTableWidgetItem("Checkpoint Names"))
+        print(self.path)
+
+        tableFastestBus = QTableWidget()
+        tableFastestBus.setRowCount(len(self.path) + 1)
+        tableFastestBus.setColumnCount(2)
+        tableFastestBus.setItem(0, 0, QTableWidgetItem("Checkpoint Coordinates"))
+        tableFastestBus.setItem(0, 1, QTableWidgetItem("Checkpoint Names"))
         for i in range(len(self.path)):
-            tableShortestWalk.setItem(i + 1, 0, QTableWidgetItem(str(self.path[i])))
-            tableShortestWalk.setItem(i + 1, 1, QTableWidgetItem(str(nodeNames[i])))
+            tableFastestBus.setItem(i + 1, 0, QTableWidgetItem(str(self.path[i])))
+            tableFastestBus.setItem(i + 1, 1, QTableWidgetItem(str(nodeNames[i])))
         # Align columns to same width
-        tableShortestWalk.horizontalHeader().setStretchLastSection(True)
-        tableShortestWalk.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+        tableFastestBus.horizontalHeader().setStretchLastSection(True)
+        tableFastestBus.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
         # Set columns to read only, no editing
-        tableShortestWalk.setEditTriggers(QtWidgets.QTableWidget.NoEditTriggers)
-        tableLayout.addWidget(tableShortestWalk, 3, 0)
+        tableFastestBus.setEditTriggers(QtWidgets.QTableWidget.NoEditTriggers)
+        tableLayout.addWidget(tableFastestBus, 3, 0)
         gridLayout.addLayout(tableLayout, 1, 0)
 
 def swap(coord):
@@ -88,5 +90,5 @@ def swap(coord):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    shortest = ShortestPathGUI()
+    fastest = FastestBusGUI()
     sys.exit(app.exec_())
