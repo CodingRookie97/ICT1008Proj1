@@ -1,11 +1,6 @@
 <h4>ICT1008 2019/20 Data Structures & Algorithms Project</h4>
 <i>Project Title: It's all about Punggol West!</i>
-<h4>Group 2-3 Members:</h4>
-Ong Chang Hong - 1902201<br>
-Jerone Poh Yong Cheng - 1902606<br>
-Ong Kel Vyn - 1902639<br>
-Chiu Jing Xiong - 1902669<br>
-Er Jayce - 1902688
+<h4>Group P2-3</h4>
 <h4>JSON FILE Dataset Used</h4>
 <h4>Buildings:</h4>
 <ol>
