@@ -59,7 +59,7 @@ class MainGUI(QtWidgets.QMainWindow):
         startEndingLocation = self.importStartEnding('Combined/nodes.json')
 
         #Array that contains the bus services
-        busServices = ["Bus 3", "Bus 34", "Bus 43", "Bus 43e", "Bus 43M", "Bus 50", "Bus 62", "Bus 82", "Bus 83", "Bus 84", "Bus 85", "Bus 117", "Bus 118", "Bus 119", "Bus 136", "Bus 381", "Bus 382G", "Bus 382W", "Bus 386"]
+        busServices = ["Bus 3", "Bus 34", "Bus 43", "Bus 50", "Bus 62", "Bus 82", "Bus 83", "Bus 84", "Bus 85", "Bus 117", "Bus 118", "Bus 119", "Bus 136", "Bus 381", "Bus 382G", "Bus 382W", "Bus 386"]
 
         self.main = QtWidgets.QWidget()
         self.setCentralWidget(self.main)
@@ -318,17 +318,6 @@ class MainGUI(QtWidgets.QMainWindow):
                     for c in coordinates:
                         c[0], c[1] = c[1], c[0]
             folium.PolyLine(coordinates, color="green", weight=3).add_to(self.m)
-            coordinates = [[]]
-            with open("Bus_Services/Bus3/Bus_3_to.json") as f:
-                getJson = json.load(f)
-            feature_access = getJson['features']
-            for feature_data in feature_access:
-                type = feature_data['geometry']['type']
-                if type == 'LineString':
-                    coordinates = feature_data['geometry']['coordinates']
-                    for c in coordinates:
-                        c[0], c[1] = c[1], c[0]
-            folium.PolyLine(coordinates, color="red", weight=3).add_to(self.m)
             self.marker_cluster = MarkerCluster().add_to(self.m)
             self.initMap(self.m, self.marker_cluster)
             data = io.BytesIO()
@@ -348,17 +337,6 @@ class MainGUI(QtWidgets.QMainWindow):
                     for c in coordinates:
                         c[0], c[1] = c[1], c[0]
             folium.PolyLine(coordinates, color="green", weight=3).add_to(self.m)
-            coordinates = [[]]
-            with open("Bus_Services/Bus34/Bus_34_to.json") as f:
-                getJson = json.load(f)
-            feature_access = getJson['features']
-            for feature_data in feature_access:
-                type = feature_data['geometry']['type']
-                if type == 'LineString':
-                    coordinates = feature_data['geometry']['coordinates']
-                    for c in coordinates:
-                        c[0], c[1] = c[1], c[0]
-            folium.PolyLine(coordinates, color="red", weight=3).add_to(self.m)
             self.marker_cluster = MarkerCluster().add_to(self.m)
             self.initMap(self.m, self.marker_cluster)
             data = io.BytesIO()
@@ -378,77 +356,6 @@ class MainGUI(QtWidgets.QMainWindow):
                     for c in coordinates:
                         c[0], c[1] = c[1], c[0]
             folium.PolyLine(coordinates, color="green", weight=3).add_to(self.m)
-            coordinates = [[]]
-            with open("Bus_Services/Bus43/Bus_43_to.json") as f:
-                getJson = json.load(f)
-            feature_access = getJson['features']
-            for feature_data in feature_access:
-                type = feature_data['geometry']['type']
-                if type == 'LineString':
-                    coordinates = feature_data['geometry']['coordinates']
-                    for c in coordinates:
-                        c[0], c[1] = c[1], c[0]
-            folium.PolyLine(coordinates, color="red", weight=3).add_to(self.m)
-            self.marker_cluster = MarkerCluster().add_to(self.m)
-            self.initMap(self.m, self.marker_cluster)
-            data = io.BytesIO()
-            self.m.save(data, close_file=False)
-            self.mapView.setHtml(data.getvalue().decode())
-
-        if self.comboBusService.currentText() == "Bus 43e":
-            coordinates = [[]]
-            self.m = folium.Map(location=[1.4053, 103.9021], zoom_start=16)
-            with open("Bus_Services/Bus43/Bus_43E_from.json") as f:
-                getJson = json.load(f)
-            feature_access = getJson['features']
-            for feature_data in feature_access:
-                type = feature_data['geometry']['type']
-                if type == 'LineString':
-                    coordinates = feature_data['geometry']['coordinates']
-                    for c in coordinates:
-                        c[0], c[1] = c[1], c[0]
-            folium.PolyLine(coordinates, color="green", weight=3).add_to(self.m)
-            coordinates = [[]]
-            with open("Bus_Services/Bus43/Bus_43E_to.json") as f:
-                getJson = json.load(f)
-            feature_access = getJson['features']
-            for feature_data in feature_access:
-                type = feature_data['geometry']['type']
-                if type == 'LineString':
-                    coordinates = feature_data['geometry']['coordinates']
-                    for c in coordinates:
-                        c[0], c[1] = c[1], c[0]
-            folium.PolyLine(coordinates, color="red", weight=3).add_to(self.m)
-            self.marker_cluster = MarkerCluster().add_to(self.m)
-            self.initMap(self.m, self.marker_cluster)
-            data = io.BytesIO()
-            self.m.save(data, close_file=False)
-            self.mapView.setHtml(data.getvalue().decode())
-
-        if self.comboBusService.currentText() == "Bus 43M":
-            coordinates = [[]]
-            self.m = folium.Map(location=[1.4053, 103.9021], zoom_start=16)
-            with open("Bus_Services/Bus43/Bus_43M_from.json") as f:
-                getJson = json.load(f)
-            feature_access = getJson['features']
-            for feature_data in feature_access:
-                type = feature_data['geometry']['type']
-                if type == 'LineString':
-                    coordinates = feature_data['geometry']['coordinates']
-                    for c in coordinates:
-                        c[0], c[1] = c[1], c[0]
-            folium.PolyLine(coordinates, color="green", weight=3).add_to(self.m)
-            coordinates = [[]]
-            with open("Bus_Services/Bus43/Bus_43M_to.json") as f:
-                getJson = json.load(f)
-            feature_access = getJson['features']
-            for feature_data in feature_access:
-                type = feature_data['geometry']['type']
-                if type == 'LineString':
-                    coordinates = feature_data['geometry']['coordinates']
-                    for c in coordinates:
-                        c[0], c[1] = c[1], c[0]
-            folium.PolyLine(coordinates, color="red", weight=3).add_to(self.m)
             self.marker_cluster = MarkerCluster().add_to(self.m)
             self.initMap(self.m, self.marker_cluster)
             data = io.BytesIO()
@@ -468,17 +375,6 @@ class MainGUI(QtWidgets.QMainWindow):
                     for c in coordinates:
                         c[0], c[1] = c[1], c[0]
             folium.PolyLine(coordinates, color="green", weight=3).add_to(self.m)
-            coordinates = [[]]
-            with open("Bus_Services/Bus50/Bus_50_to.json") as f:
-                getJson = json.load(f)
-            feature_access = getJson['features']
-            for feature_data in feature_access:
-                type = feature_data['geometry']['type']
-                if type == 'LineString':
-                    coordinates = feature_data['geometry']['coordinates']
-                    for c in coordinates:
-                        c[0], c[1] = c[1], c[0]
-            folium.PolyLine(coordinates, color="red", weight=3).add_to(self.m)
             self.marker_cluster = MarkerCluster().add_to(self.m)
             self.initMap(self.m, self.marker_cluster)
             data = io.BytesIO()
@@ -498,17 +394,6 @@ class MainGUI(QtWidgets.QMainWindow):
                     for c in coordinates:
                         c[0], c[1] = c[1], c[0]
             folium.PolyLine(coordinates, color="green", weight=3).add_to(self.m)
-            coordinates = [[]]
-            with open("Bus_Services/Bus62/Bus_62_to.json") as f:
-                getJson = json.load(f)
-            feature_access = getJson['features']
-            for feature_data in feature_access:
-                type = feature_data['geometry']['type']
-                if type == 'LineString':
-                    coordinates = feature_data['geometry']['coordinates']
-                    for c in coordinates:
-                        c[0], c[1] = c[1], c[0]
-            folium.PolyLine(coordinates, color="red", weight=3).add_to(self.m)
             self.marker_cluster = MarkerCluster().add_to(self.m)
             self.initMap(self.m, self.marker_cluster)
             data = io.BytesIO()
@@ -528,17 +413,6 @@ class MainGUI(QtWidgets.QMainWindow):
                     for c in coordinates:
                         c[0], c[1] = c[1], c[0]
             folium.PolyLine(coordinates, color="green", weight=3).add_to(self.m)
-            coordinates = [[]]
-            with open("Bus_Services/Bus82/Bus_82_to.json") as f:
-                getJson = json.load(f)
-            feature_access = getJson['features']
-            for feature_data in feature_access:
-                type = feature_data['geometry']['type']
-                if type == 'LineString':
-                    coordinates = feature_data['geometry']['coordinates']
-                    for c in coordinates:
-                        c[0], c[1] = c[1], c[0]
-            folium.PolyLine(coordinates, color="red", weight=3).add_to(self.m)
             self.marker_cluster = MarkerCluster().add_to(self.m)
             self.initMap(self.m, self.marker_cluster)
             data = io.BytesIO()
@@ -558,17 +432,6 @@ class MainGUI(QtWidgets.QMainWindow):
                     for c in coordinates:
                         c[0], c[1] = c[1], c[0]
             folium.PolyLine(coordinates, color="green", weight=3).add_to(self.m)
-            coordinates = [[]]
-            with open("Bus_Services/Bus83/Bus_83_to.json") as f:
-                getJson = json.load(f)
-            feature_access = getJson['features']
-            for feature_data in feature_access:
-                type = feature_data['geometry']['type']
-                if type == 'LineString':
-                    coordinates = feature_data['geometry']['coordinates']
-                    for c in coordinates:
-                        c[0], c[1] = c[1], c[0]
-            folium.PolyLine(coordinates, color="red", weight=3).add_to(self.m)
             self.marker_cluster = MarkerCluster().add_to(self.m)
             self.initMap(self.m, self.marker_cluster)
             data = io.BytesIO()
@@ -607,17 +470,6 @@ class MainGUI(QtWidgets.QMainWindow):
                     for c in coordinates:
                         c[0], c[1] = c[1], c[0]
             folium.PolyLine(coordinates, color="green", weight=3).add_to(self.m)
-            coordinates = [[]]
-            with open("Bus_Services/Bus85/Bus_85_to.json") as f:
-                getJson = json.load(f)
-            feature_access = getJson['features']
-            for feature_data in feature_access:
-                type = feature_data['geometry']['type']
-                if type == 'LineString':
-                    coordinates = feature_data['geometry']['coordinates']
-                    for c in coordinates:
-                        c[0], c[1] = c[1], c[0]
-            folium.PolyLine(coordinates, color="red", weight=3).add_to(self.m)
             self.marker_cluster = MarkerCluster().add_to(self.m)
             self.initMap(self.m, self.marker_cluster)
             data = io.BytesIO()
@@ -637,17 +489,6 @@ class MainGUI(QtWidgets.QMainWindow):
                     for c in coordinates:
                         c[0], c[1] = c[1], c[0]
             folium.PolyLine(coordinates, color="green", weight=3).add_to(self.m)
-            coordinates = [[]]
-            with open("Bus_Services/Bus117/Bus_117_to.json") as f:
-                getJson = json.load(f)
-            feature_access = getJson['features']
-            for feature_data in feature_access:
-                type = feature_data['geometry']['type']
-                if type == 'LineString':
-                    coordinates = feature_data['geometry']['coordinates']
-                    for c in coordinates:
-                        c[0], c[1] = c[1], c[0]
-            folium.PolyLine(coordinates, color="red", weight=3).add_to(self.m)
             self.marker_cluster = MarkerCluster().add_to(self.m)
             self.initMap(self.m, self.marker_cluster)
             data = io.BytesIO()
@@ -667,17 +508,6 @@ class MainGUI(QtWidgets.QMainWindow):
                     for c in coordinates:
                         c[0], c[1] = c[1], c[0]
             folium.PolyLine(coordinates, color="green", weight=3).add_to(self.m)
-            coordinates = [[]]
-            with open("Bus_Services/Bus118/Bus_118_to.json") as f:
-                getJson = json.load(f)
-            feature_access = getJson['features']
-            for feature_data in feature_access:
-                type = feature_data['geometry']['type']
-                if type == 'LineString':
-                    coordinates = feature_data['geometry']['coordinates']
-                    for c in coordinates:
-                        c[0], c[1] = c[1], c[0]
-            folium.PolyLine(coordinates, color="red", weight=3).add_to(self.m)
             self.marker_cluster = MarkerCluster().add_to(self.m)
             self.initMap(self.m, self.marker_cluster)
             data = io.BytesIO()
@@ -697,17 +527,6 @@ class MainGUI(QtWidgets.QMainWindow):
                     for c in coordinates:
                         c[0], c[1] = c[1], c[0]
             folium.PolyLine(coordinates, color="green", weight=3).add_to(self.m)
-            coordinates = [[]]
-            with open("Bus_Services/Bus119/Bus_119_to.json") as f:
-                getJson = json.load(f)
-            feature_access = getJson['features']
-            for feature_data in feature_access:
-                type = feature_data['geometry']['type']
-                if type == 'LineString':
-                    coordinates = feature_data['geometry']['coordinates']
-                    for c in coordinates:
-                        c[0], c[1] = c[1], c[0]
-            folium.PolyLine(coordinates, color="red", weight=3).add_to(self.m)
             self.marker_cluster = MarkerCluster().add_to(self.m)
             self.initMap(self.m, self.marker_cluster)
             data = io.BytesIO()
@@ -727,17 +546,6 @@ class MainGUI(QtWidgets.QMainWindow):
                     for c in coordinates:
                         c[0], c[1] = c[1], c[0]
             folium.PolyLine(coordinates, color="green", weight=3).add_to(self.m)
-            coordinates = [[]]
-            with open("Bus_Services/Bus136/Bus_136_to.json") as f:
-                getJson = json.load(f)
-            feature_access = getJson['features']
-            for feature_data in feature_access:
-                type = feature_data['geometry']['type']
-                if type == 'LineString':
-                    coordinates = feature_data['geometry']['coordinates']
-                    for c in coordinates:
-                        c[0], c[1] = c[1], c[0]
-            folium.PolyLine(coordinates, color="red", weight=3).add_to(self.m)
             self.marker_cluster = MarkerCluster().add_to(self.m)
             self.initMap(self.m, self.marker_cluster)
             data = io.BytesIO()
@@ -757,17 +565,6 @@ class MainGUI(QtWidgets.QMainWindow):
                     for c in coordinates:
                         c[0], c[1] = c[1], c[0]
             folium.PolyLine(coordinates, color="green", weight=3).add_to(self.m)
-            coordinates = [[]]
-            with open("Bus_Services/Bus381/Bus_381_to.json") as f:
-                getJson = json.load(f)
-            feature_access = getJson['features']
-            for feature_data in feature_access:
-                type = feature_data['geometry']['type']
-                if type == 'LineString':
-                    coordinates = feature_data['geometry']['coordinates']
-                    for c in coordinates:
-                        c[0], c[1] = c[1], c[0]
-            folium.PolyLine(coordinates, color="red", weight=3).add_to(self.m)
             self.marker_cluster = MarkerCluster().add_to(self.m)
             self.initMap(self.m, self.marker_cluster)
             data = io.BytesIO()
@@ -825,17 +622,6 @@ class MainGUI(QtWidgets.QMainWindow):
                     for c in coordinates:
                         c[0], c[1] = c[1], c[0]
             folium.PolyLine(coordinates, color="green", weight=3).add_to(self.m)
-            coordinates = [[]]
-            with open("Bus_Services/Bus386/Bus_386_to.json") as f:
-                getJson = json.load(f)
-            feature_access = getJson['features']
-            for feature_data in feature_access:
-                type = feature_data['geometry']['type']
-                if type == 'LineString':
-                    coordinates = feature_data['geometry']['coordinates']
-                    for c in coordinates:
-                        c[0], c[1] = c[1], c[0]
-            folium.PolyLine(coordinates, color="red", weight=3).add_to(self.m)
             self.marker_cluster = MarkerCluster().add_to(self.m)
             self.initMap(self.m, self.marker_cluster)
             data = io.BytesIO()
@@ -934,7 +720,7 @@ class MainGUI(QtWidgets.QMainWindow):
     @pyqtSlot()
     def computeFastestBus(self):
         # Fastest Bus Route
-        nodes = {}
+        """nodes = {}
 
         # Initialising start and end points
         with open('Combined/nodes.json') as f:
@@ -1042,6 +828,87 @@ class MainGUI(QtWidgets.QMainWindow):
         self.mapView.setHtml(data.getvalue().decode())
 
         self.fastestPath = FastestBusGUI(path)
+        self.fastestPath.show()"""
+
+        nodes = OrderedDict()
+        edges = []
+        mrtPath = []
+        mrtRoutes = OrderedDict()
+        mrtNodes = {}
+        temp = {}
+        filedir = "Bus_Services\\"
+        json_files = [pos_json for pos_json in os.listdir(filedir) if pos_json.endswith('.json')]
+        for f in json_files:
+            with open(filedir + f) as json_file:
+                data = json.load(json_file)
+
+            for feature in data['features']:
+
+                if feature['geometry']['type'] == 'MultiLineString':
+                    for y in feature['geometry']['coordinates']:
+                        mrtPath.append(y)
+
+                else:
+                    coord = feature['geometry']['coordinates']
+                    nodes[feature['properties']['node-details']] = coord
+                    mrtNodes[tuple(coord)] = feature['properties']['node-details']
+
+                    lowest = 999
+                    lowestIndex = 0
+                    for i in range(len(mrtPath)):
+                        print(mrtPath[i])
+                        d = haversine(coord, mrtPath[i])
+                        if d < lowest:
+                            lowest = d
+                            lowestIndex = i
+                    mrtPath.insert(lowestIndex, coord)
+
+            length = len(mrtPath)
+            for i in range(length):
+                c = tuple(mrtPath[i])
+                k = str(i)
+                mrtRoutes[k] = c
+                temp[c] = k
+
+            # complete dictionary
+
+            for i in range(length):
+                if i + 1 != length:
+                    d = haversine(mrtPath[i], mrtPath[i + 1])
+                    if tuple(mrtPath[i]) in mrtNodes:
+                        edges.append((mrtNodes[tuple(mrtPath[i])], temp[tuple(mrtPath[i + 1])], d / 60, "Bus"))
+                    elif tuple(mrtPath[i + 1]) in mrtNodes:
+                        edges.append((temp[tuple(mrtPath[i])], mrtNodes[tuple(mrtPath[i + 1])], d / 60, "Bus"))
+                    else:
+                        edges.append((temp[tuple(mrtPath[i])], temp[tuple(mrtPath[i + 1])], d / 60, "Bus"))
+
+            temp.clear()
+            mrtPath.clear()
+
+        with open('Combined/nodes.json') as f:
+            getJson = json.load(f)
+            feature_access = getJson['features']
+
+            for feature_data in feature_access:
+                prop = feature_data['properties']
+                if 'node-details' in prop:
+                    location_name = prop['node-details']
+                    nodes[location_name] = feature_data['geometry']['coordinates']
+
+        pathfinder = ShortestPath(nodes)
+        pathfinder.create_edges()
+        pathfinder.create_mrt_edgenodes(edges, mrtNodes, mrtRoutes)
+        graph = pathfinder.build_graph()
+        print("Get graph: " + str(graph))
+        path = pathfinder.find_shortest_path(graph, self.comboStart.currentText(), self.comboEnd.currentText())
+
+        print("Get Path: " + str(path))
+        folium.PolyLine(path, opacity=1, color='#800080').add_to(self.m)
+        data = io.BytesIO()
+        self.m.save(data, close_file=False)
+        self.mapView.setHtml(data.getvalue().decode())
+
+        self.fastestPath = FastestBusGUI(graph)
         self.fastestPath.show()
 
     @pyqtSlot()
