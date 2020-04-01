@@ -13,9 +13,6 @@ from PyQt5.QtGui import QImage, QPalette, QBrush, QFont, QPixmap, QIcon
 from PyQt5.QtWidgets import QApplication, QComboBox, QLabel
 from folium.plugins import MarkerCluster
 
-from DrivingPathGUI import DrivingPathGUI
-from FastestBusGUI import FastestBusGUI
-from FastestMRTGUI import FastestMRTGUI
 from ShortestPathGUI import ShortestPathGUI
 
 from ShortestPath import ShortestPath
@@ -105,23 +102,17 @@ class MainGUI(QtWidgets.QMainWindow):
         btnLayout.addWidget(btnWalkingPath , 0, 0)
         btnWalkingPath.clicked.connect(self.computeWalking)
 
-        btnDrivingPath = QtWidgets.QPushButton(self.tr("Compute shortest driving path"))
-        btnDrivingPath.setFont(QFont("Arial", 10, QFont.Bold))
-        btnDrivingPath.setStyleSheet('QPushButton { background-color: #FF8C00; color: white; }')
-        btnLayout.addWidget(btnDrivingPath, 1, 0)
-        btnDrivingPath.clicked.connect(self.computeDriving)
-
         btnFastestBusPath = QtWidgets.QPushButton(self.tr("Compute fastest bus path"))
         btnFastestBusPath.setFont(QFont("Arial", 10, QFont.Bold))
         btnFastestBusPath.setStyleSheet('QPushButton { background-color: #008B8B; color: white; }')
         btnFastestBusPath.clicked.connect(self.computeFastestBus)
-        btnLayout.addWidget(btnFastestBusPath, 2, 0)
+        btnLayout.addWidget(btnFastestBusPath, 1, 0)
 
         btnFastestTrainPath = QtWidgets.QPushButton(self.tr("Compute fastest train path"))
         btnFastestTrainPath.setFont(QFont("Arial", 10, QFont.Bold))
-        btnFastestTrainPath.setStyleSheet('QPushButton { background-color: #000000; color: white; }')
+        btnFastestTrainPath.setStyleSheet('QPushButton { background-color: #FF0000; color: white; }')
         btnFastestTrainPath.clicked.connect(self.computeFastestTrain)
-        btnLayout.addWidget(btnFastestTrainPath, 3, 0)
+        btnLayout.addWidget(btnFastestTrainPath, 2, 0)
         gridLayout.addLayout(btnLayout, 1, 0)
 
         #Checkbox to select whether the bus routes are displayed on the map
@@ -308,7 +299,7 @@ class MainGUI(QtWidgets.QMainWindow):
         if self.comboBusService.currentText() == "Bus 3":
             coordinates = [[]]
             self.m = folium.Map(location=[1.4053, 103.9021], zoom_start=16)
-            with open("Bus_Services/Bus3/Bus_3_from.json") as f:
+            with open("Bus_Services/Bus_3_from.json") as f:
                 getJson = json.load(f)
             feature_access = getJson['features']
             for feature_data in feature_access:
@@ -327,7 +318,7 @@ class MainGUI(QtWidgets.QMainWindow):
         if self.comboBusService.currentText() == "Bus 34":
             coordinates = [[]]
             self.m = folium.Map(location=[1.4053, 103.9021], zoom_start=16)
-            with open("Bus_Services/Bus34/Bus_34_from.json") as f:
+            with open("Bus_Services/Bus_34_from.json") as f:
                 getJson = json.load(f)
             feature_access = getJson['features']
             for feature_data in feature_access:
@@ -346,7 +337,7 @@ class MainGUI(QtWidgets.QMainWindow):
         if self.comboBusService.currentText() == "Bus 43":
             coordinates = [[]]
             self.m = folium.Map(location=[1.4053, 103.9021], zoom_start=16)
-            with open("Bus_Services/Bus43/Bus_43_from.json") as f:
+            with open("Bus_Services/Bus_43_from.json") as f:
                 getJson = json.load(f)
             feature_access = getJson['features']
             for feature_data in feature_access:
@@ -365,7 +356,7 @@ class MainGUI(QtWidgets.QMainWindow):
         if self.comboBusService.currentText() == "Bus 50":
             coordinates = [[]]
             self.m = folium.Map(location=[1.4053, 103.9021], zoom_start=16)
-            with open("Bus_Services/Bus50/Bus_50_from.json") as f:
+            with open("Bus_Services/Bus_50_from.json") as f:
                 getJson = json.load(f)
             feature_access = getJson['features']
             for feature_data in feature_access:
@@ -384,7 +375,7 @@ class MainGUI(QtWidgets.QMainWindow):
         if self.comboBusService.currentText() == "Bus 62":
             coordinates = [[]]
             self.m = folium.Map(location=[1.4053, 103.9021], zoom_start=16)
-            with open("Bus_Services/Bus62/Bus_62_from.json") as f:
+            with open("Bus_Services/Bus_62_from.json") as f:
                 getJson = json.load(f)
             feature_access = getJson['features']
             for feature_data in feature_access:
@@ -403,7 +394,7 @@ class MainGUI(QtWidgets.QMainWindow):
         if self.comboBusService.currentText() == "Bus 82":
             coordinates = [[]]
             self.m = folium.Map(location=[1.4053, 103.9021], zoom_start=16)
-            with open("Bus_Services/Bus82/Bus_82_from.json") as f:
+            with open("Bus_Services/Bus_82_from.json") as f:
                 getJson = json.load(f)
             feature_access = getJson['features']
             for feature_data in feature_access:
@@ -422,7 +413,7 @@ class MainGUI(QtWidgets.QMainWindow):
         if self.comboBusService.currentText() == "Bus 83":
             coordinates = [[]]
             self.m = folium.Map(location=[1.4053, 103.9021], zoom_start=16)
-            with open("Bus_Services/Bus83/Bus_83_from.json") as f:
+            with open("Bus_Services/Bus_83_from.json") as f:
                 getJson = json.load(f)
             feature_access = getJson['features']
             for feature_data in feature_access:
@@ -441,7 +432,7 @@ class MainGUI(QtWidgets.QMainWindow):
         if self.comboBusService.currentText() == "Bus 84":
             coordinates = [[]]
             self.m = folium.Map(location=[1.4053, 103.9021], zoom_start=16)
-            with open("Bus_Services/Bus84/Bus_84.json") as f:
+            with open("Bus_Services/Bus_84.json") as f:
                 getJson = json.load(f)
             feature_access = getJson['features']
             for feature_data in feature_access:
@@ -460,7 +451,7 @@ class MainGUI(QtWidgets.QMainWindow):
         if self.comboBusService.currentText() == "Bus 85":
             coordinates = [[]]
             self.m = folium.Map(location=[1.4053, 103.9021], zoom_start=16)
-            with open("Bus_Services/Bus85/Bus_85_from.json") as f:
+            with open("Bus_Services/Bus_85_from.json") as f:
                 getJson = json.load(f)
             feature_access = getJson['features']
             for feature_data in feature_access:
@@ -479,7 +470,7 @@ class MainGUI(QtWidgets.QMainWindow):
         if self.comboBusService.currentText() == "Bus 117":
             coordinates = [[]]
             self.m = folium.Map(location=[1.4053, 103.9021], zoom_start=16)
-            with open("Bus_Services/Bus117/Bus_117_from.json") as f:
+            with open("Bus_Services/Bus_117_from.json") as f:
                 getJson = json.load(f)
             feature_access = getJson['features']
             for feature_data in feature_access:
@@ -498,7 +489,7 @@ class MainGUI(QtWidgets.QMainWindow):
         if self.comboBusService.currentText() == "Bus 118":
             coordinates = [[]]
             self.m = folium.Map(location=[1.4053, 103.9021], zoom_start=16)
-            with open("Bus_Services/Bus118/Bus_118_from.json") as f:
+            with open("Bus_Services/Bus_118_from.json") as f:
                 getJson = json.load(f)
             feature_access = getJson['features']
             for feature_data in feature_access:
@@ -517,7 +508,7 @@ class MainGUI(QtWidgets.QMainWindow):
         if self.comboBusService.currentText() == "Bus 119":
             coordinates = [[]]
             self.m = folium.Map(location=[1.4053, 103.9021], zoom_start=16)
-            with open("Bus_Services/Bus119/Bus_119_from.json") as f:
+            with open("Bus_Services/Bus_119_from.json") as f:
                 getJson = json.load(f)
             feature_access = getJson['features']
             for feature_data in feature_access:
@@ -536,7 +527,7 @@ class MainGUI(QtWidgets.QMainWindow):
         if self.comboBusService.currentText() == "Bus 136":
             coordinates = [[]]
             self.m = folium.Map(location=[1.4053, 103.9021], zoom_start=16)
-            with open("Bus_Services/Bus136/Bus_136_from.json") as f:
+            with open("Bus_Services/Bus_136_from.json") as f:
                 getJson = json.load(f)
             feature_access = getJson['features']
             for feature_data in feature_access:
@@ -555,7 +546,7 @@ class MainGUI(QtWidgets.QMainWindow):
         if self.comboBusService.currentText() == "Bus 381":
             coordinates = [[]]
             self.m = folium.Map(location=[1.4053, 103.9021], zoom_start=16)
-            with open("Bus_Services/Bus381/Bus_381_from.json") as f:
+            with open("Bus_Services/Bus_381_from.json") as f:
                 getJson = json.load(f)
             feature_access = getJson['features']
             for feature_data in feature_access:
@@ -574,7 +565,7 @@ class MainGUI(QtWidgets.QMainWindow):
         if self.comboBusService.currentText() == "Bus 382G":
             coordinates = [[]]
             self.m = folium.Map(location=[1.4053, 103.9021], zoom_start=16)
-            with open("Bus_Services/Bus382/Bus_382G.json") as f:
+            with open("Bus_Services/Bus_382G.json") as f:
                 getJson = json.load(f)
             feature_access = getJson['features']
             for feature_data in feature_access:
@@ -593,7 +584,7 @@ class MainGUI(QtWidgets.QMainWindow):
         if self.comboBusService.currentText() == "Bus 382W":
             coordinates = [[]]
             self.m = folium.Map(location=[1.4053, 103.9021], zoom_start=16)
-            with open("Bus_Services/Bus382/Bus_382W.json") as f:
+            with open("Bus_Services/Bus_382W.json") as f:
                 getJson = json.load(f)
             feature_access = getJson['features']
             for feature_data in feature_access:
@@ -612,7 +603,7 @@ class MainGUI(QtWidgets.QMainWindow):
         if self.comboBusService.currentText() == "Bus 386":
             coordinates = [[]]
             self.m = folium.Map(location=[1.4053, 103.9021], zoom_start=16)
-            with open("Bus_Services/Bus386/Bus_386_from.json") as f:
+            with open("Bus_Services/Bus_386_from.json") as f:
                 getJson = json.load(f)
             feature_access = getJson['features']
             for feature_data in feature_access:
@@ -621,7 +612,7 @@ class MainGUI(QtWidgets.QMainWindow):
                     coordinates = feature_data['geometry']['coordinates']
                     for c in coordinates:
                         c[0], c[1] = c[1], c[0]
-            folium.PolyLine(coordinates, color="green", weight=3).add_to(self.m)
+            folium.PolyLine(coordinates, color="#800080", weight=3).add_to(self.m)
             self.marker_cluster = MarkerCluster().add_to(self.m)
             self.initMap(self.m, self.marker_cluster)
             data = io.BytesIO()
@@ -645,6 +636,11 @@ class MainGUI(QtWidgets.QMainWindow):
         graph = pathfinder.build_graph()
         path = pathfinder.find_shortest_path(graph, self.comboStart.currentText(), self.comboEnd.currentText())
         folium.PolyLine(path, color="#008000", weight=3).add_to(self.m)
+        self.m = folium.Map(location=[1.4053, 103.9021], zoom_start=16)
+        self.lblSelectedBusRoute.setText('Bus Route Displayed: ')
+        folium.PolyLine(path, opacity=1, color='green').add_to(self.m)
+        self.marker_cluster = MarkerCluster().add_to(self.m)
+        self.initMap(self.m, self.marker_cluster)
         data = io.BytesIO()
         self.m.save(data, close_file=False)
         self.mapView.setHtml(data.getvalue().decode())
@@ -653,191 +649,16 @@ class MainGUI(QtWidgets.QMainWindow):
         self.walkingPath.show()
 
     @pyqtSlot()
-    def computeDriving(self):
-        nodes = {}
-        with open('MRT/mrt.json') as f1, open('Combined/exportRoad.json') as f2, open(
-                'Buildings/residential_buildings.json') as f3, open(
-                'Buildings/general_buildings.json') as f4,  open(
-                'Bus_Stops/bus_stops.json') as f5:
-            getMrtJson = json.load(f1)
-            getRoadJson = json.load(f2)
-            getHdbJson = json.load(f3)
-            getGeneralJson = json.load(f4)
-            getBusStopsJson = json.load(f5)
-
-            feature_access_mrt = getMrtJson['features']
-            for feature_data in feature_access_mrt:
-                propMrt = feature_data['properties']
-                if 'node-details' in propMrt:
-                    mrt_name = propMrt['node-details']
-                    nodes[mrt_name] = feature_data['geometry']['coordinates']
-
-            feature_access_road = getRoadJson['features']
-            count = 0
-            for feature_data in feature_access_road:
-                type = feature_data['geometry']['type']
-                if type == 'LineString':
-                    coordinateList = feature_data['geometry']['coordinates']
-                    for coordinate in coordinateList:
-                        if isinstance(coordinate, list):
-                            nodes[count] = coordinate
-                            count += 1
-
-            feature_access_hdb = getHdbJson['features']
-            for feature_data in feature_access_hdb:
-                propHdb = feature_data['properties']
-                if 'node-details' in propHdb:
-                    hdb_name = propHdb['node-details']
-                    nodes[hdb_name] = feature_data['geometry']['coordinates']
-
-            feature_access_general = getGeneralJson['features']
-            for feature_data in feature_access_general:
-                propGeneral = feature_data['properties']
-                if 'node-details' in propGeneral:
-                    general_name = propGeneral['node-details']
-                    nodes[general_name] = feature_data['geometry']['coordinates']
-
-            feature_access_bus_stop = getBusStopsJson['features']
-            for feature_data in feature_access_bus_stop :
-                propBusStop = feature_data['properties']
-                if 'node-details' in propBusStop:
-                    bus_stop_name = propBusStop['node-details']
-                    nodes[bus_stop_name] = feature_data['geometry']['coordinates']
-
-        pathFinder = ShortestPath(nodes)
-        pathFinder.create_edges()
-        graph = pathFinder.build_graph()
-        path = pathFinder.find_shortest_path(graph, self.comboStart.currentText(), self.comboEnd.currentText())
-        folium.PolyLine(path, color="#FF8C00", weight=3).add_to(self.m)
-        data = io.BytesIO()
-        self.m.save(data, close_file=False)
-        self.mapView.setHtml(data.getvalue().decode())
-
-        self.drivingPath = DrivingPathGUI(path)
-        self.drivingPath.show()
-        # endbeta(CH)
-
-    @pyqtSlot()
     def computeFastestBus(self):
         # Fastest Bus Route
-        """nodes = {}
-
-        # Initialising start and end points
-        with open('Combined/nodes.json') as f:
-            getJson = json.load(f)
-            feature_access = getJson['features']
-            for feature_data in feature_access:
-                prop = feature_data['properties']
-                if 'node-details' in prop:
-                    # Checking if start point exists in data
-                    if self.comboStart.currentText() in prop['node-details']:
-                        location_name = prop['node-details']
-                        nodes[location_name] = feature_data['geometry']['coordinates']
-                        # Recording latitude and longitude to compare later
-                        lat0 = nodes[location_name][0]
-                        lon0 = nodes[location_name][1]
-                    # Checking of end point exists in data
-                    elif self.comboEnd.currentText() in prop['node-details']:
-                        location_name = prop['node-details']
-                        nodes[location_name] = feature_data['geometry']['coordinates']
-                        lat1 = nodes[location_name][0]
-                        lon1 = nodes[location_name][1]
-
-            # Retrieving all bus stops between start and end points
-            for feature_data in feature_access:
-                prop = feature_data['properties']
-                if 'node-details' in prop:
-                    if "Bus Stop" in prop['node-details']:
-                        # Temporarily storing bus stop's coordinates
-                        bLat = feature_data['geometry']['coordinates'][0]
-                        bLon = feature_data['geometry']['coordinates'][1]
-                        # If start point is below end point
-                        if lat0 <= lat1:
-                            # If bus stop is between start and end latitudes
-                            if bLat >= lat0 and bLat <= lat1:
-                                # If start point is left of end point
-                                if lon0 <= lon1:
-                                    # If bus stop is between start and end points
-                                    if bLon >= lon0 and bLon <= lon1:
-                                        location_name = prop['node-details']
-                                        nodes[location_name] = feature_data['geometry']['coordinates']
-                                # If start point is right of end point
-                                elif lon0 >= lon1:
-                                    # If bus stop is between start and end longitudes
-                                    if bLon <= lon0 and bLon >= lon1:
-                                        location_name = prop['node-details']
-                                        nodes[location_name] = feature_data['geometry']['coordinates']
-                        # If start point is above end point
-                        # The rest is the same as before
-                        elif lat0 >= lat1:
-                            if bLat <= lat0 and bLat >= lat1:
-                                if lon0 <= lon1:
-                                    if bLon >= lon0 and bLon <= lon1:
-                                        location_name = prop['node-details']
-                                        nodes[location_name] = feature_data['geometry']['coordinates']
-                                elif lon0 >= lon1:
-                                    if bLon <= lon0 and bLon >= lon1:
-                                        location_name = prop['node-details']
-                                        nodes[location_name] = feature_data['geometry']['coordinates']
-
-        # Sorting points in ascending order based on whether start point is above or below end point
-        if lat0 <= lat1:
-            temp_node = sorted(nodes.items(), key=lambda kv: (kv[1][0], kv[1][1], kv[0]))
-        else:
-            temp_node = sorted(nodes.items(), key=lambda kv: (kv[1][0], kv[1][1], kv[0]), reverse=True)
-
-        # Initialising graph
-        pathfinder = ShortestPath(nodes)
-        pathfinder.create_edges()
-        graph = pathfinder.build_graph()
-        path = pathfinder.find_shortest_path(graph, self.comboStart.currentText(), self.comboEnd.currentText())
-
-        # Checking to see if there are sufficient bus stops
-        if len(temp_node) > 3:
-            buses = []
-            # Retrieving bus services
-            with open('Bus_Stops/bus_stops.json') as f2:
-                getJson = json.load(f2)
-                feature_access = getJson['features']
-                for feature_data in feature_access:
-                    prop = feature_data['properties']
-                    if 'node-details' in prop:
-                        if temp_node[1][0] in prop['node-details']:
-                            buses0 = prop['bus-services']
-                        if temp_node[len(temp_node) - 2][0] in prop['node-details']:
-                            buses1 = prop['bus-services']
-                # Storing list of buses that connect both points
-                for bus in buses0:
-                    if bus in buses1:
-                        buses.append(bus)
-
-            # Checking to see if there are buses connecting both points
-            # If there are, then add them to the path
-            if len(buses) > 0:
-                firstBus = [temp_node[1][1][1], temp_node[1][1][0]]
-                lastBus = [temp_node[len(temp_node) - 2][1][1], temp_node[len(temp_node) - 2][1][0]]
-
-                temp = path[1]
-                path[1] = firstBus
-                path.append(lastBus)
-                path.append(temp)
-
-        folium.PolyLine(path, color="#008B8B", weight=3).add_to(self.m)
-        data = io.BytesIO()
-        self.m.save(data, close_file=False)
-        self.mapView.setHtml(data.getvalue().decode())
-
-        self.fastestPath = FastestBusGUI(path)
-        self.fastestPath.show()"""
-
         nodes = OrderedDict()
         edges = []
-        mrtPath = []
-        mrtRoutes = OrderedDict()
-        mrtNodes = {}
+        busPath = []
+        busRoutes = OrderedDict()
+        busNodes = {}
         temp = {}
-        filedir = "Bus_Services\\"
-        json_files = [pos_json for pos_json in os.listdir(filedir) if pos_json.endswith('.json')]
+        filedir = "Bus_Path\\"
+        json_files = [pos_json for pos_json in os.listdir(filedir) if pos_json.endswith('.geojson')]
         for f in json_files:
             with open(filedir + f) as json_file:
                 data = json.load(json_file)
@@ -846,44 +667,45 @@ class MainGUI(QtWidgets.QMainWindow):
 
                 if feature['geometry']['type'] == 'MultiLineString':
                     for y in feature['geometry']['coordinates']:
-                        mrtPath.append(y)
+                        busPath.append(y)
 
                 else:
                     coord = feature['geometry']['coordinates']
                     nodes[feature['properties']['node-details']] = coord
-                    mrtNodes[tuple(coord)] = feature['properties']['node-details']
+                    print("Nodes: " + str(coord))
+                    busNodes[tuple(coord)] = feature['properties']['node-details']
 
                     lowest = 999
                     lowestIndex = 0
-                    for i in range(len(mrtPath)):
-                        print(mrtPath[i])
-                        d = haversine(coord, mrtPath[i])
+                    for i in range(len(busPath)):
+                        print(busPath[i])
+                        d = haversine(coord, busPath[i])
                         if d < lowest:
                             lowest = d
                             lowestIndex = i
-                    mrtPath.insert(lowestIndex, coord)
+                    busPath.insert(lowestIndex, coord)
 
-            length = len(mrtPath)
+            length = len(busPath)
             for i in range(length):
-                c = tuple(mrtPath[i])
+                c = tuple(busPath[i])
                 k = str(i)
-                mrtRoutes[k] = c
+                busRoutes[k] = c
                 temp[c] = k
 
             # complete dictionary
 
             for i in range(length):
                 if i + 1 != length:
-                    d = haversine(mrtPath[i], mrtPath[i + 1])
-                    if tuple(mrtPath[i]) in mrtNodes:
-                        edges.append((mrtNodes[tuple(mrtPath[i])], temp[tuple(mrtPath[i + 1])], d / 60, "Bus"))
-                    elif tuple(mrtPath[i + 1]) in mrtNodes:
-                        edges.append((temp[tuple(mrtPath[i])], mrtNodes[tuple(mrtPath[i + 1])], d / 60, "Bus"))
+                    d = haversine(busPath[i], busPath[i + 1])
+                    if tuple(busPath[i]) in busNodes:
+                        edges.append((busNodes[tuple(busPath[i])], temp[tuple(busPath[i + 1])], d / 60, "Bus"))
+                    elif tuple(busPath[i + 1]) in busNodes:
+                        edges.append((temp[tuple(busPath[i])], busNodes[tuple(busPath[i + 1])], d / 60, "Bus"))
                     else:
-                        edges.append((temp[tuple(mrtPath[i])], temp[tuple(mrtPath[i + 1])], d / 60, "Bus"))
+                        edges.append((temp[tuple(busPath[i])], temp[tuple(busPath[i + 1])], d / 60, "Bus"))
 
             temp.clear()
-            mrtPath.clear()
+            busPath.clear()
 
         with open('Combined/nodes.json') as f:
             getJson = json.load(f)
@@ -897,19 +719,21 @@ class MainGUI(QtWidgets.QMainWindow):
 
         pathfinder = ShortestPath(nodes)
         pathfinder.create_edges()
-        pathfinder.create_mrt_edgenodes(edges, mrtNodes, mrtRoutes)
+        pathfinder.create_bus_edgenodes(edges, busNodes, busRoutes)
         graph = pathfinder.build_graph()
         print("Get graph: " + str(graph))
         path = pathfinder.find_shortest_path(graph, self.comboStart.currentText(), self.comboEnd.currentText())
 
         print("Get Path: " + str(path))
+
+        self.m = folium.Map(location=[1.4053, 103.9021], zoom_start=16)
+        self.lblSelectedBusRoute.setText('Bus Route Displayed: ')
         folium.PolyLine(path, opacity=1, color='#800080').add_to(self.m)
+        self.marker_cluster = MarkerCluster().add_to(self.m)
+        self.initMap(self.m, self.marker_cluster)
         data = io.BytesIO()
         self.m.save(data, close_file=False)
         self.mapView.setHtml(data.getvalue().decode())
-
-        self.fastestPath = FastestBusGUI(graph)
-        self.fastestPath.show()
 
     @pyqtSlot()
     def computeFastestTrain(self):
@@ -986,13 +810,15 @@ class MainGUI(QtWidgets.QMainWindow):
         path = pathfinder.find_shortest_path(graph, self.comboStart.currentText(), self.comboEnd.currentText())
 
         print("Get Path: " + str(path))
-        folium.PolyLine(path, opacity=1, color='black').add_to(self.m)
+
+        self.m = folium.Map(location=[1.4053, 103.9021], zoom_start=16)
+        self.lblSelectedBusRoute.setText('Bus Route Displayed: ')
+        folium.PolyLine(path, opacity=1, color='red').add_to(self.m)
+        self.marker_cluster = MarkerCluster().add_to(self.m)
+        self.initMap(self.m, self.marker_cluster)
         data = io.BytesIO()
         self.m.save(data, close_file=False)
         self.mapView.setHtml(data.getvalue().decode())
-
-        self.fastestPath = FastestMRTGUI(graph)
-        self.fastestPath.show()
 
 if __name__ == "__main__":
     App = QApplication(sys.argv)

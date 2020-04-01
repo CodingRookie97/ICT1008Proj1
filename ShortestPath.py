@@ -10,6 +10,8 @@ class ShortestPath:
     def __init__(self, nodes):
         self.nodes = nodes
         self.edges = []
+        self.busnodes = {}
+        self.busroutes = {}
         self.mrtnodes = {}
         self.mrtroutes = {}
 
@@ -19,6 +21,11 @@ class ShortestPath:
                 edge = add_neighbour(key1, value1, key2, value2)
                 if edge is not None:
                     self.edges.append(edge)
+
+    def create_bus_edgenodes(self, edges, busnodes, busroutes):
+        self.edges = self.edges + edges
+        self.busnodes = busnodes
+        self.busroutes = busroutes
 
     def create_mrt_edgenodes(self, edges, mrtnodes, mrtroutes):
         self.edges = self.edges + edges
@@ -46,6 +53,10 @@ class ShortestPath:
                 newpath.append(swap(self.nodes[x[0]]))
             elif x[0] in self.mrtnodes:
                 newpath.append(swap(self.mrtnodes[x[0]]))
+            elif x[0] in self.busnodes:
+                newpath.append(swap(self.busnodes[x[0]]))
+            elif x[1] == "Bus":
+                newpath.append(swap(self.busroutes[x[0]]))
             elif x[1] == "LRT":
                 newpath.append(swap(self.mrtroutes[x[0]]))
         return newpath
