@@ -25,6 +25,7 @@
 <h4>Download Instructions</h4>
 These are the pre-requisities to run the application successfully, you are strongly encouraged to download the repositories as displayed below<br>
 1. Python 3.x: You must have at least a Python version 3 and above, preferably in latest Python version.<br>
+Download Link: <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a><br>
 2. PyQt5: Python's GUI framework<br>- pip install PyQt5<br>
 3. PyQtWebEngine: A set of Python bindings for The Qt Company’s Qt WebEngine framework<br>- pip install PyQtWebEngine<br>
 4. Folium: Parsed Open Street Map API to display the Leaflet map in Python<br>- pip install folium<br>
