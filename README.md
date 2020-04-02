@@ -53,15 +53,15 @@ encouraged to download and install the packages listed below:</p>
 <p>Run this command through the command line:
 <br><i>pip install PyQt5</i></p>
 <p><b>3. PyQtWebEngine: A set of Python bindings for The Qt Company’s
-Qt WebEngine framework.</p>
+Qt WebEngine framework.</b></p>
 <p>Run this command through the command line:
 <br><i>pip install PyQtWebEngine</i></p>
 <p><b>4. Folium: Parsed Open Street Map API to display the Leaflet map in Python.
-</p>
+</b></p>
 <p>Run this command through the command line:
 <br><i>pip install folium</i></p>
 <p><b>5. Haversine: Dynamically calculates the distance (in km) between 2 coordinates that can be used for Dijkstra Algorithm.
-</p>
+</b></p>
 <p>Run this command through the command line:
 <br><i>pip install haversine</i></p>
 <h4>Main Functions</h4>
