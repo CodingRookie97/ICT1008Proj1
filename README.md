@@ -29,7 +29,7 @@ Download Link: <a href="https://www.python.org/downloads/">https://www.python.or
 2. PyQt5: Python's GUI framework<br>- pip install PyQt5<br>
 3. PyQtWebEngine: A set of Python bindings for The Qt Company’s Qt WebEngine framework<br>- pip install PyQtWebEngine<br>
 4. Folium: Parsed Open Street Map API to display the Leaflet map in Python<br>- pip install folium<br>
-5. Haversine: Dynamically calculates the distance between 2 coordinates that can be used for Dijkstra Algorithm<br>- pip install haversine
+5. Haversine: Dynamically calculates the distance (in km) between 2 coordinates that can be used for Dijkstra Algorithm<br>- pip install haversine
 <h4>Main Functions</h4>
 <li>Display of 4 different kinds of nodes into the folium map that is represented by different logos for different landmarks</li>
 <li>Allowing users the freedom to select any starting and ending location to determine their shortest path to reach to their destination</li>
