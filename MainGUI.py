@@ -52,12 +52,13 @@ class MainGUI(QtWidgets.QMainWindow):
         self.mapView = QtWebEngineWidgets.QWebEngineView()
         self.initMap(self.m, self.marker_cluster)
 
-        # Array that contains the ending locations (Those residential areas that cover Punggol West Area only)
+        # Array that contains the ending locations (Entire nodes that cover Punggol West Area)
         startEndingLocation = self.importStartEnding('Combined/nodes.json')
 
-        #Array that contains the bus services
+        #Array that contains all the bus services that ply around Punggol West (Area-Of-Interest)
         busServices = ["Bus 3", "Bus 34", "Bus 43", "Bus 50", "Bus 62", "Bus 82", "Bus 83", "Bus 84", "Bus 85", "Bus 117", "Bus 118", "Bus 119", "Bus 136", "Bus 381", "Bus 382G", "Bus 382W", "Bus 386"]
 
+        #Initailises the main layout + grid layout to format the GUI
         self.main = QtWidgets.QWidget()
         self.setCentralWidget(self.main)
         gridLayout = QtWidgets.QGridLayout(self.main)
@@ -65,6 +66,7 @@ class MainGUI(QtWidgets.QMainWindow):
         #Combo Box Layout 1 for starting and ending location
         comboLayout1 = QtWidgets.QGridLayout(self.main)
 
+        #Starting Location Label
         lblStartLocation = QLabel(self)
         lblStartLocation.setText('Choose starting location:')
         lblStartLocation.setFont(QFont("Arial", 14, QFont.Bold))
@@ -76,6 +78,7 @@ class MainGUI(QtWidgets.QMainWindow):
         self.comboStart.addItems(startEndingLocation)
         self.comboStart.currentIndexChanged.connect(self.chooseStart)
 
+        #Ending location label
         lblEndLocation = QLabel(self)
         lblEndLocation.setText('Choose ending location:')
         lblEndLocation.setFont(QFont("Arial", 14, QFont.Bold))
@@ -94,7 +97,7 @@ class MainGUI(QtWidgets.QMainWindow):
         comboLayout1.addWidget(self.comboEnd, 1, 1)
         gridLayout.addLayout(comboLayout1, 0, 0)
 
-        #Button to determine shortest path + fastest Path
+        #Button to determine shortest walking bath
         btnLayout = QtWidgets.QGridLayout()
         btnWalkingPath = QtWidgets.QPushButton(self.tr("Compute shortest walking path"))
         btnWalkingPath.setFont(QFont("Arial", 10, QFont.Bold))
@@ -102,12 +105,14 @@ class MainGUI(QtWidgets.QMainWindow):
         btnLayout.addWidget(btnWalkingPath , 0, 0)
         btnWalkingPath.clicked.connect(self.computeWalking)
 
+        #Button to determine fastest bus bath
         btnFastestBusPath = QtWidgets.QPushButton(self.tr("Compute fastest bus path"))
         btnFastestBusPath.setFont(QFont("Arial", 10, QFont.Bold))
         btnFastestBusPath.setStyleSheet('QPushButton { background-color: #008B8B; color: white; }')
         btnFastestBusPath.clicked.connect(self.computeFastestBus)
         btnLayout.addWidget(btnFastestBusPath, 1, 0)
 
+        #Button to determine fastest MRT/train bath
         btnFastestTrainPath = QtWidgets.QPushButton(self.tr("Compute fastest train path"))
         btnFastestTrainPath.setFont(QFont("Arial", 10, QFont.Bold))
         btnFastestTrainPath.setStyleSheet('QPushButton { background-color: #FF0000; color: white; }')
@@ -125,12 +130,14 @@ class MainGUI(QtWidgets.QMainWindow):
 
         busLayout.addWidget(lblBusRoutes, 0, 0)
 
+        #Checkbox to select a bus service route to display on the map
         self.comboBusService = QComboBox(self)
         self.comboBusService.setFont(QFont("Arial", 10))
         self.comboBusService.addItems(busServices)
         self.comboBusService.currentIndexChanged.connect(self.chooseBus)
         busLayout.addWidget(self.comboBusService, 1, 0)
 
+        #Button to click the bus route to display on the map
         btnSelectBus = QtWidgets.QPushButton(self.tr("Display Selected Bus Route"))
         btnSelectBus.setFont(QFont("Arial", 10, QFont.Bold))
         btnSelectBus.setStyleSheet('QPushButton { background-color: #800080; color: white; }')
@@ -621,7 +628,9 @@ class MainGUI(QtWidgets.QMainWindow):
 
     @pyqtSlot()
     def computeWalking(self):
+        #initialise dictionary
         nodes = {}
+        #opens up the combined nodes json file to retrieve the json keys
         with open('Combined/nodes.json') as f:
             getJson = json.load(f)
             feature_access = getJson['features']
@@ -629,13 +638,13 @@ class MainGUI(QtWidgets.QMainWindow):
                 prop = feature_data['properties']
                 if 'node-details' in prop:
                     location_name = prop['node-details']
+                    #add all the node details such as the name as key and coordinates as value into dictionary
                     nodes[location_name] = feature_data['geometry']['coordinates']
 
         pathfinder = ShortestPath(nodes)
         pathfinder.create_edges()
         graph = pathfinder.build_graph()
         path = pathfinder.find_shortest_path(graph, self.comboStart.currentText(), self.comboEnd.currentText())
-        folium.PolyLine(path, color="#008000", weight=3).add_to(self.m)
         self.m = folium.Map(location=[1.4053, 103.9021], zoom_start=16)
         self.lblSelectedBusRoute.setText('Bus Route Displayed: ')
         folium.PolyLine(path, opacity=1, color='green').add_to(self.m)
@@ -657,6 +666,7 @@ class MainGUI(QtWidgets.QMainWindow):
         busRoutes = OrderedDict()
         busNodes = {}
         temp = {}
+        #Retrieve all the json files under Bus_Path directory
         filedir = "Bus_Path\\"
         json_files = [pos_json for pos_json in os.listdir(filedir) if pos_json.endswith('.geojson')]
         for f in json_files:
@@ -665,10 +675,12 @@ class MainGUI(QtWidgets.QMainWindow):
 
             for feature in data['features']:
 
+                #Added all the coordinates that follow the bus path into busPath list
                 if feature['geometry']['type'] == 'MultiLineString':
                     for y in feature['geometry']['coordinates']:
                         busPath.append(y)
 
+                #Added all the nodes that are placed on the maop into busNodes list
                 else:
                     coord = feature['geometry']['coordinates']
                     nodes[feature['properties']['node-details']] = coord
@@ -679,6 +691,7 @@ class MainGUI(QtWidgets.QMainWindow):
                     lowestIndex = 0
                     for i in range(len(busPath)):
                         print(busPath[i])
+                        #Finding out the distance and sort them out as lowest index, sort based on lowest distance (cost) like a heap
                         d = haversine(coord, busPath[i])
                         if d < lowest:
                             lowest = d
@@ -692,8 +705,7 @@ class MainGUI(QtWidgets.QMainWindow):
                 busRoutes[k] = c
                 temp[c] = k
 
-            # complete dictionary
-
+            #Added for overall edges for the other node coordinates to find out the fastest path based on speed
             for i in range(length):
                 if i + 1 != length:
                     d = haversine(busPath[i], busPath[i + 1])
@@ -719,7 +731,7 @@ class MainGUI(QtWidgets.QMainWindow):
 
         pathfinder = ShortestPath(nodes)
         pathfinder.create_edges()
-        pathfinder.create_bus_edgenodes(edges, busNodes, busRoutes)
+        pathfinder.createBusEdgeNodes(edges, busNodes, busRoutes)
         graph = pathfinder.build_graph()
         print("Get graph: " + str(graph))
         path = pathfinder.find_shortest_path(graph, self.comboStart.currentText(), self.comboEnd.currentText())
@@ -743,6 +755,7 @@ class MainGUI(QtWidgets.QMainWindow):
         mrtRoutes = OrderedDict()
         mrtNodes = {}
         temp = {}
+        # Retrieve all the json files under MRT directory
         filedir = "MRT\\"
         json_files = [pos_json for pos_json in os.listdir(filedir) if pos_json.endswith('.geojson')]
         for f in json_files:
@@ -751,6 +764,7 @@ class MainGUI(QtWidgets.QMainWindow):
 
             for feature in data['features']:
 
+                #Added all the coordinates that follow the mrt path into mrtPath list
                 if feature['geometry']['type'] == 'MultiLineString':
                     for y in feature['geometry']['coordinates']:
                         mrtPath.append(y)
@@ -804,7 +818,7 @@ class MainGUI(QtWidgets.QMainWindow):
 
         pathfinder = ShortestPath(nodes)
         pathfinder.create_edges()
-        pathfinder.create_mrt_edgenodes(edges, mrtNodes, mrtRoutes)
+        pathfinder.createMrtEdgeNodes(edges, mrtNodes, mrtRoutes)
         graph = pathfinder.build_graph()
         print("Get graph: " + str(graph))
         path = pathfinder.find_shortest_path(graph, self.comboStart.currentText(), self.comboEnd.currentText())
