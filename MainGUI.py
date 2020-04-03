@@ -667,10 +667,11 @@ class MainGUI(QtWidgets.QMainWindow):
         busNodes = {}
         temp = {}
         #Retrieve all the json files under Bus_Path directory
-        filedir = "Bus_Path\\"
-        json_files = [pos_json for pos_json in os.listdir(filedir) if pos_json.endswith('.geojson')]
-        for f in json_files:
-            with open(filedir + f) as json_file:
+        path_to_json = "Bus_Path/"
+        #Referenced from: https://stackoverflow.com/questions/30539679/python-read-several-json-files-from-a-folder
+        json_files = [pos_json for pos_json in os.listdir(path_to_json) if pos_json.endswith('.geojson')]
+        for (index, name) in enumerate(json_files):
+            with open(path_to_json + str(name)) as json_file:
                 data = json.load(json_file)
 
             for feature in data['features']:
@@ -687,16 +688,14 @@ class MainGUI(QtWidgets.QMainWindow):
                     print("Nodes: " + str(coord))
                     busNodes[tuple(coord)] = feature['properties']['node-details']
 
-                    lowest = 999
-                    lowestIndex = 0
-                    for i in range(len(busPath)):
-                        print(busPath[i])
-                        #Finding out the distance and sort them out as lowest index, sort based on lowest distance (cost) like a heap
-                        d = haversine(coord, busPath[i])
+                    i = 0
+                    while i < len(busPath):
+                        d = haversine(coordinates, busPath[i])
                         if d < lowest:
                             lowest = d
                             lowestIndex = i
-                    busPath.insert(lowestIndex, coord)
+                            i += 1
+                    busPath.insert(lowestIndex, coordinates)
 
             length = len(busPath)
             for i in range(length):
@@ -756,10 +755,10 @@ class MainGUI(QtWidgets.QMainWindow):
         mrtNodes = {}
         temp = {}
         # Retrieve all the json files under MRT directory
-        filedir = "MRT\\"
-        json_files = [pos_json for pos_json in os.listdir(filedir) if pos_json.endswith('.geojson')]
-        for f in json_files:
-            with open(filedir + f) as json_file:
+        path_to_json = "MRT/"
+        json_files = [pos_json for pos_json in os.listdir(path_to_json) if pos_json.endswith('.geojson')]
+        for (index, name) in enumerate(json_files):
+            with open(path_to_json + str(name)) as json_file:
                 data = json.load(json_file)
 
             for feature in data['features']:
@@ -770,19 +769,21 @@ class MainGUI(QtWidgets.QMainWindow):
                         mrtPath.append(y)
 
                 else:
-                    coord = feature['geometry']['coordinates']
-                    nodes[feature['properties']['node-details']] = coord
-                    mrtNodes[tuple(coord)] = feature['properties']['node-details']
+                    coordinates = feature['geometry']['coordinates']
+                    nodes[feature['properties']['node-details']] = coordinates
+                    mrtNodes[tuple(coordinates)] = feature['properties']['node-details']
 
-                    lowest = 999
+                    lowest = 1000
                     lowestIndex = 0
-                    for i in range(len(mrtPath)):
-                        print(mrtPath[i])
-                        d = haversine(coord, mrtPath[i])
+
+                    i = 0
+                    while i < len(mrtPath):
+                        d = haversine(coordinates, mrtPath[i])
                         if d < lowest:
                             lowest = d
                             lowestIndex = i
-                    mrtPath.insert(lowestIndex, coord)
+                            i += 1
+                    mrtPath.insert(lowestIndex, coordinates)
 
             length = len(mrtPath)
             for i in range(length):
@@ -790,8 +791,6 @@ class MainGUI(QtWidgets.QMainWindow):
                 k = str(i)
                 mrtRoutes[k] = c
                 temp[c] = k
-
-            # complete dictionary
 
             for i in range(length):
                 if i + 1 != length:

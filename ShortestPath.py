@@ -3,6 +3,7 @@ from haversine import haversine
 
 global mapView
 
+#This is the class that will determine the shortest/fastest path algorithm for the different modes of transports
 class ShortestPath:
 
     #Initialises edges, nodes, routes
@@ -19,7 +20,7 @@ class ShortestPath:
         for key1, value1 in self.nodes.items():
             for key2, value2 in self.nodes.items():
                 #add a new neighbouring node
-                edge = add_neighbour(key1, value1, key2, value2)
+                edge = add_neighbouring_nodes(key1, value1, key2, value2)
                 if edge is not None:
                     self.edges.append(edge)
 
@@ -52,28 +53,28 @@ class ShortestPath:
     #Finding the shortest path via Dijkstra
     def find_shortest_path(self, graph, src, dst):
         d, prev = dijkstra(graph, src, dst)
-        path = find_path(prev, [dst, 'walk'])
+        path = find_next_path(prev, [dst, 'walk'])
         shortestPath = []
         for x in path:
             if x[0] in self.nodes:
                 #swap coordinates of the nodes during program runtime
-                shortestPath.append(swap(self.nodes[x[0]]))
+                shortestPath.append(swapCoordinates(self.nodes[x[0]]))
             elif x[0] in self.mrtNodes:
-                shortestPath.append(swap(self.mrtNodes[x[0]]))
+                shortestPath.append(swapCoordinates(self.mrtNodes[x[0]]))
             elif x[0] in self.busNodes:
-                shortestPath.append(swap(self.busNodes[x[0]]))
-
+                shortestPath.append(swapCoordinates(self.busNodes[x[0]]))
             #if mode is Bus
             elif x[1] == "Bus":
-                shortestPath.append(swap(self.busRoutes[x[0]]))
-
+                shortestPath.append(swapCoordinates(self.busRoutes[x[0]]))
             #if mode is LRT
             elif x[1] == "LRT":
-                shortestPath.append(swap(self.mrtRoutes[x[0]]))
+                shortestPath.append(swapCoordinates(self.mrtRoutes[x[0]]))
         return shortestPath
 
 #Dijkstra algorithm to find shorest distance away from a coordinate
-#Source adapted from: https://dev.to/mxl/dijkstras-algorithm-in-python-algorithms-for-beginners-dkc
+#Source adapted from:
+#https://dev.to/mxl/dijkstras-algorithm-in-python-algorithms-for-beginners-dkc
+#https://startupnextdoor.com/dijkstras-algorithm-in-python-3/
 def dijkstra(graph, src, dst = None):
     nodes = []
     for n in graph:
@@ -82,47 +83,48 @@ def dijkstra(graph, src, dst = None):
     q = set(nodes)
     nodes = list(q)
 
-    dist = dict()
+    distance = dict()
     prev = dict()
     for n in nodes:
-        dist[n] = float('inf')
+        #at first initialise to infinite
+        distance[n] = float('inf')
         prev[n] = None
 
-    dist[src] = 0
+    distance[src] = 0
 
     while q:
         #Mark the current node as visited and remove it from the unvisited set.
-        u = min(q, key=dist.get)
+        u = min(q, key=distance.get)
         q.remove(u)
 
         if dst is not None and u == dst:
-            return dist[dst], prev
+            return distance[dst], prev
 
         for v, w, mode in graph.get(u, []):
 
-            # Compare the newly calculated distance to the assigned and save the smaller one.
-            alt = dist[u] + w
-            if alt < dist[v]:
-                dist[v] = alt
+            #Compare the newly calculated distance to the assigned and save the smaller one
+            alt = distance[u] + w
+            if alt < distance[v]:
+                distance[v] = alt
                 prev[v] = [u, mode]
-    return dist, prev
+    return distance, prev
 
 #This is to add a neighbouring node to determine which coordinate is the nearest from the checkpoint via walking
-def add_neighbour(key1, value1, key2, value2):
+def add_neighbouring_nodes(key1, value1, key2, value2):
     distance = haversine(value1, value2)
     #specify the range of which the distance is within the walking range of 0.5 from a coordinate checkpoint
     if distance < 0.5:
         return [key1, key2, distance, 'walk']
 
 #Find path to connect from previous node
-def find_path(prv, node):
-    p = []
+def find_next_path(prv, node):
+    path = []
 
     while node is not None:
-        p.append(node)
+        path.append(node)
         node = prv[node[0]]
-    return p[::-1]
+    return path[::-1]
 
 #Swap long and lat to support lat first then long
-def swap(coord):
+def swapCoordinates(coord):
     return [coord[1], coord[0]]

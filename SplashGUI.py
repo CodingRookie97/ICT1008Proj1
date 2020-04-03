@@ -68,6 +68,7 @@ class App(QWidget):
 
         self.show()
 
+    #Button click to enter main page
     @pyqtSlot()
     def on_click(self):
         self.toMain = MainGUI()
