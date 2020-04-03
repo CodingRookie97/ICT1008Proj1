@@ -81,3 +81,13 @@ Qt WebEngine framework.</b></p>
 <p>This program uses these data structures:</p>
 <ol><li>Ordered Dictionary: To store node information for the paths.</li>
 <li>List: To store relevant node information from our datasets.</li></ol>
+<h4>References</h4>
+<p>These are the websites that we have referenced from during our research & development phase:</p>
+<ol><li><b>Folium (Python parser to parse map from HTML to Python): </b><a href="https://python-visualization.github.io/folium/">https://python-visualization.github.io/folium/</a></li>
+<li><b>GeoJSON (Manual plotting of the nodes, area of interest outline, bus service routes): </b><a href="http://geojson.io/">http://geojson.io/</a></li>
+<li><b>PyQt5 (For GUI purposes): </b><a href="https://pypi.org/project/PyQt5">https://pypi.org/project/PyQt5/</a></li>
+<li><b>Overpass Turbo EU (To query the results to retrieve selected coordinates from Open Street Map: </b><a href="https://overpass-turbo.eu/">https://overpass-turbo.eu/</a></li>
+<li><b>Bus Router SG (Plotting out the bus routes and deciding on bus stop coordinates): </b><a href="https://busrouter.sg/">https://busrouter.sg/</a></li>
+<li><b>Dijkstra Algorithm: </b><a href="https://dev.to/mxl/dijkstras-algorithm-in-python-algorithms-for-beginners-dkc">https://dev.to/mxl/dijkstras-algorithm-in-python-algorithms-for-beginners-dkc</a></li>
+<li><b>How to include Folium map into PyQt5 Window: </b><a href="https://stackoverflow.com/questions/60437182/how-to-include-folium-map-into-pyqt5-application-window">https://stackoverflow.com/questions/60437182/how-to-include-folium-map-into-pyqt5-application-window</a></li>
+</ol>
