@@ -641,10 +641,10 @@ class MainGUI(QtWidgets.QMainWindow):
                     #add all the node details such as the name as key and coordinates as value into dictionary
                     nodes[location_name] = feature_data['geometry']['coordinates']
 
-        pathfinder = ShortestPath(nodes)
-        pathfinder.create_edges()
-        graph = pathfinder.build_graph()
-        path = pathfinder.find_shortest_path(graph, self.comboStart.currentText(), self.comboEnd.currentText())
+        findPath = ShortestPath(nodes)
+        findPath.createEdges()
+        graph = findPath.buildAGraph()
+        path = findPath.findShortestPath(graph, self.comboStart.currentText(), self.comboEnd.currentText())
         self.m = folium.Map(location=[1.4053, 103.9021], zoom_start=16)
         self.lblSelectedBusRoute.setText('Bus Route Displayed: ')
         folium.PolyLine(path, opacity=1, color='green').add_to(self.m)
@@ -683,16 +683,17 @@ class MainGUI(QtWidgets.QMainWindow):
 
                 #Added all the nodes that are placed on the maop into busNodes list
                 else:
-                    coord = feature['geometry']['coordinates']
-                    nodes[feature['properties']['node-details']] = coord
-                    print("Nodes: " + str(coord))
-                    busNodes[tuple(coord)] = feature['properties']['node-details']
+                    coordinates = feature['geometry']['coordinates']
+                    nodes[feature['properties']['node-details']] = coordinates
+                    print("Nodes: " + str(coordinates))
+                    busNodes[tuple(coordinates)] = feature['properties']['node-details']
 
+                    lowest = 1000
                     i = 0
                     while i < len(busPath):
-                        d = haversine(coordinates, busPath[i])
-                        if d < lowest:
-                            lowest = d
+                        distance = haversine(coordinates, busPath[i])
+                        if distance < lowest:
+                            lowest = distance
                             lowestIndex = i
                             i += 1
                     busPath.insert(lowestIndex, coordinates)
@@ -707,13 +708,13 @@ class MainGUI(QtWidgets.QMainWindow):
             #Added for overall edges for the other node coordinates to find out the fastest path based on speed
             for i in range(length):
                 if i + 1 != length:
-                    d = haversine(busPath[i], busPath[i + 1])
+                    distance = haversine(busPath[i], busPath[i + 1])
                     if tuple(busPath[i]) in busNodes:
-                        edges.append((busNodes[tuple(busPath[i])], temp[tuple(busPath[i + 1])], d / 60, "Bus"))
+                        edges.append((busNodes[tuple(busPath[i])], temp[tuple(busPath[i + 1])], distance / 60, "Bus"))
                     elif tuple(busPath[i + 1]) in busNodes:
-                        edges.append((temp[tuple(busPath[i])], busNodes[tuple(busPath[i + 1])], d / 60, "Bus"))
+                        edges.append((temp[tuple(busPath[i])], busNodes[tuple(busPath[i + 1])], distance / 60, "Bus"))
                     else:
-                        edges.append((temp[tuple(busPath[i])], temp[tuple(busPath[i + 1])], d / 60, "Bus"))
+                        edges.append((temp[tuple(busPath[i])], temp[tuple(busPath[i + 1])], distance / 60, "Bus"))
 
             temp.clear()
             busPath.clear()
@@ -728,12 +729,12 @@ class MainGUI(QtWidgets.QMainWindow):
                     location_name = prop['node-details']
                     nodes[location_name] = feature_data['geometry']['coordinates']
 
-        pathfinder = ShortestPath(nodes)
-        pathfinder.create_edges()
-        pathfinder.createBusEdgeNodes(edges, busNodes, busRoutes)
-        graph = pathfinder.build_graph()
+        findPath = ShortestPath(nodes)
+        findPath.createEdges()
+        findPath.createBusEdgeNodes(edges, busNodes, busRoutes)
+        graph = findPath.buildAGraph()
         print("Get graph: " + str(graph))
-        path = pathfinder.find_shortest_path(graph, self.comboStart.currentText(), self.comboEnd.currentText())
+        path = findPath.findShortestPath(graph, self.comboStart.currentText(), self.comboEnd.currentText())
 
         print("Get Path: " + str(path))
 
@@ -778,9 +779,9 @@ class MainGUI(QtWidgets.QMainWindow):
 
                     i = 0
                     while i < len(mrtPath):
-                        d = haversine(coordinates, mrtPath[i])
-                        if d < lowest:
-                            lowest = d
+                        distance = haversine(coordinates, mrtPath[i])
+                        if distance < lowest:
+                            lowest = distance
                             lowestIndex = i
                             i += 1
                     mrtPath.insert(lowestIndex, coordinates)
@@ -794,13 +795,13 @@ class MainGUI(QtWidgets.QMainWindow):
 
             for i in range(length):
                 if i + 1 != length:
-                    d = haversine(mrtPath[i], mrtPath[i + 1])
+                    distance = haversine(mrtPath[i], mrtPath[i + 1])
                     if tuple(mrtPath[i]) in mrtNodes:
-                        edges.append((mrtNodes[tuple(mrtPath[i])], temp[tuple(mrtPath[i + 1])], d / 70, "LRT"))
+                        edges.append((mrtNodes[tuple(mrtPath[i])], temp[tuple(mrtPath[i + 1])], distance / 70, "LRT"))
                     elif tuple(mrtPath[i + 1]) in mrtNodes:
-                        edges.append((temp[tuple(mrtPath[i])], mrtNodes[tuple(mrtPath[i + 1])], d / 70, "LRT"))
+                        edges.append((temp[tuple(mrtPath[i])], mrtNodes[tuple(mrtPath[i + 1])], distance / 70, "LRT"))
                     else:
-                        edges.append((temp[tuple(mrtPath[i])], temp[tuple(mrtPath[i + 1])], d / 70, "LRT"))
+                        edges.append((temp[tuple(mrtPath[i])], temp[tuple(mrtPath[i + 1])], distance / 70, "LRT"))
 
             temp.clear()
             mrtPath.clear()
@@ -815,12 +816,12 @@ class MainGUI(QtWidgets.QMainWindow):
                     location_name = prop['node-details']
                     nodes[location_name] = feature_data['geometry']['coordinates']
 
-        pathfinder = ShortestPath(nodes)
-        pathfinder.create_edges()
-        pathfinder.createMrtEdgeNodes(edges, mrtNodes, mrtRoutes)
-        graph = pathfinder.build_graph()
+        findPath = ShortestPath(nodes)
+        findPath.createEdges()
+        findPath.createMrtEdgeNodes(edges, mrtNodes, mrtRoutes)
+        graph = findPath.buildAGraph()
         print("Get graph: " + str(graph))
-        path = pathfinder.find_shortest_path(graph, self.comboStart.currentText(), self.comboEnd.currentText())
+        path = findPath.findShortestPath(graph, self.comboStart.currentText(), self.comboEnd.currentText())
 
         print("Get Path: " + str(path))
 

@@ -16,11 +16,11 @@ class ShortestPath:
         self.mrtRoutes = {}
 
     #Create edges for walking path that is applicable to ALL forms of transport
-    def create_edges(self):
-        for key1, value1 in self.nodes.items():
-            for key2, value2 in self.nodes.items():
+    def createEdges(self):
+        for k1, v1 in self.nodes.items():
+            for k2, v2 in self.nodes.items():
                 #add a new neighbouring node
-                edge = add_neighbouring_nodes(key1, value1, key2, value2)
+                edge = addNeighBourNodes(k1, v1, k2, v2)
                 if edge is not None:
                     self.edges.append(edge)
 
@@ -37,23 +37,23 @@ class ShortestPath:
         self.mrtRoutes = mrtRoutes
 
     #This is to gradually build up the graph to check if the edge is being visited, based on what we learned in dijkstra algorithm from Lectures to track down visited nodes
-    def build_graph(self):
-        graph = defaultdict(list)
-        visited_edges = defaultdict(int)
-        for src, dst, weight, mode in self.edges:
+    def buildAGraph(self):
+        formAGraph = defaultdict(list)
+        visitedEdgesCount = defaultdict(int)
+        for start, destination, distanceOfEdge, modeOfTransport in self.edges:
             #flag to check if the same edge has been visited or not
-            visited_edges[(src, dst, weight)] += 1
+            visitedEdgesCount[(start, destination, distanceOfEdge)] += 1
             #ignore the edge to add into the graph if it is visited, else would form a cycle which is NOT a path anymore
-            if visited_edges[(src, dst, weight)] > 1:
+            if visitedEdgesCount[(start, destination, distanceOfEdge)] > 1:
                 continue
-            graph[src].append([dst, weight, mode])
-            graph[dst].append([src, weight, mode])
-        return graph
+            formAGraph[start].append([destination, distanceOfEdge, modeOfTransport])
+            formAGraph[destination].append([start, distanceOfEdge, modeOfTransport])
+        return formAGraph
 
     #Finding the shortest path via Dijkstra
-    def find_shortest_path(self, graph, src, dst):
-        d, prev = dijkstra(graph, src, dst)
-        path = find_next_path(prev, [dst, 'walk'])
+    def findShortestPath(self, graph, start, destination):
+        distance, previous = dijkstra(graph, start, destination)
+        path = findNextPath(previous, [destination, 'walk'])
         shortestPath = []
         for x in path:
             if x[0] in self.nodes:
@@ -75,13 +75,13 @@ class ShortestPath:
 #Source adapted from:
 #https://dev.to/mxl/dijkstras-algorithm-in-python-algorithms-for-beginners-dkc
 #https://startupnextdoor.com/dijkstras-algorithm-in-python-3/
-def dijkstra(graph, src, dst = None):
+def dijkstra(graph, start, dst = None):
     nodes = []
     for n in graph:
         nodes.append(n)
         nodes += [x[0] for x in graph[n]]
-    q = set(nodes)
-    nodes = list(q)
+    markAsVisited = set(nodes)
+    nodes = list(markAsVisited)
 
     distance = dict()
     prev = dict()
@@ -90,12 +90,12 @@ def dijkstra(graph, src, dst = None):
         distance[n] = float('inf')
         prev[n] = None
 
-    distance[src] = 0
+    distance[start] = 0
 
-    while q:
+    while markAsVisited:
         #Mark the current node as visited and remove it from the unvisited set.
-        u = min(q, key=distance.get)
-        q.remove(u)
+        u = min(markAsVisited, key=distance.get)
+        markAsVisited.remove(u)
 
         if dst is not None and u == dst:
             return distance[dst], prev
@@ -110,21 +110,21 @@ def dijkstra(graph, src, dst = None):
     return distance, prev
 
 #This is to add a neighbouring node to determine which coordinate is the nearest from the checkpoint via walking
-def add_neighbouring_nodes(key1, value1, key2, value2):
+def addNeighBourNodes(key1, value1, key2, value2):
     distance = haversine(value1, value2)
     #specify the range of which the distance is within the walking range of 0.5 from a coordinate checkpoint
     if distance < 0.5:
         return [key1, key2, distance, 'walk']
 
 #Find path to connect from previous node
-def find_next_path(prv, node):
-    path = []
+def findNextPath(previous, node):
+    findingTheNextPath = []
 
     while node is not None:
-        path.append(node)
-        node = prv[node[0]]
-    return path[::-1]
+        findingTheNextPath.append(node)
+        node = previous[node[0]]
+    return findingTheNextPath[::-1]
 
 #Swap long and lat to support lat first then long
-def swapCoordinates(coord):
-    return [coord[1], coord[0]]
+def swapCoordinates(coordinates):
+    return [coordinates[1], coordinates[0]]
